@@ -1,2 +1,1 @@
-# egamingfund
-Website
+egamingfund.org
