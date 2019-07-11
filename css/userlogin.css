@@ -1,0 +1,282 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+    padding:0; 
+    margin:0;
+    overflow-x:hidden;
+}
+.container-outer .container{
+    width: 100%;
+    color:#EFEFEF; 
+}
+.container-outer{
+    background: rgba(0, 0, 0, 0.6);
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1111;
+}
+
+.container-outer .form-container{
+    margin: 0 auto;
+    width: 400px;
+    padding: 2rem 2rem;
+    background:rgb(33,36,41);
+    box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    position: relative;
+}
+.container-outer .form-container h4{ 
+    text-align: center; 
+    margin: 0 0 20px;
+}
+.container-outer .form-container h5{ 
+    text-align: center;
+}
+
+.container-outer .form-logo{
+    width: 100%;
+    text-align: 
+    center;padding-top: 0;
+    position: relative;
+}
+
+.container-outer .lay-input{
+    text-align: left;
+}
+.container-outer .lay-input div:last-child:before{  
+    content: '.';  
+    opacity: 0;  
+}
+.container-outer .lay-input div:last-child{
+    font-size: 12px;
+    color: #f35956;
+    font-weight: normal;
+    padding: 0px 0;
+    line-height: 100%; 
+    margin: 3px;
+}
+.container-outer .lay-input input{
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    color:rgb(153,153,153);
+    border:1px solid rgba(239,239,239,0.1);
+    border-radius: 3px;
+    padding: 0px 12px 0px 12px;
+    background: rgb(226, 226, 226);
+}
+.container-outer .lay-input input::-webkit-input-placeholder{
+    color: rgb(120,120,120);
+}
+
+.container-outer .lay_box{
+    position: relative;
+    display: block;
+}
+.container-outer .lay_box label{
+    display: inline-block;
+    color: rgb(153,153,153);
+    font-size: 12px;
+    font-weight: normal;
+    top: -8px;
+    position: relative;
+    cursor:pointer;
+    /*height: 35px;*/
+    line-height: 20px;
+}
+.container-outer .lay_box .lay-forget-pwd {
+    color: #cf0202;
+    float:right;
+    font-size: 12px;
+}
+.container-outer .lay_box .check_box{
+    position:absolute;
+    display: inline-block;
+    left:0px; 
+    top:5px; 
+    background: rgb(226, 226, 226);
+}
+.container-outer .lay_box #rulelabel{
+    background-image: url(../img/userSetting/2.png);
+    height: 1.1rem;
+    width: 125px;
+    line-height: 13px;
+    margin: 0;
+    padding-left: 18px;
+    top: -3px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 11%;
+}
+.container-outer .lay_box #rulelabel.checked{
+    background-image: url(../img/userSetting/1.png);
+}
+
+.container-outer .lay_button, 
+.container-outer .lay_submit, 
+.container-outer .lay_reset, 
+.container-outer .lay_send{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #cf0202;
+    border:none;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+.container-outer .lay_button{margin: 8px auto 19px;}
+.container-outer .lay_submit{margin-top: 35px; margin-bottom: 40px;}
+.container-outer .lay_reset{ margin-top: 35px; margin-bottom: 40px;}
+.container-outer .lay_send{margin-top: 4px;margin-bottom: 16px;}
+    
+.container-outer .lay_gt,
+.container-outer .btn-reg{
+    color: #cf0202;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+}
+.container-outer .lay_gt:hover,
+.container-outer .btn-reg:hover{ color:#cf0202; }
+.container-outer .lay_gt-msg {
+    color: darkgrey;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+.container-outer .lay-input .error {border: 1px solid #c75250;}
+
+
+.container-outer .lay-input .focus-input{
+    color: #ccc;
+    background: rgba(239,239,239,0.1);
+}
+.container-outer .lay-input .focus-input:focus {
+    border-color: #cf0202;
+    outline: 0;
+}
+
+@media(min-width: 315px) and (max-width: 530px){
+    .container-outer .form-container{ width: 100%;}
+    .container-outer .form-logo{padding-top: 0px;}
+}
+@media(min-width:1140px){
+    .container-outer .container{ width:1140px;}
+}
+
+
+.container-outer .fail-login,
+.container-outer .success-register,
+.container-outer .fail-register,
+.container-outer .layer-button{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #cf0202;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.form-content>img.spin-img{
+    animation: spining 2s linear infinite;
+}
+
+@keyframes spining{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form-content>.wrap{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    margin: auto;
+}
+.form-content>.wrap>.outer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/icon-spin-s.svg) no-repeat;
+    animation: spin 800ms infinite linear;
+}
+.form-content>.wrap>.inner,
+.form-content>.wrap>.inner2{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 40px;
+    overflow: hidden;
+    left: 13px;
+    top: 13px;
+}
+.form-content>.wrap>.inner{opacity: 1; background-color: #cf0202; animation: second-half-hide 1.6s steps(1, end) infinite;}
+.form-content>.wrap>.inner2{opacity: 0; background-color: #efefef; animation: second-half-show 1.6s steps(1, end) infinite;}
+
+.form-content>.wrap .spiner,
+.form-content>.wrap .filler,
+.form-content>.wrap .masker{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.form-content>.wrap .spiner{
+    border-radius: 40px 0 0 40px;
+    background-color: #efefef;
+    transform-origin: right center;
+    animation: spin 800ms infinite linear;
+    left: 0;
+    top: 0;
+}
+.form-content>.wrap .filler{
+    border-radius: 0 40px 40px 0;
+    background-color: #efefef;
+    animation: second-half-hide 800ms steps(1, end) infinite;
+    left: 50%;
+    top: 0;
+    opacity: 1;
+}
+.form-content>.wrap .masker{
+    border-radius: 40px 0 0 40px;
+    background-color: #cf0202;
+    animation: second-half-show 800ms steps(1, end) infinite;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.form-content>.wrap>.inner2>.spiner，
+.form-content>.wrap>.inner2>.filler{
+    background-color: #cf0202;
+}
+.form-content>.wrap>.inner2>.masker{
+    background-color: #efefef;
+}
+@keyframes spin{
+    0% { transform: rotate(360deg);}
+    100% { transform: rotate(0deg);}
+}
+@keyframes second-half-hide{
+    0% { opacity: 1;}
+    50%, 100% { opacity: 0;}
+}
+@keyframes second-half-show{
+    0% { opacity: 0;}
+    50%, 100% { opacity: 1;}
+}

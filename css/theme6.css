@@ -1,0 +1,1474 @@
+/* TABLE OF CONTENT
+    -------------------------------------------------- 
+
+    1. NAVBAR
+    2. ABOUT US
+    3. SERVICE
+    4. PORTFOLIO
+    5. TEAM
+    6. PRICE TABLES
+    9. FACTS
+    9. CONTACT    
+    11. FOOTER
+    12. BORDERS
+    
+    */
+
+/* 1. Navbar
+-------------- */
+
+.navbar-inverse {
+  background-color: #000;
+}
+
+/* 2. About Us
+-------------- */
+    #about {
+        background-image: url(../img/about/bg01.png);
+        background-size: 100% 100%;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+        height: 49.5vw;
+    }
+    #about .container{
+        margin-top: 17vw;
+    }
+    
+    #about h1 {
+	    color: #000; 
+        font-size: 35px; 
+    }
+    
+    #about p {
+	    color: #000;
+    }
+    #about .about-img{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    #about .about-img img{
+        margin: 0 auto;
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+    #about .about-title{
+        /*font-size: 3.1vw;*/
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        font-family: "Arial";
+    }
+    #about .container p{
+        color: #d3d3d3;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 20px;
+        margin: 20px 5vw;
+    }
+    #about .container p span{
+        color: #feb201;
+    }
+
+    #about ul li img{
+        height: 35vw;
+        width: 26.5vw;
+        margin: 0 auto;
+    }
+    @media only screen and (max-width: 1468px){
+        #about .container p{
+            margin: 8px;
+        }
+        #about .about-img{
+            margin-bottom: 10px;
+        }    
+    }
+    @media only screen and (max-width: 1268px){
+        #about .container{
+            width: 93vw;
+        }   
+        #about .container p{
+            margin: 6px;
+        }
+        #about .about-title{
+            line-height: 50px;
+        }
+        #about .about-img{
+            margin-bottom: 8px;
+        }    
+    }
+    @media only screen and (max-width: 1068px){
+        #about{
+            height: initial;
+            background: -o-linear-gradient(top, #9d0101, #6a0000);
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9d0101), to(#6a0000));
+            background: -moz-linear-gradient(top, #9d0101, #6a0000);
+        }
+        #about .container{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        #about .about-img img{
+            width: 40px;
+            height: 40px;
+        }
+        #about .container p{
+            margin: 20px 5vw;
+        }
+        #about .about-img{
+            margin-bottom: 20px;
+        }
+        #about .about-title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    
+    #skillbar h6 {
+	    color: #fff !important;
+    }
+
+/* 2. INDUSTRY STATUS
+-------------- */
+
+    #industry-status{
+        background-image: url(../img/industryStatus/bg02.jpg);
+        background-size: 100% 100%;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+        height: 49.5vw;
+    }
+    #industry-status .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    #industry-status .container .prominent-characteristic{
+        position: relative;
+        width: 20vw;
+        left: 27%;
+        color: #fff;
+        height: 100%;
+        padding-top: 6vw;
+    }
+    #industry-status .container .prominent-characteristic div{
+        display: flex;
+    }
+    #industry-status .container .prominent-characteristic img{
+        width: 8px;
+        height: 8px;
+        margin: 8px;
+    }
+    #industry-status .container .prominent-characteristic div div{ 
+        /*margin-left: 3px;*/
+        border-bottom: 2px solid red;
+    }
+
+    #industry-status .container .industry-title{
+        font-size: 40px; 
+        color: #fff; 
+        font-weight: 800;
+    }
+     
+    #industry-status .industry-status-img{
+        margin-bottom: 30px;
+    }
+    #industry-status .industry-status-img img{
+        /*margin: 0 4.5vw;*/
+        width: 17vw;
+    }
+
+    #industry-status h1 {
+	    color: #fff; 
+        font-size: 35px; 
+    }
+
+    #industry-status h3 {
+	    color: #fff; 
+        font-size: 25px; 
+    }
+
+    #industry-status div span {
+	    color: #d3d3d3; 
+    }
+
+    #industry-status .container .special-info div{
+            margin: 2px 0;
+    }
+    #industry-status .container .special-info div .icon-circle{
+        width: 8px;
+        height: 8px;
+        background: url(../img/industryStatus/circle.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        top: 18px;
+        right: 15px;
+    }
+    #industry-status .container .special-info div .industry_status_item{ 
+        font-size: 13px;
+        line-height: 24px;
+    }
+    #industry-status .container .special-info div .industry_status_item span{ 
+        color: #FE6501;
+    }
+
+    #industry-status .industry-status-intro{
+        width: 506px;
+        position: relative;
+        top: 20%;
+            /*margin-top: 10vw;*/
+        left: 33%;
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 1268px){
+        #industry-status{
+            height: initial;
+            background: #191b1a;
+        }
+        #industry-status .container{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #industry-status .industry-status-intro{
+            margin: auto 10%;
+            position: initial;
+            width: 80%;
+        }
+        #industry-status .container .industry-title{
+            font-size: 32px; 
+            text-align: center;
+        }
+        #industry-status .container .prominent-characteristic{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 468px){
+         #industry-status .container .industry-title{
+            font-size: 32px;
+            margin-top: 30px;
+        }
+    }
+
+/* 3. Service
+-------------- */
+    
+    #service {
+        background-image: url(../img/service/bg01.jpg);
+        background-size: 100% 100%;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+	    text-align: center;
+         height: 50vw;
+    }
+    #service2 {
+        background: #343434;
+	    padding: 120px 0px;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+	    text-align: center;
+    }
+    #service .container .row .head{
+        margin: 8vw 0 1.4vw 0;
+    }
+     #service .container .row .head .service-title{
+        color: #5b5b5b; 
+        font-weight: 800;
+    }
+    #service .container .row .head .service-title div{
+        font-size: 40px; 
+        display: inline-block;
+    }
+    
+     #service h1 {
+	    color: #fff;
+        font-size: 35px; 
+    }
+    #service2 h1 {
+	    color: #fff;
+        font-size: 35px; 
+    }
+    
+    .service-col h4 {
+	    color: #fff;
+        font-size: 24px;        
+	}
+    #service .service-col h4{
+        color: #363636;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Microsoft YaHei" ! important;
+    }
+    #service .service-col p{
+        color: #000;
+        font-size: 13px;
+        padding: 0;
+        margin: 5px 26px;
+        line-height: 24px;
+    }
+    #service .service-col p span{
+        color: #963c00;
+    }
+    
+    .service-col p {
+	    color: #b8b8b8;
+    }
+    #service .service-col .icon-desktop, #service .service-col .icon-wrench, #service .service-col .icon-mobile{
+        background: url(../img/service/017.png) repeat-x center center;
+        background-size: 100% 100%;
+        border-radius: 0;
+        width: 130px;
+        height: 150px;
+        padding: 0;
+    }
+    #service .service-col .icon-desktop:hover, #service .service-col .icon-wrench:hover, #service .service-col .icon-mobile:hover{
+        background: url(../img/service/018.png) repeat-x center center;
+        background-size: 100% 100%;
+    }
+     #service .service-col img{
+        width: 84%;
+        height: 84%; 
+        margin-top: 12px;
+     }
+     #service .service{
+         padding: 2.5vw 0 0 0;
+     }
+     @media only screen and (max-width: 468px){
+         #service .container .row .head .service-title{
+            margin-top: 80px;
+         }
+         #service .container .row .head .service-title div{
+            font-size: 32px;
+        }
+    }
+
+/* 4. Portfolio
+-------------- */
+    
+    #portfolio {
+        background: #343434;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+        color: white;
+        text-align: center;
+    }
+    #portfolio .container .head img{
+        height: 4.2vw;
+    }
+    #portfolio .container .head{
+        margin: 8vw 0 2.4vw 0;
+    }
+    #portfolio .container .head .portfolio-title{
+        font-size: 40px; 
+        color: #fff; 
+        font-weight: 800;
+    }
+
+    #portfolio h1 {
+	    color: #fff;
+        font-size: 35px; 
+    }
+    
+    .caption {
+        color: #fff !important;
+        background: rgba(192, 57, 43, 0.75);
+    }
+    
+    .caption h5 {
+        color: #000;
+	    border-bottom: 1px solid #fff;
+	}
+    #portfolio #Grid{
+        float: left;
+        margin-bottom: 6vw;
+    }
+
+    #portfolio .portfolio-item{
+        float: left;
+        height: 400px;
+        padding: 0;
+        border: 2px solid #414141;
+        margin: 20px 0 40px;
+        margin-right: -2px;
+    }
+    #portfolio .overlay div, #portfolio .overlay p{
+        text-align: center;
+        font-size: 13px;
+        line-height: 24px;
+    }
+    #portfolio .overlay div{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    #portfolio .overlay .service-p span{
+        color: #FE6501;
+    }
+    @media only screen and (max-width: 1468px) {
+        #service .service{
+            padding: 0;
+        }
+    }
+    @media only screen and (max-width: 1268px) {
+        #portfolio .portfolio-item{
+            float: left;
+            width: 33%;
+            height: 450px;
+        }
+        
+        #service{
+            height: initial;
+            /*background-size: 100%;*/
+            background: #fff;
+        }
+        
+        #service .container .row .head img{
+            height: 50px;
+        }
+        #portfolio .container .head img{
+            height: 50px;
+        }
+
+        #team .container .row .head img{
+            height: 50px;
+        }
+
+        #price{
+            height: initial;
+            background-size: 100%;
+        }
+        #price .container .row .head-title img{
+            height: 50px;
+        }       
+    }
+    @media only screen and (max-width: 992px) {
+        #portfolio .portfolio-item{
+            float: left;
+            width: 50%;
+            height: 450px;
+        }   
+        
+        #about ul li img{
+            width: 247px;
+            height: 326px;
+        }
+    }
+    @media only screen and (max-width: 580px) {
+        #portfolio .portfolio-item{
+            float: left;
+            width: 100%;
+            height: initial;
+        }
+    }
+     @media only screen and (max-width: 468px){
+         #portfolio .container .head .portfolio-title{
+            font-size: 32px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        #portfolio #Grid{
+            margin-top: 20px;
+        }
+    }
+    #portfolio .image img{
+        vertical-align: middle;
+        position: relative;
+        bottom: 25px;
+        display: inline-block;
+        /*width: 80px;*/
+        height: 50px;
+        border-radius: 0;
+    }
+     #portfolio #Grid .service-col{
+         padding-top: 66px;
+     }
+
+/* 5. Team
+-------------- */
+    #team {
+        background: #383838;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+	    text-align: center;
+    }
+    #team2 {
+	    background: #c0392b;
+	    padding: 120px 0px ;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+	    text-align: center;
+    }
+    #team .container .row .head{
+        margin:  8vw 0 4vw;
+    }
+
+    #team .team-item-content{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    @media only screen and (max-width: 1200px){
+        #team .team-item-content{
+            width: 33.3%;
+        }
+    }
+    @media only screen and (max-width: 992px){
+        #team .team-item-content{
+            width: 50%;
+        }
+    }
+    @media only screen and (max-width: 598px){
+        #team .team-item-content{
+            width: 100%;
+        }
+    }
+    #team .team-item{
+        width: 290px;
+        height: inherit;
+    }
+
+    .team:hover {
+	    background-color: #000;
+	    color: #fff;
+    }
+    #team .team .name{
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    #team .team-item div{
+            margin: 0px 10px;
+            padding: 30px 10px;
+    }
+    #team .team-item .team-member p{
+        /*padding: 10px;*/
+        color: #c0c0c0;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #team .team-item .team-member .name{
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+    }
+    #team .team-item .team-member .member{
+        background-size: 100% 100%;
+        width: 110px;
+        height: 110px;
+        background-position-y: 0%;
+    }
+     #team .container .row .head .team-title{
+            color: #fff; 
+            font-weight: 800; 
+    }
+    #team .container .row .head .team-title div{
+            font-size: 40px;
+            display: inline-block;
+        }
+    @media only screen and (max-width: 468px){
+        #team .container .row .head .team-title{
+            margin-top: 80px;
+        }
+        #team .container .row .head .team-title div{
+            font-size: 32px;
+        }
+    }
+
+    #team .investment-institution{
+        display: flex; 
+        justify-content: space-between;
+        min-height: 100px;
+        margin: 0 20px 20px;
+    }
+    #team .investment-institution .institution-item{
+        width: 19%;
+        height: inherit;
+    }
+    #team .investment-institution .institution-item div img{
+        width: 100%;
+        max-width: 360px;
+    }
+    #team  .team-small-title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        margin: 60px 0 20px;
+    }
+    #team .team-support-content{
+        font-size: 24px;
+        line-height: 50px;
+        color: #fff;
+        margin: 0 20px 8vw;
+    }
+    #team .team-support-content .team-support-item2 img{
+        width: 120px;
+        margin: 0 20px;
+    }
+    #team .team-support-content .team-support-item1 span{
+        color: #fe6501;
+    }
+    #team .team-support-content .team-support-item1 a{
+        color: #5480ff;
+    }
+
+     @media only screen and (max-width: 768px){
+        #team .investment-institution{
+            display: block; 
+            margin: 0 20px 40px;
+        }
+        #team .investment-institution .institution-item{
+            width: 80%;
+            margin: 20px auto;
+        }
+        #team .team-support-content{
+            font-size: 20px;
+            line-height: 40px;
+            color: #fff;
+            margin: 0 20px 100px;
+        }
+    }
+    @media only screen and (max-width: 468px){
+         #team .team-support-content{
+            font-size: 15px;
+            line-height: 40px;
+            color: #fff;
+            margin: 0 20px 100px;
+        }
+        #team .team-support-content .team-support-item2 img{
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+    
+    .team p {
+	    color: #fff;
+    }
+    
+    .team:hover p {
+	    padding: 10px;
+	    color: #fff;
+    }
+    
+    .team a {
+	    color: #c1c1c1;
+    }
+    
+    .team:hover a {
+	    color: #fff;
+    }
+    .team2:hover {
+	    background-color: #000;
+	    color: #fff;
+    }
+    
+    .team2 p {
+	    color: #c1c1c1;
+    }
+    
+    .team2:hover p {
+	    padding: 10px;
+	    color: #fff;
+    }
+    
+    .team2 a {
+	    color: #c1c1c1;
+    }
+    
+    .team2:hover a {
+	    color: #fff;
+    }
+    
+    .member1, .member2, .member3, .member4 {
+        color: #e67e22;
+    }
+    .team-member1:hover > div {
+        color: #fff;
+    }
+    .team-member2:hover > div {
+        color: #fff;
+    }
+    .team-member3:hover > div {
+        color: #fff;
+    }
+    .team-member4:hover > div {
+        color: #fff;
+    }
+    
+    .icon-social {
+        background: #fff;
+        color: #000;
+    }
+
+
+/*5.5 community
+--------------*/
+#community{
+    background: #e2e2e2;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 900;
+    text-align: center;
+    /*height: 49.5vw;*/
+}
+#community .head{
+    margin: 8vw 0 2.4vw 0;
+}
+#community .head .community-title{        
+    color: #5b5b5b; 
+    font-weight: 800;
+}
+#community .head .community-title span{        
+    font-size: 40px; 
+}
+#community .community-img-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 60px 20px 30px;
+}
+
+#community .community-img{
+    display: none;
+}
+#community .community-img-big{
+    display: block;
+}
+#community .background-img{
+    width: 68%;
+    margin: auto;
+    max-width: 1170px;
+}
+
+@media only screen and (min-width: 1069px){
+    #community .background-img .community-content{
+        display: flex;
+    }
+    #community .community-img-big{
+        flex: 40%;
+    }
+    #community .community-img-big img{
+        width: 100%;
+    }
+    #community .content-left{
+        flex: 30%;
+        text-align: right;
+    }
+    #community .content-right{
+        flex: 30%;
+        text-align: left;
+    }
+    #community .content-right .item-content{
+        min-height: 7vw;
+    }
+    #community .content-left .first-content{
+        margin-top: 7vw;
+        height: 5.2vw;
+    }
+    #community .content-left .second-content{
+        margin-top: 4vw;
+    }
+    #community .content-right .fourth-content{
+        margin-top: 1vw;
+    }
+    #community .background-img .community-content .item-title{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #community .background-img .community-content .item-text{
+        font-size: 13px;
+        max-width: 235px;
+    }
+    #community .background-img .community-content .content-left .item-text{
+        float: right;
+    }
+    #community .background-img .total-content{
+        margin: 3vw auto;
+        width: 72%;
+    }
+}
+
+@media only screen and (max-width: 1068px){
+    #community .community-img{
+        display: block;
+    }
+
+    #community .community-img-big{
+        display: none;
+    }
+    #community .community-img img{
+        width: 60%;
+        max-width: 500px;
+    }
+
+    #community .background-img .community-content .item-title{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    }
+    #community .background-img .community-content .item-text{
+        font-size: 13px;
+        text-align: left;
+    }
+    #community .background-img .community-content .item-content{
+        margin: 30px 0;
+    }
+
+    #community .background-img .total-content{
+        margin-top: 60px;
+    }
+}
+
+#community .background-img .total-content p{
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px){
+    #community .head .community-title{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    #community .community-img img{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 468px){
+    #community .head .community-title span{        
+        font-size: 32px; 
+    }
+}
+
+/*5.6 community-video
+--------------*/
+#community-video{
+    background: #e2e2e2;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 900;
+    text-align: center;
+    /*height: 49.5vw;*/
+}
+#community-video .community-video-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 60px 20px 40px;
+}
+#community-video .video-content{
+    width: 68%;
+    margin: 40px auto;
+    max-width: 1170px;
+}
+#community-video .video-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+#community-video .video-content .btn-video{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+#community-video .video-content .btn-video img{
+    /*width: 60px;*/
+    margin: auto;
+    width: 100%;
+}
+#community-video .video-content video{
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+#community-video .video-content .community-video-intro{
+    margin: 20px auto 80px;
+    width: 72%;
+}
+#community-video .video-content .community-video-intro p{
+    color: #443e44;
+    font-size: 13px;
+}
+@media only screen and (max-width: 768px){
+    #community-video .video-container{
+        width:100%;
+    }
+   #community-video .video-content video{
+        width: 100%;
+    }
+    #community-video .video-content{
+        width: 100%;
+    }
+
+    #community-video .video-content .btn-video{
+        /*position: absolute;*/
+        width: 100vw;
+        height: 54.25vw;
+        margin: 0;
+    }
+    #community-video .video-content .btn-video img{
+        /*width: 60px;*/
+        margin: auto;
+    }
+    #community-video .video-content .community-video-intro{
+        width: 80%;
+    }
+    #community .background-img{
+        width: 80%;
+        margin: auto;
+    }
+}
+    
+/* 6.0.competitive
+-------------- */
+    #advance .advance-particle{
+            position: absolute; 
+            width: 100%;
+            z-index: 0;
+    }
+    @media only screen and (max-width: 1268px){
+        #advance .advance-particle{
+            display: none;
+        }
+    }
+    
+    #competitive {
+        background-image: url(../img/competitive/bg01.png);
+	    /*padding: 120px 0px ;*/
+        background-size: 100% 100%;
+        width: 100%;
+        overflow: hidden;
+	    z-index: 0;
+        text-align: center;
+        height: 49.5vw;
+    }
+    #competitive .background-img{
+        background-image: url(../img/competitive/bg02.png);
+        background-size: 95% 95%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 1280px;
+        height: 457.6px;
+        margin: auto;
+    }
+    #competitive .container{
+        display: none;
+    }
+    #competitive .background-img .competitive-content{
+        width: 100%;
+        height: 100%;
+    }
+    #competitive .background-img .competitive-content .item-content{
+        width: 25.3%;
+        height: 22%;
+        position: relative;
+        padding: 5px 8px;
+    }
+    #competitive .background-img .competitive-content .item-content .item-title{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    #competitive .background-img .competitive-content .item-content .item-text{
+        color: #d3d3d3;
+        font-size: 13px;
+    }
+    #competitive .background-img .competitive-content .item-content .item-text span{
+        color: #feb201;
+    }
+
+    #competitive .background-img .competitive-content .first-content{      
+        top: 2.7%;
+        left: 6.7%;
+    }    
+    #competitive .background-img .competitive-content .fourth-content{
+        top: -5.5%;        
+        left: 2.5%;
+    }
+    #competitive .background-img .competitive-content .third-content{
+        top: 53.6%;
+        left: 6.7%;
+    }
+    #competitive .background-img .competitive-content .sixth-content{
+        top: -63.6%;
+        float: right;
+        right: -18.4%;
+    }
+    #competitive .background-img .competitive-content .second-content{
+        top: 16.4%;
+        float: right;
+        right: 2.4%;
+    }
+    #competitive .background-img .competitive-content .fifth-content{
+        top: 9.6%;
+        float: right;
+       right: 6.6%;
+    }
+
+    #competitive .background-img .competitive-content .first-content .item-text,
+    #competitive .background-img .competitive-content .fourth-content .item-text,
+    #competitive .background-img .competitive-content .third-content .item-text,
+    #competitive .background-img .competitive-content .first-content .item-title,
+    #competitive .background-img .competitive-content .fourth-content .item-title,
+    #competitive .background-img .competitive-content .third-content .item-title{
+        text-align: right;
+    }
+    #competitive .background-img .competitive-content .second-content .item-text,
+    #competitive .background-img .competitive-content .sixth-content .item-text,
+    #competitive .background-img .competitive-content .fifth-content .item-text,
+    #competitive .background-img .competitive-content .second-content .item-title,
+    #competitive .background-img .competitive-content .sixth-content .item-title,
+    #competitive .background-img .competitive-content .fifth-content .item-title{
+        text-align: left;
+    }
+
+    #competitive .head{
+        margin: 0vw 0 4vw;
+    }   
+    #competitive .head .competitive-title{        
+        color: #fff; 
+        font-weight: 800;
+    }
+    #competitive .head .competitive-title span{
+        font-size: 40px; 
+    }
+
+    #advance .background-advance{
+        display: none;
+    }
+
+     @media only screen and (max-width: 1468px){
+          #advance .background-advance{
+              display: block;
+          }
+      }
+     @media only screen and (max-width: 1268px){
+        #competitive {
+            height: initial;
+            background: #080808;
+        }
+        #competitive .head img{
+            height: 50px;
+        }
+        #competitive .background-img{
+            display: none;
+        }
+        #competitive .container{
+            display: block;
+        }
+        #competitive .container .other-container{
+            margin-bottom: 60px;
+        }
+        #competitive .container .other-container .other-container-img{
+            margin: 30px 20px 10px;
+        }
+        #competitive .container .other-container .other-container-content{
+            background-image: url(../img/competitive/0006.png);
+            background-size: 100% 100%;
+            height: 110px;
+            width: 382px;
+            margin: auto;
+            padding: 5px 10px;
+        }
+        #competitive .container .other-container .other-container-content .item-title{
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        #competitive .container .other-container .other-container-content .item-text{
+            color: #d3d3d3;
+            font-size: 13px;
+        }
+        #competitive .container .other-container .other-container-content .item-text span{
+            color: #feb201;
+        }
+        #advance .background-advance{
+              display: none;
+          }
+     }
+
+     @media only screen and (max-width: 468px){
+         #advance .top-advance{
+            position: relative;
+            top: 1px;
+         }
+         #competitive .container .other-container .other-container-content{
+            width: 80%;
+            height: initial;
+         }
+
+         #competitive .container .other-container .other-container-img img{
+             height: 28vw;
+         }
+        #competitive .head .competitive-title{
+            margin-top: 50px;
+        }
+        #competitive .head .competitive-title span{
+            font-size: 32px;
+        }
+     }
+     
+/* 6. Price
+-------------- */
+    #price {
+	    background: #fff;
+        background-size: 100% 100%;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+        text-align: center;
+        /*height: 50vw;*/
+    }
+
+    #price .container .row .head-title{
+        margin: 8vw 0 4vw 0;
+    }
+    #price .price-item{
+        float: left;      
+    }
+    #price .price-item div{
+        font-size: 16px;
+        font-weight: bold;
+        color: #2e2e2e;
+        margin-top: 8px;
+        /* font-family: "Microsoft YaHei"; */
+    }
+    #price  .container .row .head-title .price-title{
+        color: #5b5b5b; 
+        font-weight: 800;
+    }
+    #price  .container .row .head-title .price-title div{
+        font-size: 40px;
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 1268px){
+        #price {
+            height: initial;
+            background-size: 100%;
+        }
+    }
+    @media only screen and (min-width: 468px) {
+         #price .price-item{
+            float: left;
+            width: 270px;
+            height: 250px;
+        }
+    }
+    @media only screen and (max-width: 468px){
+         #price  .container .row .head-title .price-title{
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+         #price  .container .row .head-title .price-title div{
+            font-size: 32px;
+        }
+        #price .price-item{
+            padding-bottom: 30px;
+        }
+    }
+    #price h1 {
+	    color: #fff;
+    }
+    #price .price-item h5,#price .price-item p{
+        color: #fff;
+        text-align: center;
+    }
+    #price .price-item .img-background{
+        height: 107%;
+        position: relative;
+        top: -213px;
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+
+    .price-table {
+    	border: 1px solid #c0392b;
+    }
+    
+    .price-table-heading h3 {
+	    color: #c1c1c1 !important;
+    }
+    
+    .price-table:hover {
+        background: #e67e22;
+    }
+    
+    .the-price {
+		background-color: #c0392b;
+    }
+    
+    .table-feature {
+    	border: 2px solid #e67e22;
+	}
+	
+	.table-feature:hover {
+       background: #e67e22;
+    }
+     
+/* 9. Contact
+-------------- */
+    #contact {
+        background-image: url(../img/contact/bg01.png);
+        background-size: 100% 100%;
+	    display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+	    z-index: 900;
+        height: 18vw;
+    }
+    #contact .total-content{
+        display: flex; 
+        height: 100%;
+    }
+    #contact .container .logo{
+        flex: 25%; 
+        height: 50px; 
+        line-height: 50px; 
+        margin: 6vw 0 auto;
+    }
+    #contact .container .logo img {
+        width: 15vw;
+        min-width: 200px;
+    }
+    #contact .container .logo .dogLogo{
+        width: 13vw;
+        min-width: 168px;
+    }
+    #contact .container .content{
+        flex: 60%; 
+        display: flex; 
+        margin: 3vw 6vw;
+    }
+
+    #contact .container .content .content-left{
+        flex: 40%; 
+        display: flex;
+    }
+    #contact .container .content .content-right{
+        flex: 60%; 
+        padding-left: 0%;
+    }
+    #contact .container .content .content-left-left div, #contact .container .content .content-left-right div{
+         height: 3.6vw;
+         font-size: 12px;
+        padding-top: 1vw;
+    }
+    #contact .container .content div a, 
+    #contact .container .content .content-right div span,
+    #contact .container .content .content-right div a{
+        color: #a8a8a8;
+        font-size: 12px;
+    }
+
+    #contact .container .content .content-right .contact-we{
+         height: 4vw;
+         font-size: 12px;
+         padding-top: 1vw;
+         color: #a8a8a8;      
+    }
+    #contact .container .content .content-right .contact-right-text{
+         font-size: 12px;     
+         color: #5480ff;
+    }
+    #contact .container .content .content-right .broadcast-group,
+    #contact .container .content .content-right .chat-group,
+    #contact .container .content .content-right .contact-twitter,
+    #contact .container .content .content-right .contact-github,
+    #contact .container .content .content-right .mail-group{
+        height: 25px;
+    }
+
+    #contact .container .qr-code{
+        height: 7vw;
+        margin-top: 8vw;
+        flex: 15%; 
+        display: flex; 
+        justify-content: space-around;
+    }
+    #contact .container .qr-code div{
+        flex: 1;
+        text-align: center;
+    }
+    #contact .container .qr-code div img{
+        width: 4vw;
+    }
+    #contact .container .qr-code div div{
+        text-align: center;
+        margin-top: 0.5vw;
+        color: #a8a8a8;
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 1268px){
+        #contact{
+            height: inherit;
+        }
+        #contact .container .qr-code{
+            flex: 20%;
+        }
+        #contact .container .qr-code div img{
+            width: 6vw;
+        } 
+
+        #contact .container .content{
+            margin: 3vw 2vw;
+        }
+    }
+    @media only screen and (max-width: 1068px){
+        #contact{
+            background: #1d1d1e;
+        }
+        #contact .total-content{
+            display: block; 
+            text-align: center;
+        }
+        #contact .container .logo{
+            float: initial;
+            display: flex;
+            justify-content: space-around;
+            height: initial;
+            line-height: initial;
+        }
+
+        #contact .container .content .content-left{
+            display: block;
+            flex: 1;
+        }
+        #contact .container .content .content-right{
+            padding-left: 0;
+            flex: 1;
+        }
+
+        #contact .container .content .content-left-left div,
+        #contact .container .content .content-left-right div,
+        #contact .container .content .content-right .contact-we{
+            height: 27px;
+            line-height: 27px;       
+        }
+
+        #contact .container .content .content-right .contact-we{
+            margin: 1vw 0; 
+            padding-top: 0vw;
+        }
+
+        #contact .container .qr-code{
+            height: initial;
+            margin: 3vw 2vw;
+        }
+        #contact .container .qr-code div img{
+            width: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        #contact .container .content .content-right .broadcast-group,
+        #contact .container .content .content-right .chat-group,
+        #contact .container .content .content-right .contact-twitter,
+        #contact .container .content .content-right .contact-github,
+        #contact .container .content .content-right .mail-group{
+            height: initial;
+            margin: 10px 0;
+            line-height: 15px;
+        }
+        #contact .container .content .content-left-left div,
+        #contact .container .content .content-left-right div,
+        #contact .container .content .content-right .contact-we{
+            height: 40px;
+            line-height: 40px;       
+        }
+    }
+    @media only screen and (max-width: 468px){
+        #contact .container .qr-code{
+            margin: 50px auto 50px;
+        }
+        #contact .container .content{
+            display: block; 
+            margin: 3vw 10vw;
+            text-align: left;
+        }
+        #contact .container .content .content-left-left div,
+        #contact .container .content .content-left-right div,
+        #contact .container .content .content-right .contact-we{
+            height: 40px;
+            line-height: 40px;       
+        }
+        #contact .container .content div a, 
+        #contact .container .content .content-right div div,
+        #contact .container .content .content-right div a{
+            height: 20px;
+            line-height: 25px;   
+        }
+        #contact .container .content .content-right .broadcast-group,
+        #contact .container .content .content-right .chat-group,
+        #contact .container .content .content-right .contact-twitter,
+        #contact .container .content .content-right .contact-github,
+        #contact .container .content .content-right .mail-group{
+            height: initial;
+        }
+        #contact .container .content .content-left{
+            margin: 20px 0 20px;
+        }
+
+        #contact .container .content .content-right .contact-we{
+            margin: 30px 0 0; 
+        }
+
+        #contact .container .logo{
+            display: block;
+            margin: 80px 10vw 0px;
+            line-height: 45px;
+            text-align: left;
+        }
+    }
+
+    #contact h1 {
+	    color: #fff;
+    }
+    
+    .requi {
+	    color: #fff;
+    }
+
+/* 11. Borders
+-------------- */
+    .head-border-white {
+	    background: #fff;
+    }
+    
+    .head-border-grey {
+	    background: #443e44;
+    }	
+
+/* 12. General
+-------------- */
+    .head p {
+	    color: #fff;
+    }

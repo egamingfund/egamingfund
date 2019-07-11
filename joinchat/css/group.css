@@ -1,0 +1,246 @@
+*{
+    font-size: 62.5%;
+}
+.flex-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex-box-justify-around{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: distribute;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+}
+.flex-box-item-center{
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", "Microsoft YaHei";
+    overflow: hidden;
+}
+.group-container{
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+/*头部图标*/
+.group-container .group-header {
+    height: 3rem;
+    padding: 1.5rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.group-container .group-header .group-icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+.group-container .group-header .group-appName{
+    font-size: 2rem;
+}
+/*使用提示*/
+.group-container .group-textContent{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #fff;
+    background-color: #2c8dff;
+    font-size: 1.3rem;
+}
+/*群名称*/
+.group-container .group-main{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.4rem;
+}
+.group-container .group-main .group-add-name {
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed #f6f6f6;
+    font-size: 1.8rem;
+    text-align: center;
+}
+/*按钮和二维码*/
+.group-container .group-main .group-add-button{
+    margin: 2.4rem auto 0;
+    width: 200px;
+    height: 50px;
+}
+.group-container .group-main .group-add-button .addGroup-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #2c8dff;
+
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.group-container .group-main .addGroup-qrcode{
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+    box-shadow: 0 0 7px 0 rgba(44, 141, 255, 0.2);
+    display: none;
+}
+.group-container .group-main .addGroup-qrcode:hover{
+    display: block;
+}
+.group-container .group-main .addGroup-qrcode .qrcode-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.group-alert{
+    display: none;
+}
+.ios-popup{
+    display: none;
+}
+.group-mask{
+    display: none;
+}
+
+/*弹出层===提醒使用浏览器*/
+.group-container .group-mask, 
+.group-container .group-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.group-container .group-alert .group-arrow {
+    position: absolute;
+    right: 5.5rem;
+    top: 6.5rem;
+    width: 7.8rem;
+    height: 10.2rem;
+    background-image: url(../img/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.group-container .group-alert .group-alert-main {
+    margin-top: 20rem;
+}
+.group-container .group-alert .group-info {
+    color: #fff;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    line-height: 2;
+}
+/*弹出层===提醒下载*/
+.group-container .popup-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.group-container .popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 1.5rem 1.5rem 1.5rem;
+    border-radius: 0.8rem;
+    background-color: #fff;
+}
+.group-container .popup-content{
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.57;
+    text-align: center;
+}
+.group-container .popup-btn{
+    width: 40%;
+    max-width: 10rem;
+    box-sizing: border-box;
+    margin: 2rem auto 0;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    background-color: #2c8dff;
+}
+
+/*转圈圈*/
+.group-container .group-mask .load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    width: 1.50rem;
+    height: 1.50rem;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-animation: load 3s ease-in-out infinite;
+            animation: load 3s ease-in-out infinite;
+}
+@-webkit-keyframes load {
+    0% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    8% {box-shadow: 1.50rem -1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    17% {box-shadow: 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    25% {box-shadow: 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    33% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    42% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    50% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    58% {box-shadow: -1.50rem 1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    67% {box-shadow: -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    75% {box-shadow: -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    83% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    92% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    100% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+}
+@keyframes load {
+    0% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    8% {box-shadow: 1.50rem -1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    17% {box-shadow: 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+    25% {box-shadow: 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    33% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    42% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff;}
+    50% {box-shadow: -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    58% {box-shadow: -1.50rem 1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    67% {box-shadow: -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem 1.50rem 0 0 #fff;}
+    75% {box-shadow: -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    83% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    92% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, 1.50rem -1.50rem 0 0 #fff;}
+    100% {box-shadow: 1.50rem 1.50rem 0 0 #fff, -1.50rem 1.50rem 0 0 #fff, -1.50rem -1.50rem 0 0 #fff;}
+}

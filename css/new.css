@@ -1,0 +1,49 @@
+/* BACK TO THE TOP BUTTON */
+
+.w-col {
+    position: relative;
+    /*float: left;*/
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.w-col-4 {
+    width: 33.33333333%;
+}
+.logo {
+    margin-right: 11px;
+    float: left;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+.content-ol {
+    color:#fff;
+    margin-left: -30px;
+}
+.team-content-ol {
+    color:#fff;
+    margin-left: -30px;
+    text-align: left;
+}
+.service-ol {
+    color:#fff;
+    margin-left: -30px;
+    text-align: left;
+}
+.service-p {
+    text-align: left;
+}
+.service-p2 {
+    text-align: left;
+}
+.service-p2::before {
+    content:"● ";
+    color:red;
+}
+.red_point_li::before{
+    content:"● ";
+    color:red;
+}
