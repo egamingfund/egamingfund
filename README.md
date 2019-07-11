@@ -1,1 +1,1 @@
-egamingfund.github.io
+egamingfund.org
