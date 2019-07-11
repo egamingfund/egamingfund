@@ -1,0 +1,64 @@
+﻿<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Group - eGamingFund</title>
+        <link rel="stylesheet" href="./css/group.css" >
+    </head>
+    <body>
+        <div class="group-container">
+            <div class="group-header">
+                <img src="./img/logo.png" alt="" class="group-icon">
+                <h1 class="group-appName">eGamingFund</h1>
+            </div>
+            <div class="group-textContent">还没有eGamingFund? 快来试试吧!</div> 
+
+            <div class="group-main">
+                <div class="group-add-name">某某电报群</div> 
+                <div class="group-add-button">
+                    <a href="javascript:;" class="addGroup-btn">立即入群</a> 
+                    <div id="qrcode" class="addGroup-qrcode">
+                        <!--<img src="./img/download-qr.png" alt="downloadImage" class="qrcode-img">-->
+                    </div>
+                </div>
+            </div> 
+
+            <!--转圈圈-->
+            <div class="group-mask">
+                <div class="load"></div>
+            </div>
+
+            <!--微信打开链接的指引页面-->
+            <div class="group-alert">
+                <div class="group-arrow"></div> 
+                <div class="group-alert-main">
+                    <p class="group-info">1、点击右上角 "···"</p> 
+                    <p class="group-info">2、选择 "在浏览器中打开"</p>
+                    <!--<p class="group-info">2、选择 "在Safari浏览器中打开"</p>-->
+                </div>
+            </div>  
+
+            <!--点击加群后提醒安装APP的弹出层-->
+            <div class="ios-popup">
+                <div class="popup-mask"></div> 
+                <div class="popup-box">
+                    <p class="popup-content">您还没有安装BiYong，请先下载。</p> 
+                    <div class="flex-box flex-box-justify-around flex-box-item-center">
+                        <span class="popup-btn">下载</span> 
+                        <span class="popup-btn" style="background-color: rgb(192, 192, 192);">取消</span>
+                    </div>
+                    <!--<p class="popup-content">点击安装后APP会自动下载，<br>请返回桌面查看。</p> 
+                    <div class="flex-box flex-item-around flex-item-align-center">
+                        <span class="popup-btn">知道了</span> 
+                        <span class="popup-btn" style="background-color: rgb(192, 192, 192);">取消</span>
+                    </div>-->
+                </div>
+            </div> 
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+        <script src="./js/group.js"></script>
+    </body>
+</html>
