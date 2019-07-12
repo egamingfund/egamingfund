@@ -1,0 +1,1059 @@
+/* TABLE OF CONTENT
+    -------------------------------------------------- 
+    
+    1. HEADINGS
+    2. NAVBAR
+    3. SLIDER
+    4. ABOUT US
+    5. SERVICE
+    6. PORTFOLIO
+    7. TEAM
+    8. PRICE TABLES
+    9. PROCESS
+    10. CLIENTS
+    11. FACTS
+    12. CONTACT    
+    13. FOOTER
+    14. FEATURE STYLES
+    15. RESPONSIVE CSS
+     
+    */
+    body.body{
+        font-family:  "Microsoft YaHei", "Arial" !important;
+        /*min-width: 1280px;*/
+         overflow-x: hidden;
+    }
+    .body_en{
+        font-family: "Arial", "Microsoft YaHei" !important;
+        /*min-width: 1280px;*/
+         overflow-x: hidden;
+    }
+    @media only screen and (max-width: 968px){
+        .decoration-img{
+            display: none;
+        }
+    }
+
+    #user-login{
+        color: #fff; 
+        font-size: 2rem; 
+        padding: 0 5px;
+    }
+    #user-login .user-info{
+        position: absolute;
+        top: 50px;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.6rem; 
+        display: none;
+    }
+    #user-login .user-info div:first-child{
+        border-bottom: 0px solid #cf0202;
+    }
+    #user-login .user-info div{
+        line-height: 200%;
+        padding: 0 10px;
+        border-top: 1px solid #cf0202;
+        border-bottom: 1px solid #cf0202;
+        text-align: center;
+        white-space: nowrap;
+    }
+    #user-login .user-info div:hover,
+    #user-login .user-info div:active{
+        color: #cf0202;
+        cursor: pointer;
+    }
+    @media (max-width: 350px){
+        #user-login{
+            color: #fff; 
+            font-size: 1.8rem; 
+            padding: 0 5px;
+        }
+    }
+
+    /* 1. HEADINGS
+    -------------------------------------------------- */
+    
+    h1 {
+	    font-size: 60px;
+	    text-transform: uppercase;
+	    text-align: center;
+    }
+    
+    h2 {
+	    font-size:50px;
+	    text-align: center;
+    }
+    
+    h3 {
+	    font-size: 40px;
+	    text-align: center;
+	}
+	
+	h4 {
+	    font-size: 30px;
+	}
+	
+	h5 {
+		font-size: 20px;
+	}
+	
+	h6 {
+		font-size: 12px;
+	}
+	
+	.subhead {
+		color: #fff;
+		text-align: center;
+	}
+
+    /* 2. NAVBAR
+    -------------------------------------------------- */
+    #menu .w-col img.logo{
+        margin-top:10px
+    }
+    #menu {
+	    z-index: 11000;
+        border: 1px solid #1e1e1e;
+        margin: 0;
+        position: fixed;
+    }
+    #menu .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #menu .container .navbar-collapse a{
+        font-weight: bold;
+        font-size: 14px;
+        padding: 15.5px 0;
+        margin: 0 12px;
+        color: #e5e5e5;
+    }
+    #menu .container .navbar-collapse a:hover,  #menu .container .navbar-collapse a:focus{
+        border-bottom: 2px solid red;
+        color: red;
+        background-color: #000;
+    }
+    #menu .container #navigation{
+        margin-left: 5px;
+    }
+
+    #menu .container #translation{
+        float: right;
+        height: 50px;
+        line-height: 50px;
+    }
+    #menu .container #translation img{
+        margin: 0 5px;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    #google_translate_element{
+        position: absolute; 
+        right: 66px; 
+        width: 125px; 
+        height: 50px; 
+        line-height: 50px;
+    }
+
+    #menu .container #registration{
+        float: right;
+        /*margin-right: 10px;*/
+        height: 51px;
+        line-height: 51px;
+    }
+    #menu .container #registration a{
+        font-weight: bold;
+        font-size: 13px;
+        margin: 11px 0;
+        padding: 0px 13px;
+        border: 1px solid red;
+        color: #e5e5e5;
+        border-radius: 4px;
+        height: 28px;
+        line-height: 28px;
+        min-width: 99px;
+        text-align: center;
+        margin-right:  6px;
+    }
+    #menu .container #registration a:link{
+        background-color: #000;
+    }
+    #menu .container #registration a:visited{
+        background-color: #000;
+    }
+    #menu .container #registration a:hover{
+        background-color: red;
+    }
+    #menu .container #registration a:active{
+        background-color: red;
+    }
+    
+    #menu .container #registration span{
+        font-size: 14px;
+        padding: 15px 0;
+        margin: 0 0px;
+        color: red;
+        font-weight: bolder;
+        font-family: "Arial";
+    }
+
+    @media only screen and (max-width: 1067px){
+        #menu .container #translation{
+            float: left;
+            display: flex;
+            height: 51px;
+            line-height: 51px;
+            margin: 0px;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        #menu .container #registration{
+            display: flex;
+            margin: 5px;
+            height: 51px;
+            line-height: 30px;
+            float: left;
+            margin-left: 25px;
+        }
+        #menu .container .navbar-collapse a{
+            padding: 6px 0;
+        }
+        #menu .container #registration a{
+            margin: 4px 0;
+            padding: 0px 16px;
+        }
+
+        #menu-sticky-wrapper .navbar-header{
+            width: 100%;
+            margin: 0;
+        }
+        #menu-sticky-wrapper .navbar-inverse .navbar-toggle{
+            margin-right:  10px;
+        }
+        #menu-sticky-wrapper .navbar-inverse .navbar-toggle .icon-bar {
+            background-color: red;
+        }
+        #menu-sticky-wrapper .navbar-inverse .in{
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+            border-color: red;
+            border-bottom: 1px solid red;
+        }
+        #menu .container #navigation{
+            margin-left: 20px;
+        }
+         #menu .container #registration a{
+            margin-right: 16px;
+        }
+    }
+    @media only screen and (max-width: 350px){
+         #menu .container #translation img{
+            margin: 0 3px;
+        }
+         #menu .container #translation{
+             margin-left: 0px;
+             padding-right: 0px;
+         }
+    }
+
+    @media only screen and (min-width: 1068px){
+        #menu .container #translation{
+            position: absolute;
+            right: 100px;
+        }
+    }
+
+    /* 3. SLIDER BACKGROUND
+    -------------------------------------------------- */
+    
+    #top-slider {
+    	width: 100%;
+    	height: 47vw;
+     	text-align: center;
+    	z-index: 100;
+    }
+    #top-slider .container{
+        margin-left: 2vw;
+    }
+    #top-slider .slider-bg {
+    	background: url(../img/slider/background0.jpg);	
+    	margin: 0 auto;
+    	padding: 0;
+    	position: absolute;
+    	z-index: 100;
+    	width: 100%;
+    	height: 47vw;
+        background-size: 100% 100%;
+    }
+
+    /* 4. ABOUT US
+    -------------------------------------------------- */
+
+    .html {
+    	width: 95%;  /* YOUR SKILL VALUE HERE */
+    	-moz-animation: html 15s ease-out;
+    	-webkit-animation: html 15s ease-out;
+    	background-color: #e67e22;
+    }
+
+    .css {
+    	width: 90%; /* YOUR SKILL VALUE HERE */
+    	-moz-animation: css 15s ease-out;
+    	-webkit-animation: css 15s ease-out;
+    	background-color: #e67e22;
+    }
+
+    .java {
+    	width: 55%; /* YOUR SKILL VALUE HERE */
+    	-moz-animation: java 15s ease-out;
+    	-webkit-animation: java 15s ease-out;
+    	background-color: #e67e22;
+    }
+
+    .php {
+    	width: 65%; /* YOUR SKILL VALUE HERE */
+    	-moz-animation: php 15s ease-out;
+    	-webkit-animation: php 15s ease-out;
+    	background-color: #e67e22;	
+    }
+
+    .psd {
+    	width: 85%; /* YOUR SKILL VALUE HERE */
+    	-moz-animation: psd 15s ease-out;
+    	-webkit-animation: psd 15s ease-out;
+    	background-color: #e67e22;	
+    }
+
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+    
+    /* animation keyframes */
+
+    @-moz-keyframes html {0%  { width:0px;} 100%{ width:95%;}  }
+    @-moz-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
+    @-moz-keyframes java      { 0%  { width:0px;} 100%{ width:55%;}  }
+    @-moz-keyframes php   { 0%  { width:0px;} 100%{ width:65%;}  }
+    @-moz-keyframes psd   { 0%  { width:0px;} 100%{ width:85%;}  }
+
+    @-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:95%;}  }
+    @-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
+    @-webkit-keyframes java      { 0%  { width:0px;} 100%{ width:55%;}  }
+    @-webkit-keyframes php   { 0%  { width:0px;} 100% { width:65%;}  }
+    @-webkit-keyframes psd   { 0%  { width:0px;} 100% { width:85%;}  }
+    
+    /* 5. SERVICE
+    -------------------------------------------------- */
+
+    .service {
+        padding: 0px 40px 20px 40px;
+    }
+    .service2 {
+        padding: 0px 40px 20px 40px;
+    }
+    
+    .service-col {
+	    margin: 0px 10px;
+	    padding: 30px 10px;
+	    -webkit-transition:  ease-out 0.6s;
+        -moz-transition: ease-out 0.6s;
+        -o-transition: ease-out 0.6s;
+        transition: ease-out 0.6s;
+    }
+    
+    .service-col h4 {
+	    border-bottom: 1px solid transparent;
+	    padding: 10px 0px;
+    }
+    
+    .service-col p {
+	    padding: 10px;
+    }
+    
+    .service-col:hover {
+	    -webkit-transition: all 0.6s linear;
+        -moz-transition: all 0.6s linear;
+        -o-transition: all 0.6s linear;
+        -ms-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+    }
+    
+    .service-col:hover p {
+	    padding: 10px;
+    }
+
+    .service-col:hover > div {
+        text-shadow: 1px -1px 0px rgba(0,0,0,0.5);
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    /* Icon rotation effect  */
+    
+    .rotate {
+	    -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        border-radius: 50%;
+    }
+    
+    .rotate:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;   
+    }
+    
+   /* Icons  */
+    
+    .icon-wrench, .icon-mobile {
+        /*background: url('../img/icon-bg.png') repeat-x center center;*/
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .icon-desktop {
+        background: url('../img/icon-bg.png') repeat-x center center;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 22px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .webdesign {
+	    z-index: 1000;
+    }
+    
+    /* Hire Us Button  */
+    
+    .service-btn {
+	    margin-top: 40px;
+    }
+    
+    .btn-hire {
+        text-transform: uppercase;
+        font-size: 20px;
+	    padding: 10px 20px;
+    }
+
+    /* 6. PORTFOLIO
+    -------------------------------------------------- */
+    
+    /* Filter */
+    
+    .filter-list ul{
+        text-align: center;
+    }
+    
+    .filter-list ul li {
+        margin: 5px;
+        cursor: pointer;
+    }
+    #portfolio .nav-pills > li > a:hover, #portfolio .nav-pills > li > a:focus{
+        background-color: red !important;
+    }
+
+    /* images grid and hover effect */
+    
+    .gallery {
+	    margin: 40px 0px 0px 0px;
+    }
+    
+    #Grid .mix{
+        opacity: 0;
+        display: none;
+    }
+
+    .images {
+	    margin: 10px 0px;
+    }
+
+    .overlay {
+        position: relative;
+        overflow: hidden;
+    }
+ 
+    .caption {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        display: none;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .caption h5 {
+	    margin-top: 15%;
+	    margin-left: 10px;
+	    margin-right: 10px;
+    }
+    
+    .caption p {
+	    font-size: 12px;
+    }
+
+    /* 7. TEAM
+    -------------------------------------------------- */
+    
+    .team {
+	    margin: 0px 10px;
+	    padding: 30px 10px;
+	    -webkit-transition:  ease-out 0.6s;
+        -moz-transition: ease-out 0.6s;
+        -o-transition: ease-out 0.6s;
+        transition: ease-out 0.6s;
+    }
+    .team2 {
+	    margin: 0px 10px;
+	    padding: 30px 10px;
+	    -webkit-transition:  ease-out 0.6s;
+        -moz-transition: ease-out 0.6s;
+        -o-transition: ease-out 0.6s;
+        transition: ease-out 0.6s;
+    }
+
+    .job {
+        font-size: 12px;
+    }
+    
+    .team p {
+	    padding: 10px;
+    }
+    
+    .team:hover {
+	    -webkit-transition: all 0.6s linear;
+        -moz-transition: all 0.6s linear;
+        -o-transition: all 0.6s linear;
+        -ms-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+    }
+    
+    .team:hover p {
+	    padding: 10px;
+    }
+    .team2 p {
+	    padding: 10px;
+    }
+    
+    .team2:hover {
+	    -webkit-transition: all 0.6s linear;
+        -moz-transition: all 0.6s linear;
+        -o-transition: all 0.6s linear;
+        -ms-transition: all 0.6s linear;
+        transition: all 0.6s linear;
+    }
+    
+    .team2:hover p {
+	    padding: 10px;
+    }
+    
+   /* Team Member Images  */
+    
+    .member1 {
+        background: url('../img/team/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .member2 {
+        background: url('../img/team/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .member3 {
+        background: url('../img/team/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .member4 {
+        background: url('../img/team/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        padding-top: 25px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    /* Team Member Hover Images  */
+    
+    .team-member1:hover > div {
+        background: url('../img/team/backside/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .team-member2:hover > div {
+        background: url('../img/team/backside/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .team-member3:hover > div {
+        background: url('../img/team/backside/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    .team-member4:hover > div {
+        background: url('../img/team/backside/1.jpg') center center no-repeat; /* YOUR IMAGE HERE */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	    -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+    
+    /* TEAM MEMBER SOCIAL ICONS */
+    
+    .social-team a{
+	    padding: 0px 5px;
+    }
+    
+    .icon-social {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+    }
+
+    /* 8. PRICE
+    -------------------------------------------------- */
+    
+    .tables {
+	    padding-bottom: 60px;
+    }
+
+    .price-table {
+	    text-align: center;
+    	margin-bottom: 20px;
+	}
+	
+	.price-table:hover {
+      -webkit-transition: all 0.6s linear;
+      -moz-transition: all 0.6s linear;
+      -o-transition: all 0.6s linear;
+      -ms-transition: all 0.6s linear;
+      transition: all 0.6s linear;
+    }
+	
+	.price-table-body {
+		padding: 0px;
+		text-align: center;
+	}
+	
+	.price-table-heading h3 {
+	    font-weight: 400;
+	    font-size: 28px;
+	    line-height: 1em;
+	    padding: 30px;
+	    margin: 0;
+	}
+
+	.the-price {
+		padding: 20px;
+		margin: 0;
+	}
+	
+	.the-price h1 {
+	    font-size: 50px;
+		line-height: 1em;
+	    margin: 0;
+	}
+
+	.month
+	{
+	    font-size: 16px;
+	}
+	
+	.price-table-footer {
+		padding: 30px;
+	}
+	
+	.table-feature {
+		margin-top: -60px;
+		-webkit-transition:  ease-out 0.6s;
+        -moz-transition: ease-out 0.6s;
+        -o-transition: ease-out 0.6s;
+        transition: ease-out 0.6s;
+	}
+	
+	.table-feature:hover {
+       -webkit-transition: all 0.6s linear;
+       -moz-transition: all 0.6s linear;
+       -o-transition: all 0.6s linear;
+       -ms-transition: all 0.6s linear;
+       transition: all 0.6s linear;
+    }
+	
+	/* 14. FEATURE STYLES
+    -------------------------------------------------- */
+
+    /* HEADING BOARDERS */
+    
+    .head-border-white {
+	    width: 20%;
+	    height: 0px;
+    }
+    
+    .head-border-grey {
+	    width: 20%;
+	    height: 1px;
+    }
+
+    /* FONT STYLES  */
+    
+    .head {
+	    /*margin-bottom: 60px;*/
+        margin-top: 3.5vw;
+    }
+    
+    .center {
+	    text-align: center;
+    }
+
+    /* 15. MEDIA RESPONSIVE
+    -------------------------------------------------- */
+    
+    @media only screen and (min-width: 1200px) {
+    
+    /* Top Slider */
+    
+     #top-slider .slider-bg {
+        background-size: cover;
+     }
+    }
+
+    @media (max-width: 979px) {
+    
+    /* Navbar */
+    
+     .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+     }
+     
+     .navbar-inner {
+        border-radius: 0;
+        margin: 1px 0;
+     }
+     
+     /* Filter */
+
+    .filter-list ul{
+        text-align: center;
+    }
+    
+    /* Contact Form */
+      
+    .input-group {
+	    max-width: 300px !important;
+	    float: none;
+        margin: 0 auto;
+    }
+	
+	.form {
+		padding-bottom: 50px;
+	}
+	
+	
+	.requi {
+	    padding-left: 15px;
+	    font-size: 12px;
+    }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+    
+    .slide {
+	    padding-top: 30%;
+    }
+    
+    /* Team */
+   
+   .team {
+      -webkit-transition:  none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+    
+    .team:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+    .team2 {
+      -webkit-transition:  none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+    
+    .team2:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+    }
+    
+    /* Filter */
+    
+    .filter-list ul{
+        text-align: center;
+    }
+
+    }
+    
+    @media (max-width: 489px) {
+    
+    /* Filter */
+    
+    .filter-list ul{
+        text-align: center;
+    }
+    
+    .filter-list ul li {
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    
+    .nav-pills > li > a {
+        position: relative;
+        display: block;
+        padding: 5px 10px
+    }
+    
+    .gallery ul li {
+      margin: 0;
+      padding: 0px 0;
+      float: left;
+    }
+    
+    .gallery ul li:hover {
+      margin: 0;
+      padding: 0px 0;
+      float: left;
+    }
+    
+   .gallery ul li:hover img {
+      opacity: 0.1;
+    }
+    
+    .gallery ul li:hover strong {
+      font-size: 12px;
+      margin: 0;
+      padding: 10px 0;
+      position: absolute;
+      display: block;
+      text-align: center;
+      bottom: 55%;
+      opacity: 0.9;
+    }
+    
+    .gallery ul li:hover p {
+      font-size: 12px;
+      margin: 0;
+      padding: 0px 0px 20px 0px;
+      position: absolute;
+      width: 100%;
+      display: block;
+      text-align: center;
+      bottom: 0;
+    }
+
+    .gallery ul li:hover p span {
+      margin-top: 20px;
+      font-size: 12px;
+      display: block;
+    }
+
+    }
+    
+    @media (max-width: 767px) {
+    
+    /* Heading */
+    
+    h1 {
+	    font-size: 50px;
+    }
+    
+    /* Top Slider */
+
+    #top-slider {
+    	width: 100%;
+    	height: 164vw;
+     	text-align: center;
+    	z-index: 100;
+    }
+    
+    #top-slider .slider-bg {
+   	 	margin: 0 auto;
+		padding: 0;
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		height: 164vw;
+        background: url(../img/slider/background.jpg);	
+        background-size: 100% 100%;
+    }
+    
+    /* Button */
+    
+    .btn-top {
+	    text-transform: uppercase;
+        font-size: 10px;
+	    padding: 10px 20px
+    }
+    
+    /* About Us */
+    
+    .agency-heading {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    /* Filter */
+    
+    .filter-list ul{
+        text-align: center;
+    }
+    
+    .filter-list ul li {
+        margin-top: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+    .nav-pills > li > a {
+        position: relative;
+        display: block;
+        padding: 5px 10px
+    }
+
+    .team-grid  {
+        position: relative;
+        display: inline-block;
+        width: 180px;
+        height: 180px;
+    }
+    
+    .media-object {
+	    display: none;
+    }
+    
+    /* Social Media Divider */
+    
+    .social-icons {
+	    padding-top: 40px;
+    }
+    
+    #divider .divider-bg {
+    	background: cover;
+    }
+
+    }

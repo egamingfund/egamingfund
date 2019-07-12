@@ -1,0 +1,454 @@
+
+.reward-container{
+    position: relative;
+    top: 0;
+    width: 100%;
+    color:white;
+    background-color: #262626;
+}
+.reward-title{
+    height: 72.5vw; 
+    width: 100%; 
+}
+.reward-title-bg{
+    width: 68%;
+    height: 68%;
+    background-image: url(../img/reward_bg_en.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.reward-tasklist-container{
+    margin-bottom: 7%;
+    width: 80%;
+}
+.reward-tasklist-button{
+    display: flex;
+    justify-content: space-around;
+}
+.reward-tasklist-button div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.reward-tasklist-button div img{
+    margin: auto;
+    width: 80%;
+    max-width: 208px;
+}
+.reward-tasklist-button .reward-tasklist-button-text{
+    background-color: #CA2728;
+    padding: 2% 0;
+    font-size: 3vw;
+    letter-spacing: 0.6vw;
+    padding-left: 0.6vw;
+    cursor: pointer;
+}
+.reward-tasklist-arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.reward-tasklist-arrow img{
+    width: 5.2%;
+    height: 3.5%;
+    max-width: 45px;
+    max-height: 33px;
+}
+.reward-tasklist-arrow img:hover{
+    transform: scale(1.2);
+}
+
+.reward-tasklist-content{
+    width: 100%;
+    position: relative;
+    top: -22.5vw;
+}
+
+.reward-tasklist-detail{
+    width: 68%;
+    height: 68%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.reward-tasklist-detail-navi{
+        flex: 20%;
+}
+.reward-tasklist-detail-navi ul{
+    margin: 0;
+    padding: 0;
+}
+.reward-tasklist-detail-navi ul>li{
+    margin: 0 1.5vw 1vw 0;
+    padding: 0.6vw 0;
+    background-color: #555555;
+    text-align: center;
+    font-size: 1.2vw;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reward-tasklist-detail-container{
+    flex: 80%;
+    padding: 3% 0;
+    background-color: #fff;
+    color: #000;
+}
+.reward-tasklist-detail-container>div{
+    width: 88%;
+    margin: 5% auto;
+
+}
+.reward-tasklist-detail-title span{
+    background-color: #ca2728;
+    font-size: 1.8vw;
+    padding: 0.8vw 2vw;
+    color: #fff;
+}
+
+.reward-tasklist-detail-content{
+    margin: 3vw 0;
+}
+.reward-tasklist-detail-content ul{
+    list-style-type: decimal;
+    font-size: 1vw;
+    word-wrap: break-word;
+    padding-left: 2vw;
+    line-height: 200%;
+}
+
+.reward-tasklist-detail-navi ul>li.active{
+    background-color: #ca2728;
+}
+
+.reward-tasklist-detail-content .reward-share-content-left span{
+    color: #ca2728;
+    margin: 0 10px 0 5px;
+}
+.reward-tasklist-detail-content .reward-share-content-right span{
+    color: #ca2728;
+    margin: 0 5px 0 10px;
+}
+.reward-tasklist-detail-content ul li a{
+    color: #ca2728;
+}
+
+/*饼图*/
+.reward-share-content{
+    display: flex;
+    display: none;
+}
+.reward-share-content .reward-share-content-left{
+    flex: 22.5%;
+}
+.reward-share-content .reward-share-img-big{
+    flex: 55%;
+    position: relative;
+}
+.reward-share-content .reward-share-img-big img{
+    width: 100%;
+}
+.reward-share-content .reward-share-content-right{
+    flex: 22.5%;
+}
+.reward-share-content .reward-share-img-big .reward-share-total-budget{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%,-12%); 
+}
+.reward-share-content .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-text{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: #565656;
+}
+.reward-share-content .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-num{
+    padding: 0.3vw;
+    background-color: #ca2728;
+    color: #fff;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.reward-share-content .reward-share-content-left .item-content{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.96vw;
+}
+.reward-share-content .reward-share-content-right .item-content{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.96vw;
+    line-height: 100%;
+}
+
+.reward-share-content-mobile{
+    display: none;
+}
+.reward-share-content-mobile .reward-share-img-big{
+    width: 40%;
+    position: relative;
+    margin: auto;
+}
+.reward-share-content-mobile .reward-share-img-big img{
+    width: 100%;
+}
+.reward-share-content-mobile .reward-share-img-big .reward-share-total-budget{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.reward-share-content-mobile .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-text{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    color: #565656;
+}
+.reward-share-content-mobile .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-num{
+    padding: 0.3vw 0.6vw;
+    background-color: #ca2728;
+    color: #fff;
+    font-size: 1.1vw;
+}
+
+.reward-share-content-mobile .reward-share-content-text{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 40px 5px;
+}
+.reward-share-content-mobile .reward-share-content-text .item-content{
+    width: 30%;
+    display: flex;
+    line-height: 200%;
+    margin: 1.5%;
+}
+.reward-share-content-mobile .reward-share-content-text .item-content .item-content-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+.reward-share-content-mobile .reward-share-content-text .item-content .item-content-text span{
+    color: #ca2728;
+    margin-left: 5px;
+}
+.reward-share-content-mobile .reward-share-content-text .item-content .item-content-color{
+    width: 18px;
+    height: 18px;
+    margin: auto 5px;
+    border-radius: 3px;
+    background-color: #ca2728;
+}
+
+
+
+.reward-tasklist-result{
+    display: none;
+}
+.reward-tasklist-detail-navi .reward-show-navi{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .reward-tasklist-detail {
+        width: 68%;
+        height: 68%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .reward-tasklist-detail-navi ul{
+        margin: 20px 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .reward-tasklist-detail-navi ul>li {
+        margin: 0 1.5vw 1vw 0;
+        padding: 0.6vw 1vw;
+        background-color: #555555;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .reward-tasklist-detail {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .reward-tasklist-detail-content ul{
+        list-style-type: decimal;
+        font-size: 1.3rem;
+        word-wrap: break-word;
+        padding-left: 15px;
+    }
+
+    .reward-share-content-mobile .reward-share-img-big{
+        width: 50%;
+        position: relative;
+    }
+
+    /*修改字体大小---主要是手机屏幕下字体太小*/
+    .reward-tasklist-detail-title span {
+        background-color: #ca2728;
+        font-size: 1.7rem;
+        padding: 8px 16px;
+        color: #fff;
+    }
+    .reward-share-content-mobile .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-text{
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        color: #565656;
+    }
+    .reward-share-content-mobile .reward-share-img-big .reward-share-total-budget .reward-share-total-budget-num{
+        padding: 3px 6px;
+        background-color: #ca2728;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .reward-share-content-mobile .reward-share-content-text .item-content{
+        width: 45%;
+        display: flex;
+        line-height: 200%;
+    }
+    .reward-share-content-mobile .reward-share-content-text .item-content .item-content-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 530px){
+
+    .reward-share-content-mobile .reward-share-img-big{
+        width: 70%;
+        position: relative;
+    }
+    
+    .reward-share-content-mobile .reward-share-content-text .item-content{
+        flex: 100%;
+        display: flex;
+        line-height: 200%;
+    }
+
+    /*实现哔哩哔哩的导航栏*/
+    .reward-tasklist-detail-navi {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 1);
+        overflow: hidden;
+        display: flex;
+        z-index: 2;
+    }
+    .reward-tasklist-detail-navi ul {
+        flex: 90%;
+        margin: 0;
+        padding: 0;
+        padding-left: 8%;
+        overflow: auto;
+        display: flex;
+        flex-wrap: inherit; 
+        justify-content: inherit; 
+        margin-bottom: -8px;
+    }
+
+    .reward-tasklist-detail-navi .reward-show-navi{
+        flex: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .reward-tasklist-detail-navi ul>li {
+        margin: 8px 12px 8px;
+        padding: 0 0 8px 0;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .reward-tasklist-detail-navi ul>li.active {
+        color: #ca2728;
+        background-color: rgba(0, 0, 0, 0);
+        font-weight: bold;
+        border-bottom: 2px solid #ca2728;
+    }
+
+    .reward-tasklist-detail-navi.showed {    
+       flex-direction: column;
+    }
+    .reward-tasklist-detail-navi ul.showed{
+        flex: 100%;
+        flex-wrap: wrap;
+        width: 92%;
+        margin: auto;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .reward-tasklist-detail-navi .reward-show-navi.showed{
+        transform: rotate(180deg)  scale(1.5);
+        margin-bottom: 10px;
+    }
+    .reward-title-bg{
+        width: 100%;
+        height: 60%;
+        background-image: url(../img/reward_bg_mobile_en.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        border-bottom: 1px solid #9d9d9d;
+        /*background-position-y: 35px;*/
+    }
+    .reward-tasklist-container{
+        display: none;
+    }
+    .reward-tasklist-detail-container>div {
+        width: 88%;
+        margin: 30px auto;
+    }
+    .reward-tasklist-detail-content{
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 458px){
+    .reward-tasklist-detail-navi ul.showed{
+        width: 76%;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .reward-tasklist-detail-navi ul.showed{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 342px){
+    .reward-tasklist-detail-navi ul.showed{
+        width: 94%;
+    }
+}

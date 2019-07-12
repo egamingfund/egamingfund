@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>Blockchain GAME FUND Game Community GAME FUND 基于区块链的游戏平台</title>
+    <link rel="bookmark" type="image/x-icon" href="img/logo1.ico"/>
+	<link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/logo2.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eGamingFund是基于区块链技术的游戏平台。 拥有最公平的游戏排行榜，融合了游戏开发，发行，众筹，投资等诸多功能。">
+    <meta name="author" content="Fabian Bentz Webdesign">
+    <meta name="keywords" content="Game Development,Financing,Crowdfunding,Investment,NSFW,Token,Gaming,游戏开发,分销,融资,众筹,投资,NSFW,令牌,游戏排行榜">
+
+    <!--facebook linked start-->
+    <meta property="og:type" content="website"/>
+    <!--<meta property="og:locale" content="en_US"/>-->
+	<meta property="og:url" content="https://egamingfund.org"/>
+    <meta property="og:title" content="eGamingFund"/>
+    <meta property="og:description" content="eGamingFund是基于区块链技术的游戏平台。 拥有最公平的游戏排行榜，融合了游戏开发，发行，众筹，投资等诸多功能。"/>
+    <meta property="og:image" content="https://egamingfund.org/img/logo2.png" />
+    <!--facebook linked end-->
+
+    <!--twitter linked start-->
+    <meta name="twitter:card" content="summary"/>
+    <!--<meta name="twitter:site" content="@enjin"/>-->
+	<meta name="twitter:title" content="eGamingFund"/>
+    <meta name="twitter:description" content="eGamingFund是基于区块链技术的游戏平台。 拥有最公平的游戏排行榜，融合了游戏开发，发行，众筹，投资等诸多功能。"/>
+    <meta name="twitter:image" content="https://egamingfund.org/img/logo2.png"/>
+    <!--twitter linked end-->
+
+    <!-- CSS Styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" id="theme" href="./css/theme6.css" type="text/css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/particle.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="./css/sequence-slider.css" />
+    <link rel="stylesheet" href="./css/top.css" type="text/css" />
+    <link rel="stylesheet" href="./css/new.css" type="text/css" />
+
+    <link rel="stylesheet" href="./css/userlogin.css" type="text/css" />
+</head>
+
+<body class="body">   
+    <!-- Back to Top Button -->
+    <div class="button-top" id="top-bt">
+        <a href="#top-slider"><i class="fa fa-sort-desc fa-3x"></i></a>
+    </div>
+    <!-- Back to Top Button END -->
+
+    <!--countdown-->
+    <div class="countdown-container">
+        <div class="countdown-time-content">
+            <p id="countdown-time-text">距离eGamingFund原型展示版本上线还有</p>
+            <div class="countdown-time">
+                <div class="time-text">
+                    <div class="countdown-text day"><div></div><div></div></div>
+                    <div class="time-text-space">,</div>
+                    <div class="countdown-text hour"><div></div><div></div></div>
+                    <div class="time-text-space">：</div>
+                    <div class="countdown-text minute"><div></div><div></div></div>
+                    <div class="time-text-space">：</div>
+                    <div class="countdown-text second"><div></div><div></div></div>
+
+                    <div>DAYS</div>
+                    <div></div>
+                    <div>HOURS</div>
+                    <div></div>
+                    <div>MINUTES</div>
+                    <div></div>
+                    <div>SECONDS</div>
+                </div>
+            </div>
+        </div>
+        <div class="countdown-time-content countdown-time-endTime">
+            <p></p>
+        </div>
+    </div>
+    <!--countdown end-->
+
+    <!--sequence-slider --> 
+    <div id="top-slider">
+        <div class="slider-bg top" id="particles-js">
+            <script src="./js/particles.min.js"></script>
+            <script src="./js/particle-json.js"></script>
+            <div class="slider-content">
+                <div class="slider-center" id="showContent">     
+                    <div class="slider-title" ><span>G</span>AME.<span>F</span>UND</div>
+                    <div class="slider-text" id="sequence_other_item1">The community based on global decentralization blockchain that of the people, by the people, for the people.</div>
+                    <div class="slider-button" style="line-height: 38px; width: 83%;margin: auto;">
+                        <a class="slider-href slider-href-item2"  href="https://t.me/gamefund" target="_blank" style="line-height: 60px; height: 60px; padding-top: 0;">
+                            <span class="slider-href-telegram"><img src="./img/slider/telegram.png"></span>
+                            <span id="sequence_other_item2_fourth" style="color: red; margin-left: 10px; font-size: 16px; position: absolute;">JOIN OUR TELEGRAM</span>
+                        </a> 
+                        <a class="slider-href slider-href-item2"  href="https://egamingfund.org/GAME.FUND-en-draft.pdf" target="_blank" >
+                            <!-- <span id="sequence_other_item2_first" style="color: red">English</span> -->
+                            <span id="sequence_other_item2_first_paper" style="color: #c5c5c5">Dev Deck</span>
+                        </a> 
+                        <!-- <a class="slider-href slider-href-item2"  href="https://egamingfund.org/GAME.FUND-zh-draft.pdf" target="_blank" >
+                            <span id="sequence_other_item2_second" style="color: red">中文</span>
+                            <span id="sequence_other_item2_second_paper" style="color: #c5c5c5">白皮书</span>
+                        </a>  -->
+                        <a id="sequence_other-button-version" class="slider-href slider-href-item2 new-button-version" href="javascript:void(0);" target="_blank">
+                            <i class="fa fa-download"></i>
+                            <span>eGamingFund Download</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">    
+            <div id="sequence">  
+                <ul class="sequence-canvas">
+                    <li class="animate-in" id="showContent">
+                        <div class="title"><span>G</span>AME.<span>F</span>UND</div>
+                        <div class="subtitle" id="sequence_item1">The community based on global decentralization blockchain that of the people, by the people, for the people.</div>
+                        <div class="load-pdf-content subtitle">
+                            <a class="button-find-detail slider-href-item2"  href="https://t.me/gamefund" target="_blank" style="line-height: 50px; height: 50px; margin-bottom: 10px;">
+                                <span class="slider-href-telegram"><img src="./img/slider/telegram.png"></span>
+                                <span id="sequence_item2_fourth" style="color: red; margin-left: 10px; font-size: 18px;">JOIN OUR TELEGRAM</span>
+                            </a> 
+                            <a class="button-find-detail slider-href-item2"  href="https://egamingfund.org/GAME.FUND-en-draft.pdf" target="_blank" >
+                                <!-- <span id="sequence_item2_first" style="color: red">English</span> -->
+                                <span id="sequence_item2_first_paper" style="color: #c5c5c5">Dev Deck</span>
+                            </a> 
+                            <!-- <a class="button-find-detail slider-href-item2"  href="https://egamingfund.org/GAME.FUND-zh-draft.pdf" target="_blank" >
+                                <span id="sequence_item2_second" style="color: red">中文</span>
+                                <span id="sequence_item2_second_paper" style="color: #c5c5c5">白皮书</span>
+                            </a>  -->
+                            <a id="sequence-button-version" class="button-find-detail slider-href-item2 new-button-version" href="javascript:void(0);" target="_blank">
+                                <i class="fa fa-download"></i>
+                                <span>eGamingFund Download</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>			
+            </div>         
+        </div>
+    </div>
+    <!-- SEQUENCE SLIDER END -->
+   
+    <!--prototype version-->
+    <!-- <div class="version-container">
+        <div class="version-content">
+            <a id="button-version" class="button-version" href="javascript:void(0);">
+                <i class="fa fa-download"></i>
+                <div>原型展示版</div>
+            </a>
+            <div id="version-content-text" class="version-content-text">
+                原型展示版本仅供展示预览，非正式上线版本。
+            </div>
+        </div>
+    </div> -->
+    <!--prototype version end-->
+
+    <!-- ABOUT US -->
+    <div id="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="./img/about/logo01.png" alt="">
+            </div>
+            <div class="about-title">ABSTRACT</div>
+            <p>The goal of <span>G</span>AME.<span>F</span>UND is to build a Blockchain gaming public community which is <span>of the people</span>, <span>by the people</span>, <span>for the people</span>. Users can design, play discuess games. Also, users can establish digital property rights and make transactions. The community uses smart contracts to realize decentralized  UGC (User Generate Content) and make contribution pricing and equity returns. Therefore, creators, reviewers, community promoters, and players can get reasonable revenue and promote community's long-term healthy development and growth. Currently, <span>G</span>AME.<span>F</span>UND has its own game engine tool:  "BCreator.io"(The internal test version is completed).</p>
+            <p style="line-height: 24px;"><span>G</span>AME.<span>F</span>UND的目标是建设一个<span>民有</span>、<span>民治</span>、<span>民享</span>的区块链游戏内容公共社区，用户可以做游戏、玩游戏、交流游戏、进行数字财产确权及交易。社区通过智能合约去中心化共识方式UGC（User Generate Content），进行贡献定价和权益回报，使内容生产者、内容筛择评论者、社区推广者、玩家都能得到合理的激励，促使社区长期良性发展及壮大。目前<span>G</span>AME.<span>F</span>UND已拥有自己的游戏制作工具“BCreator.io”（已完成内部测试版本）。</p>
+            <!--<p style="line-height: 24px;"><span>G</span>AME.<span>F</span>UNDの目標はブロックチェーンに基づいて、ゲームを作ったり、ゲームをしたり、ゲーム経験を交換する、デジタル資産権と取引の<span>人民所有</span>、<span>人民管理</span>と<span>人民享有</span>のコミュニティを構築する、分権化の方式でUGC（ユーザー生成コンテンツ）に定価、株主資本利益率を貢献する。コンテンツ制作者、コンテンツ選別批評家、コミュニティプロモータは合理的なインセンティブを得ることができます、コミュニティの長期的な健全な発展と成長を促進する。<span>G</span>AME.<span>F</span>UNDは自分のゲーム制作ツール“Bcreator.io”があります（今内部テストバージョンは完成しました）。</p>        -->
+        </div>
+    </div>
+    <!-- ABOUT END -->
+
+    <!-- INDUSTRY STATUS -->
+    <div id="industry-status">
+        <div class="container">
+
+            <div class="prominent-characteristic">
+                <div class="prominent-feature1" >
+                    <img src="./img/industryStatus/circle.png">
+                    <div id="industry_status_feature1">Virtual distributed structure</div>
+                </div>
+                <div class="prominent-feature2"  style="position: absolute; top: 30%; left: 12%;  width: 88%;">
+                    <img src="./img/industryStatus/circle.png">
+                    <div id="industry_status_feature2">High efficiency and low cost operation mode</div>           
+                </div>
+                <div class="prominent-feature3"  style="position: absolute; top: 50%; left: 20%; width: 80%;">
+                    <img src="./img/industryStatus/circle.png">
+                    <div id="industry_status_feature3">Decentralized institution</div>
+                </div>
+                <div class="prominent-feature4" style="position: absolute; top: 68%; left: 12%; width: 88%;">
+                    <img src="./img/industryStatus/circle.png">
+                    <div id="industry_status_feature4" >Multi-node consensus mechanism</div>
+                </div>
+                <div class="prominent-feature5" style="position: absolute; top: 85%;">
+                    <img src="./img/industryStatus/circle.png">
+                    <div id="industry_status_feature5">Distributed ledger</div>
+                </div>
+            </div>
+            <div class="industry-status-intro col-lg-5 col-md-5">
+                <div class="industry-status-img">
+                    <div class="industry-title">
+                        <span style="font-family: 'Arial'; color: #fff;">
+                            <span style="color:#fe6501;">G</span>AME.
+                            <span style="color:#fe6501;">F</span>UND 
+                        </span>
+                        <span style="color: #cf0202;" id="industry_status_feature">
+                            FEATURE
+                        </span>
+                    </div>
+                </div>
+                <div class="special-info">
+                    <div>
+                        <div class="icon-circle"></div>
+                        <span id="industry_status_item1" class="industry_status_item"></span>
+                    </div>
+                    <div>
+                        <div class="icon-circle"></div>
+                        <span id="industry_status_item2" class="industry_status_item"></span>
+                    </div>
+                    <div>
+                        <div class="icon-circle"></div>
+                        <span id="industry_status_item3" class="industry_status_item"></span>
+                    </div>
+                    <div>
+                        <div class="icon-circle"></div>
+                        <span id="industry_status_item4" class="industry_status_item"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- INDUSTRY STATUS END -->
+
+    <!-- SERVICE -->
+    <div id="service">
+        <div class="container">
+            <div class="row" style="margin-bottom: 40px;">
+            
+                <div class="center-block head">      
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="service-title" id="service_title">
+                            <div id="service_title1">INDUSTRY</div>
+                            <div style="color: #cf0202" id="service_title2">&nbspBACKGROUND AND PROBLEMS</div>
+                        </div>
+                    </div>          
+                </div>
+                <!-- SERVICE COLUMNS -->   
+                <div class="col-lg-4 col-md-4 service">
+                    <div class="service-col">         
+                        <div class="icon-desktop">  
+                            <img src="./img/service/022.png" alt="">
+                        </div>
+                        <h4 id="service_title_item1"></h4>
+                        <p id="service_text_item1"></p>
+                    </div>
+                </div>      
+                <div class="col-lg-4 col-md-4 service">
+                    <div class="service-col">          
+                        <div class="icon-wrench">
+                            <img src="./img/service/021.png" alt="">
+                        </div>        
+                        <h4 id="service_title_item2"></h4>
+                        <p id="service_text_item2"></p>
+                    </div>
+                </div>   
+                <div class="col-lg-4 col-md-4 service">
+                    <div class="service-col">            
+                        <div class="icon-mobile">  
+                            <img src="./img/service/019.png" alt="">
+                        </div>       
+                        <h4 id="service_title_item3"></h4>
+                        <p id="service_text_item3"></p>            
+                    </div>
+                </div> 
+            
+            </div>
+        </div>
+    </div>
+
+    <!--COMMUNITY　OPERATION-->
+    <div id="community">
+        <div class="decoration-img" style="position: absolute;">
+            <img src="./img/decoration/3.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="center-block head">         
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="community-title" >
+                    <span id="community_title1">社区</span>
+                    <span style="color: #cf0202" id="community_title2">生态</span>
+                </div>
+            </div>             
+        </div>
+        <div class="community-img-title" id="community_img_title">
+            GFG通证分配方案
+        </div>
+        <div class="community-img" >
+            <img src="./img/community/pie-chart4.png">
+        </div>
+        <div class="background-img">
+            <div class="community-content">
+                <div class="content-left"> 
+                    <div class="first-content item-content">
+                        <div class="item-title" id="community_title_item1"></div>
+                        <div class="item-text" id="community_text_item1"></div>
+                    </div>
+                    <div class="second-content item-content">
+                        <div class="item-title" id="community_title_item2"></div>
+                        <div class="item-text" id="community_text_item2"></div>
+                    </div>
+                </div>
+                <div class="community-img-big" >
+                    <img src="./img/community/pie-chart3.png">
+                </div>
+                <div class="content-right"> 
+                    <div class="fifth-content item-content">
+                        <div class="item-title" id="community_title_item5"></div>
+                        <div class="item-text" id="community_text_item5"></div>
+                    </div>
+                    <div class="third-content item-content">
+                        <div class="item-title" id="community_title_item3"></div>
+                        <div class="item-text" id="community_text_item3"></div>
+                    </div>
+                    <div class="fourth-content item-content">
+                        <div class="item-title" id="community_title_item4"></div>
+                        <div class="item-text" id="community_text_item4"></div>
+                    </div>
+                </div>              
+            </div>
+            <div class="total-content item-content">
+                <div class="item-text">
+                    <p id="total_content_item1"></p>
+                    <p id="total_content_item2" style="display:none"></p>
+                    <p id="total_content_item3" style="display:none"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--COMMUNITY　OPERATION END-->
+
+    <!--COMMUNITY　video-->
+    <div id="community-video">
+        <div class="decoration-img" style="position: absolute; bottom: 0; right: 0;">
+            <img src="./img/decoration/right2.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="center-block head">         
+            <div class="community-video-title" id="community_video_title">
+                社区运作
+            </div>
+            <div class="video-content">
+                <div class="video-container">
+                <div class="btn-video"><img src="./img/community/bg_btn_en.jpg"></div>
+                <video></video>
+            </div>
+            <div class="community-video-intro" id="community_video_intro">
+                <p id="community_video_text1"></p>
+                <p id="community_video_text2"></p>
+            </div>
+            </div>
+        </div>             
+    </div>
+    <!--COMMUNITY　video end-->
+
+    <!--competition advance-->
+    <div id="advance">
+        <div id="particles-js-advance" class="advance-particle">
+            <script src="./js/particles.min.js"></script>
+            <script src="./js/particles-advance.js"></script>
+        </div>
+        <div class="top-advance" style="background-color: #080808; height: 8vw"></div>
+
+        <!-- competitive -->
+        <div id="competitive">
+            <div class="center-block head">         
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="competitive-title">
+                        <span id="competitive_title1">竞争</span>
+                        <span style="color: #cf0202;" id="competitive_title2">优势</span>
+                    </div>
+                </div>             
+            </div>
+
+            <div class="background-img">
+                <div class="competitive-content">
+                    <div class="first-content item-content">
+                        <div class="item-title" id="competitive_title_item1"></div>
+                        <div class="item-text" id="competitive_text_item1"></div>
+                    </div>
+                    <div class="second-content item-content">
+                        <div class="item-title" id="competitive_title_item2"></div>
+                        <div class="item-text" id="competitive_text_item2"></div>
+                    </div>
+                    <div class="third-content item-content">
+                        <div class="item-title" id="competitive_title_item3"></div>
+                        <div class="item-text" id="competitive_text_item3"></div>
+                    </div>
+                    <div class="fourth-content item-content">
+                        <div class="item-title" id="competitive_title_item4"></div>
+                        <div class="item-text" id="competitive_text_item4"></div>
+                    </div>
+                    <div class="fifth-content item-content">
+                        <div class="item-title" id="competitive_title_item5"></div>
+                        <div class="item-text" id="competitive_text_item5"></div>
+                    </div>
+                    <div class="sixth-content item-content">
+                        <div class="item-title" id="competitive_title_item6"></div>
+                        <div class="item-text" id="competitive_text_item6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" >
+                <div class="other-container">
+                    <div class="other-container-img"><img src="./img/competitive/0004.png" alt=""></div>
+                    <div class="other-container-content" >
+                        <div class="item-title" id="competitive_other_title_item1"></div>
+                        <div class="item-text" id="competitive_other_text_item1"></div>
+                    </div>
+                    <div class="other-container-img"><img src="./img/competitive/0007.png" alt=""></div>
+                    <div class="other-container-content">
+                        <div class="item-title" id="competitive_other_title_item6"></div>
+                        <div class="item-text" id="competitive_other_text_item6"></div>
+                    </div>
+                    <div class="other-container-img"><img src="./img/competitive/0003.png" alt=""></div>
+                    <div class="other-container-content">
+                        <div class="item-title" id="competitive_other_title_item4"></div>
+                        <div class="item-text" id="competitive_other_text_item4"></div>
+                    </div>
+                    <div class="other-container-img"><img src="./img/competitive/0002.png" alt=""></div>
+                    <div class="other-container-content">
+                        <div class="item-title" id="competitive_other_title_item2"></div>
+                        <div class="item-text" id="competitive_other_text_item2"></div>
+                    </div>
+                    <div class="other-container-img"><img src="./img/competitive/0005.png" alt=""></div>
+                    <div class="other-container-content">
+                        <div class="item-title" id="competitive_other_title_item3"></div>
+                        <div class="item-text" id="competitive_other_text_item3"></div>
+                    </div>
+                    <div class="other-container-img"><img src="./img/competitive/0001.png" alt=""></div>
+                    <div class="other-container-content">
+                        <div class="item-title" id="competitive_other_title_item5"></div>
+                        <div class="item-text" id="competitive_other_text_item5"></div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <div class="background-advance" style="background-color: #080808; height: 4vw"></div>
+    </div>
+    <!--competition advance end-->
+
+    <!-- PRICE -->
+    <div id="price">
+        <div class="decoration-img" style="position: absolute;">
+            <img src="./img/decoration/3.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="decoration-img" style="position: absolute; bottom: 0; right: 0;">
+            <img src="./img/decoration/right2.png" style="width: 20vw;" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 head-title">
+                    <div class="price-title" id="price_title"><div style="color: #cf0202" id="price_title1"></div><div id="price_title2"></div></div>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 6vw;">
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/1.png" alt="" />
+                        <div id="price_item1"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/2.png" alt="" />
+                        <div id="price_item2"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/3.png" alt="" />
+                        <div id="price_item3"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/4.png" alt="" />
+                        <div id="price_item4"></div>
+                    </div>      
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/5.png" alt="" />
+                        <div id="price_item5"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/6.png" alt="" />
+                        <div id="price_item6"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/7.png" alt="" />
+                        <div id="price_item7"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/8.png" alt="" />
+                        <div id="price_item8"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/9.png" alt="" />
+                        <div id="price_item9"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/10.png" alt="" />
+                        <div id="price_item10"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/11.png" alt="" />
+                        <div id="price_item11"></div>
+                    </div>
+                    <div class="center-block head tables price-item" style=" margin: 0 10px;">
+                        <img class="img-responsive" src="./img/product/12.png" alt="" />
+                        <div id="price_item12"></div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRICE END -->
+
+    <!-- TEAM END -->
+    <div id="team">
+        <div class="decoration-img" style="position: absolute;">
+            <img src="./img/decoration/3.png" style="width: 20vw;" alt="">
+        </div>
+        <div class="decoration-img" style="position: absolute; bottom: 0; right: 0;">
+            <img src="./img/decoration/right2.png" style="width: 20vw;" alt="">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="center-block head">        
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="team-title"><div style="color: #cf0202" id="team_title">TEAM</div><div id="team_title_intro">&nbspINTRODUCTION</div></div>              
+                    </div>        
+                </div>    
+
+                <!-- TEAM MEMBER -->  
+                <div class="team-small-title" id="team-creative-title">
+                    The Main Team
+                </div>
+                <!-- creative team-->
+                <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item">
+                            <div class="team-member1 team-member"> 
+                                <div class="member1 member" style="background-image: url('./img/person/person19.png');"></div>           
+                                <p class="name" id="team_name_item19">Gareth George McIntosh</p>                
+                                <p id="team_text_item19"></p>            
+                            </div>        
+                        </div>
+                    </div>
+                    <!-- <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member1 team-member">    
+                                <div class="member1 member" style="background-image: url('./img/person/person11.png');"></div>        
+                                <p class="name" id="team_name_item1">Ali Dagli</p>
+                                <p id="team_text_item1"></p>        
+                            </div>          
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member1 team-member">    
+                                <div class="member1 member" style="background-image: url('./img/person/person10.png');"></div>        
+                                <p class="name" id="team_name_item2">Thomas Lindgren</p>
+                                <p id="team_text_item2"></p>        
+                            </div>          
+                        </div>
+                    </div> -->
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member1 team-member">    
+                                <div class="member1 member" style="background-image: url('./img/person/person12.png');"></div>        
+                                <p class="name" id="team_name_item3">Oliver Wu</p>
+                                <p id="team_text_item3"></p>        
+                            </div>          
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item">
+                            <div class="team-member2 team-member">       
+                                <div class="member2 member" style="background-image: url('./img/person/person2.png');"></div>         
+                                <p class="name" id="team_name_item6">Frank Liu</p>        
+                                <p id="team_text_item6"></p>         
+                            </div>        
+                        </div>     
+                    </div>
+                    <!-- <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item">
+                            <div class="team-member1 team-member">    
+                                <div class="member1 member" style="background-image: url('./img/person/person15.png');"></div>        
+                                <p class="name" id="team_name_item4">Abdullah Konash</p>
+                                <p id="team_text_item4"></p>
+                            </div>          
+                        </div>
+                    </div> -->
+                </div>
+                <!-- creative team end-->
+
+                <div class="team-small-title" id="team-consultant-title">
+                    Consultant Team
+                </div>
+                <!-- consultant team-->
+                <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member3 team-member">     
+                                <div class="member3 member" style="background-image: url('./img/person/person17.png');"></div>          
+                                <p class="name" id="team_name_item17">John Caldwell</p>                 
+                                <p id="team_text_item17"></p>          
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item">
+                            <div class="team-member4 team-member"> 
+                                <div class="member4 member" style="background-image: url('./img/person/person18.png');"></div>           
+                                <p class="name" id="team_name_item18">Duncan Cameron</p>                
+                                <p id="team_text_item18"></p>            
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member3 team-member">     
+                                <div class="member3 member" style="background-image: url('./img/person/person3.png');"></div>          
+                                <p class="name" id="team_name_item5">冯涛</p>                 
+                                <p id="team_text_item5"></p>          
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item">
+                            <div class="team-member4 team-member"> 
+                                <div class="member4 member" style="background-image: url('./img/person/person4.png');"></div>           
+                                <p class="name" id="team_name_item9">李翀</p>                
+                                <p id="team_text_item9"></p>            
+                            </div>        
+                        </div>
+                    </div>
+                    <!-- <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member4 team-member">
+                                <div class="member4 member" style="background-image: url('./img/person/person14.png');"></div>    
+                                <p class="name" id="team_name_item10">刘嘉陵（巨蟹）</p>      
+                                <p id="team_text_item10"></p>       
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="team-item-content">
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member2 team-member">       
+                                <div class="member2 member" style="background-image: url('./img/person/person6.png');"></div>         
+                                <p class="name " id="team_name_item8">谭群钊</p>            
+                                <p id="team_text_item8"></p>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="team-item-content">   
+                        <div class="col-lg-3 col-md-3 team-item" >
+                            <div class="team-member3 team-member">      
+                                <div class="member3 member" style="background-image: url('./img/person/person7.png');"></div>         
+                                <p class="name" id="team_name_item11">金鹏</p>                
+                                <p id="team_text_item11"></p>         
+                            </div>       
+                        </div>
+                    </div> -->
+                </div>
+                
+                <!-- consultant team end-->
+                <div class="team-small-title" id="team-investment-title" style="margin-bottom: 5vw;">
+                    Sponsors
+                </div>
+                <!-- investment institution-->
+                <div class="investment-institution">
+                    <div class="institution-item">
+                        <div class=" team-member">       
+                            <img src="./img/person/invest2.png">
+                        </div>          
+                    </div>   
+                    <div class="institution-item">
+                        <div class=" team-member">       
+                            <img src="./img/person/invest3.png">
+                        </div>          
+                    </div>   
+                    <div class="institution-item">
+                        <div class="team-member">       
+                            <img src="./img/person/invest4.png">
+                        </div>          
+                    </div>   
+                    <div class="institution-item">
+                        <div class="team-member">       
+                            <img src="./img/person/invest5.png">
+                        </div>          
+                    </div>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TEAM  END-->
+
+
+    <!--JAVASCRIPT================================================== -->
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/head-bottom.js"></script> 
+
+    <!-- Sequence Slider -->
+    <script type="text/javascript" src="./js/jquery.sequence-min.js"></script>
+    <!-- Parallax Background -->
+    <script type="text/javascript" src="./js/nbw-parallax.js"></script>
+    <script type="text/javascript" src="./js/jquery.inview.js"></script>
+    <!-- Smooth Scrolling -->
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
+    <!-- Sticky Navigation --> 
+    <script type="text/javascript" src="./js/jquery.sticky.js"></script>
+
+    <!-- language -->
+    <script type="text/javascript" src="./js/language.js"></script> 
+    <script type="text/javascript" src="./js/functions.js"></script> 
+    <script type="text/javascript" src="./js/userlogin.js"></script> 
+
+</body>
+</html>
