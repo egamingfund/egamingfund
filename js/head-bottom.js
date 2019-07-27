@@ -1,10 +1,17 @@
-var fatherHref = 'https://egamingfund.org';
+// var fatherHref = 'https://egamingfund.org';  //官网
+// var fatherHref = 'http://localhost/gamefund/game.fund';  //本地服务器
+var fatherHref = '.';   //只可用于根目录下html，
 var headerText = 
     '<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="menu">' +
           '<div class="container">' +
-              '<div class="w-col"><a href="'+ fatherHref + '/index.html" ><img class="logo" src="'+ fatherHref + '/img/logo.png" height="30px"></a></div>' +
+                '<div class="w-col">' +
+                    '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center;">' +
+                        '<img class="logo" src="'+ fatherHref + '/img/logo2.png" height="28px">' +
+                        '<div style="margin-top: 10px; font-size: 18px; color: #fff">e<span style="color: #fe6501">G</span>aming<span style="color: #fe6501">F</span>und</div>' +
+                    '</a>' +
+                '</div>' +
 
-              '<div>' +
+              /* '<div>' +
                 '<ul class="nav navbar-nav" id="translation">' +
                 //   '<li  id="user-login" >' +
                 //       '<div class="user-icon"><i class="fa fa-user"></i></div>' +
@@ -18,9 +25,9 @@ var headerText =
                   '<!--<li><img src="'+ fatherHref + '/img/header/003.png" id="JA"></li>-->' +
                 '</ul>' +
                 '<!--<div id="google_translate_element"></div>-->' +
-              '</div>' +
+              '</div>' +*/
 
-              '<div class="navbar-header">' +
+              /*'<div class="navbar-header">' +
                 '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">' +
                   '<span class="sr-only">Toggle navigation</span>' +
                   '<span class="icon-bar"></span>' +
@@ -46,7 +53,7 @@ var headerText =
                     '<!--<li><a href="'+ fatherHref + '/whitelist" target="_blank" id="registration_item_menu">Join whitelist</a></li>-->' +
                     '<li><span>NOW LIVE!</span></li>' +
                   '</ul>' +          
-              '</div>' +
+              '</div>' +*/
         '</div>' +
     '</nav>';
 
@@ -62,61 +69,75 @@ var bottomText =
           '<div class="center-block" style="height: 100%;">' +
           
             '<div class="col-lg-12 col-md-12 col-xs-12 total-content">' +
-                '<div class="logo">' +
-                    '<a href="#top-slider" ><img src="'+ fatherHref + '/img/contact/logo.png" alt=""></a>' +
-                    '<!--<a href="./DamnSingle-testnet/mobile.html" target="_blank"><img class="dogLogo" src="'+ fatherHref + '/img/contact/dogLogo.png" alt=""></a>-->' +
+                '<div style="flex: 1">' +
+                    // '<div class="content-left-left" style=" flex: 40%;">' +
+                    //     '<div> <a href="'+ fatherHref + '/index.html#about"  id="contact_href_item1">简介</a> </div>' +
+                    //     '<div> <a href="'+ fatherHref + '/index.html#service" id="contact_href_item2">背景及问题</a> </div>' +
+                    //     // '<div> <a href="'+ fatherHref + '/index.html#portfolio" id="contact_href_item3">解决方案</a> </div>' +
+                    //     '<div><a href="'+ fatherHref + '/index.html#community" id="contact_href_item4">社区生态</a></div>' +
+                    //     '<div> <a href="'+ fatherHref + '/index.html#advance" id="contact_href_item5">竞争优势</a> </div>' +                           
+                    // '</div>' +
+                    // '<div class="content-left-right" style=" flex: 60%;">' +
+                    //     '<div> <a href="'+ fatherHref + '/index.html#team" id="contact_href_item6">团队介绍</a> </div>' +
+                    //     '<div><a href="'+ fatherHref + '/bloglist.html" id="contact_href_item7">Blog</a></div>' +
+                    //     // '<div><a href="'+ fatherHref + '//reward/reward.html" id="contact_href_item8">Reward</a></div>' +
+                    // '</div>' +
                 '</div>' +
+                
 
-                '<div class="content">' +
-                    '<div class="content-left">' +
-                        '<div class="content-left-left" style=" flex: 40%;">' +
-                            '<div> <a href="'+ fatherHref + '/index.html#about"  id="contact_href_item1">简介</a> </div>' +
-                            '<div> <a href="'+ fatherHref + '/index.html#service" id="contact_href_item2">背景及问题</a> </div>' +
-                            // '<div> <a href="'+ fatherHref + '/index.html#portfolio" id="contact_href_item3">解决方案</a> </div>' +
-                            '<div><a href="'+ fatherHref + '/index.html#community" id="contact_href_item4">社区生态</a></div>' +
-                            '<div> <a href="'+ fatherHref + '/index.html#advance" id="contact_href_item5">竞争优势</a> </div>' +                           
+                '<div class="contact-content">' + 
+                    '<div class="privacy-terms">' +
+                        // '<a href="#top-slider" ><img src="'+ fatherHref + '/img/contact/logo.png" alt=""></a>' +
+                        '<div style="width: 60px;"><a href="'+ fatherHref + '/EGF_TERMS.pdf" style="color: #a8a8a8;font-size: 12px; border-bottom: 1px solid #c5c5c5;" target="_blank" >TERMS</a></div>' +
+                        '<div style="width: 60px;margin-top: 1vw;"><a href="'+ fatherHref + '/EGF_PRIVACY.pdf" style="color: #a8a8a8;font-size: 12px; border-bottom: 1px solid #c5c5c5;" target="_blank" >PRIVACY</a></div>' +
+                    '</div>' +
+
+                    '<div style="flex: 1;">' + 
+                        // 联系方式
+                        '<div class="content">' +
+                            // '<div class="contact-we" id="contact_we">Contact Us</div>' +
+                            // '<div class="contact-we" ></div>' +
+                            '<!--<div class="broadcast-group" >' +
+                                '<span id="contact_broadcast_group">Notice Address：</span>' +
+                                '<a class="contact-right-text" href="https://t.me/gamefundchannel"  target="_blank">https://t.me/gamefundchannel</a>' +
+                            '</div>  -->' +
+                            '<div class="chat-group" >' +
+                                // '<span id="contact_chat_group">Telegram：</span>' +
+                                '<a class="contact-right-text" href="https://t.me/eGamingFund"  target="_blank"><i class="fa fa-telegram" style="color:#86878F;font-size: 25px;"></i></a>' +
+                            '</div>'   +
+                            '<div class="contact-twitter" >' +
+                                // '<span id="contact_twitter">Twitter：</span>' +
+                                '<a class="contact-right-text" href="https://twitter.com/eGamingFund" target="_blank"><i class="fa fa-twitter" style="color:#86878F;font-size: 25px;"></i></a>' +
+                            '</div>' +
+                            '<div class="contact-github" >' +
+                                // '<span id="contact_github">Github：</span>' +
+                                '<a class="contact-right-text" href="https://github.com/eGamingFund" target="_blank"><i class="fa fa-github" style="color:#86878F;font-size: 25px;"></i></a>' +
+                            '</div>' +
+                            '<div class="mail-group" >' +
+                                // '<span id="contact_mail">Email：</span>' +
+                                '<a class="contact-right-text" href="mailto:info@egamingfund.org" target="_blank"><i class="fa fa-envelope-square" style="color:#86878F;font-size: 25px;"></i></a>' +
+                            '</div>' +   
                         '</div>' +
-                        '<div class="content-left-right" style=" flex: 60%;">' +
-                            '<div> <a href="'+ fatherHref + '/index.html#team" id="contact_href_item6">团队介绍</a> </div>' +
-                            '<div><a href="'+ fatherHref + '/bloglist.html" id="contact_href_item7">Blog</a></div>' +
-                            // '<div><a href="'+ fatherHref + '//reward/reward.html" id="contact_href_item8">Reward</a></div>' +
+                        // logo
+                        '<div class="content">' +
+                            '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center; margin-left: 1vw">' +
+                                '<img src="'+ fatherHref + '/img/logo2.png" width="28px" height="28px" style="margin-right: 10px;">' +
+                                '<div style="font-size: 18px; color: #fff">e<span style="color: #fe6501">G</span>aming<span style="color: #fe6501">F</span>und</div>' +
+                            '</a>' +
                         '</div>' +
                     '</div>' +
-                    '<div class="content-right">' +
-                        '<div class="contact-we" id="contact_we">Contact Us</div>' +
-                        '<!--<div class="broadcast-group">' +
-                            '<span id="contact_broadcast_group">Notice Address：</span>' +
-                            '<a class="contact-right-text" href="https://t.me/gamefundchannel"  target="_blank">https://t.me/gamefundchannel</a>' +
-                        '</div>  -->' +
-                        '<div class="chat-group">' +
-                            '<span id="contact_chat_group">Telegram：</span>' +
-                            '<a class="contact-right-text" href="https://t.me/gamefund"  target="_blank">https://t.me/gamefund</a>' +
-                        '</div>'   +
-                        '<div class="contact-twitter">' +
-                            '<span id="contact_twitter">Twitter：</span>' +
-                            '<a class="contact-right-text" href="https://twitter.com/gamefundchain" target="_blank">https://twitter.com/gamefundchain</a>' +
-                        '</div>' +
-                        '<div class="contact-github">' +
-                            '<span id="contact_github">Github：</span>' +
-                            '<a class="contact-right-text" href="https://github.com/gamefund" target="_blank">https://github.com/gamefund</a>' +
-                        '</div>' +
-                        '<div class="mail-group">' +
-                            '<span id="contact_mail">Email：</span>' +
-                            '<a class="contact-right-text" href="mailto:info@egamingfund.org" target="_blank">info@egamingfund.org</a>' +
-                        '</div>' +
-                    '</div>' +       
-                '</div>' +
-
-                '<div class="qr-code">' +
-                    '<!--<div class="broadcast">' +
-                        '<img src="'+ fatherHref + '/img/contact/broadcast.png" />' +
-                        '<div id="broadcast_group">Broadcast Group</div>' +
-                    '</div>-->' +
-                    '<div class="chat" >' +
-                        '<img src="'+ fatherHref + '/img/contact/chat.png" />' +
-                        '<div id="chat_group">Chat Group</div>' +
-                    '</div>' +         
-                '</div>' +       
+                    // 二维码
+                    '<div class="qr-code" style="flex: 1;">' +
+                        '<!--<div class="broadcast">' +
+                            '<img src="'+ fatherHref + '/img/contact/broadcast.png" />' +
+                            '<div id="broadcast_group">Broadcast Group</div>' +
+                        '</div>-->' +
+                        '<div class="chat" >' +
+                            '<img src="'+ fatherHref + '/img/contact/chat.jpg" />' +
+                            '<div id="chat_group">Chat Group</div>' +
+                        '</div>' +         
+                    '</div>' +     
+                '</div>' +    
             '</div>' +
           
           '</div>' +
@@ -127,6 +148,7 @@ var bottomText =
     '<!-- CONTACT END -->';
 
     $("body").append(bottomText);
+
 
 
     /**语言包  cn: 中文包；en：英文包；ja：日文包*/

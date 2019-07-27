@@ -23,7 +23,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   background-position: 50% 100%;
   color: white;
   font-size: 0.625em;
-  margin: 14vw 13vw;
+  margin: 10vw 13vw;
   /*height: 25vw;*/
   width: 40vw;
   min-width: 447px;
@@ -287,7 +287,7 @@ h3 {
 }
 @media only screen and (max-width: 1268px){
     #sequence{
-        margin: 8vw 13vw;
+        margin: 4vw 13vw;
     }
 }
 
@@ -371,7 +371,7 @@ h3 {
 }
 @media only screen and (max-width: 767px) {
   #top-slider .slider-content {
-        top: -140vw;
+        top: -160vw;
     }
 }
 @media only screen and (max-width: 468px) {
@@ -381,7 +381,7 @@ h3 {
     }
     #top-slider .slider-content .slider-text{
       font-size: 18px;
-      margin: 3vh 0px 6vh;
+      margin: 3vh 0px 3vh;
       text-align: center;
     }
 }

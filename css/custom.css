@@ -114,7 +114,7 @@
     }
     #menu {
 	    z-index: 11000;
-        border: 1px solid #1e1e1e;
+        /* border: 1px solid #1e1e1e; */
         margin: 0;
         position: fixed;
     }

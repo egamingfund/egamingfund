@@ -56,10 +56,10 @@
     }
     #about .about-title{
         /*font-size: 3.1vw;*/
-        font-size: 50px;
+        font-weight: bold;
+        font-size: 38px;
         color: #fff;
         text-align: center;
-        font-family: "Arial";
     }
     #about .container p{
         color: #d3d3d3;
@@ -94,6 +94,7 @@
         }
         #about .about-title{
             line-height: 50px;
+            font-size: 32px;
         }
         #about .about-img{
             margin-bottom: 8px;
@@ -170,13 +171,13 @@
     }
 
     #industry-status .container .industry-title{
-        font-size: 40px; 
+        font-size: 38px; 
         color: #fff; 
-        font-weight: 800;
+        font-weight: bold;
     }
      
     #industry-status .industry-status-img{
-        margin-bottom: 30px;
+        margin : 6vw 0 2vw;
     }
     #industry-status .industry-status-img img{
         /*margin: 0 4.5vw;*/
@@ -219,7 +220,7 @@
     }
 
     #industry-status .industry-status-intro{
-        width: 506px;
+        width: 520px;
         position: relative;
         top: 20%;
             /*margin-top: 10vw;*/
@@ -260,7 +261,7 @@
 -------------- */
     
     #service {
-        background-image: url(../img/service/bg01.jpg);
+        background-image: url(../img/service/bg01.png);
         background-size: 100% 100%;
 	    display: block;
         width: 100%;
@@ -268,7 +269,7 @@
         position: relative;
 	    z-index: 900;
 	    text-align: center;
-         height: 50vw;
+        height: 50vw;
     }
     #service2 {
         background: #343434;
@@ -281,14 +282,14 @@
 	    text-align: center;
     }
     #service .container .row .head{
-        margin: 8vw 0 1.4vw 0;
+        margin: 10vw  0 2vw 0;
     }
      #service .container .row .head .service-title{
-        color: #5b5b5b; 
-        font-weight: 800;
+        color: #fff; 
+        font-weight: bold;
     }
     #service .container .row .head .service-title div{
-        font-size: 40px; 
+        font-size: 36px; 
         display: inline-block;
     }
     
@@ -306,13 +307,16 @@
         font-size: 24px;        
 	}
     #service .service-col h4{
-        color: #363636;
+        color: #d3d3d3;
         font-size: 20px;
         font-weight: bold;
-        font-family: "Microsoft YaHei" ! important;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #service .service-col p{
-        color: #000;
+        color: #d3d3d3;
         font-size: 13px;
         padding: 0;
         margin: 5px 26px;
@@ -345,6 +349,11 @@
      #service .service{
          padding: 2.5vw 0 0 0;
      }
+     @media only screen and (max-width: 1268px){
+        #service .container .row .head .service-title div{
+           font-size: 32px;
+       }
+     }
      @media only screen and (max-width: 468px){
          #service .container .row .head .service-title{
             margin-top: 80px;
@@ -374,9 +383,9 @@
         margin: 8vw 0 2.4vw 0;
     }
     #portfolio .container .head .portfolio-title{
-        font-size: 40px; 
+        font-size: 36px; 
         color: #fff; 
-        font-weight: 800;
+        font-weight: bold;
     }
 
     #portfolio h1 {
@@ -435,8 +444,6 @@
         
         #service{
             height: initial;
-            /*background-size: 100%;*/
-            background: #fff;
         }
         
         #service .container .row .head img{
@@ -456,7 +463,18 @@
         }
         #price .container .row .head-title img{
             height: 50px;
-        }       
+        }    
+        #portfolio .container .head .portfolio-title{
+            font-size: 32px;
+        }   
+    }
+    @media only screen and (max-width: 1068px){
+        #service{
+            height: initial;
+            background: -o-linear-gradient(top, #9d0101, #6a0000);
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9d0101), to(#6a0000));
+            background: -moz-linear-gradient(top, #9d0101, #6a0000);
+        }
     }
     @media only screen and (max-width: 992px) {
         #portfolio .portfolio-item{
@@ -582,12 +600,17 @@
     }
      #team .container .row .head .team-title{
             color: #fff; 
-            font-weight: 800; 
+            font-weight: bold; 
     }
     #team .container .row .head .team-title div{
-            font-size: 40px;
+            font-size: 36px;
             display: inline-block;
         }
+    @media only screen and (max-width: 1268px){
+        #team .container .row .head .team-title div{
+            font-size: 32px;
+        }
+    }
     @media only screen and (max-width: 468px){
         #team .container .row .head .team-title{
             margin-top: 80px;
@@ -612,11 +635,23 @@
         max-width: 360px;
     }
     #team  .team-small-title{
-        font-size: 20px;
+        font-size: 36px;
         font-weight: bold;
         color: #fff;
-        margin: 60px 0 20px;
+        /* margin: 60px 0 20px; */
+        margin: 4vw 8vw;
     }
+    @media only screen and (max-width: 1268px){
+        #team  .team-small-title{
+            font-size: 32px;
+        }
+    }
+    @media only screen and (max-width: 468px){
+        #team  .team-small-title{
+            font-size: 32px;
+        }
+    }
+
     #team .team-support-content{
         font-size: 24px;
         line-height: 50px;
@@ -739,15 +774,21 @@
 }
 #community .head .community-title{        
     color: #5b5b5b; 
-    font-weight: 800;
+    font-weight: bold;
 }
 #community .head .community-title span{        
-    font-size: 40px; 
+    font-size: 36px; 
 }
 #community .community-img-title{
-    font-size: 20px;
+    font-size: 36px;
     font-weight: bold;
-    margin: 60px 20px 30px;
+    /* margin: 60px 20px 30px; */
+    margin: 4vw 8vw;
+}
+@media only screen and (max-width: 1268px){
+    #community .community-img-title{
+        font-size: 32px;
+    }
 }
 
 #community .community-img{
@@ -781,17 +822,17 @@
         text-align: left;
     }
     #community .content-right .item-content{
-        min-height: 7vw;
+        min-height: 6vw;
     }
     #community .content-left .first-content{
         margin-top: 7vw;
         height: 5.2vw;
     }
     #community .content-left .second-content{
-        margin-top: 4vw;
+        margin-top: 2vw;
     }
     #community .content-right .fourth-content{
-        margin-top: 1vw;
+        margin-top: 2vw;
     }
     #community .background-img .community-content .item-title{
         font-size: 16px;
@@ -872,9 +913,15 @@
     /*height: 49.5vw;*/
 }
 #community-video .community-video-title{
-    font-size: 20px;
+    font-size: 36px;
     font-weight: bold;
-    margin: 60px 20px 40px;
+    /* margin: 60px 20px 30px; */
+    margin: 4vw 8vw;
+}
+@media only screen and (max-width: 1268px){
+    #community-video .community-video-title{
+        font-size: 32px;
+    }
 }
 #community-video .video-content{
     width: 68%;
@@ -1051,10 +1098,10 @@
     }   
     #competitive .head .competitive-title{        
         color: #fff; 
-        font-weight: 800;
+        font-weight: bold;
     }
     #competitive .head .competitive-title span{
-        font-size: 40px; 
+        font-size: 36px; 
     }
 
     #advance .background-advance{
@@ -1110,6 +1157,10 @@
         #advance .background-advance{
               display: none;
           }
+
+        #competitive .head .competitive-title span{
+            font-size: 32px;
+        }
      }
 
      @media only screen and (max-width: 468px){
@@ -1158,14 +1209,13 @@
         font-weight: bold;
         color: #2e2e2e;
         margin-top: 8px;
-        /* font-family: "Microsoft YaHei"; */
     }
     #price  .container .row .head-title .price-title{
         color: #5b5b5b; 
-        font-weight: 800;
+        font-weight: bold;
     }
     #price  .container .row .head-title .price-title div{
-        font-size: 40px;
+        font-size: 36px;
         display: inline-block;
     }
 
@@ -1173,6 +1223,9 @@
         #price {
             height: initial;
             background-size: 100%;
+        }
+        #price .container .row .head-title .price-title div{
+            font-size: 32px;
         }
     }
     @media only screen and (min-width: 468px) {
@@ -1187,7 +1240,7 @@
             margin-top: 80px;
             margin-bottom: 40px;
         }
-         #price  .container .row .head-title .price-title div{
+        #price .container .row .head-title .price-title div{
             font-size: 32px;
         }
         #price .price-item{
@@ -1235,7 +1288,8 @@
 /* 9. Contact
 -------------- */
     #contact {
-        background-image: url(../img/contact/bg01.png);
+        /* background-image: url(../img/contact/bg01.png); */
+        background-color: #070707;
         background-size: 100% 100%;
 	    display: block;
         width: 100%;
@@ -1247,6 +1301,7 @@
     #contact .total-content{
         display: flex; 
         height: 100%;
+        align-items: center;
     }
     #contact .container .logo{
         flex: 25%; 
@@ -1254,18 +1309,31 @@
         line-height: 50px; 
         margin: 6vw 0 auto;
     }
-    #contact .container .logo img {
-        width: 15vw;
-        min-width: 200px;
-    }
     #contact .container .logo .dogLogo{
         width: 13vw;
         min-width: 168px;
     }
     #contact .container .content{
-        flex: 60%; 
-        display: flex; 
-        margin: 3vw 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 3vw;
+    }
+    #contact .container .content>div{
+        margin: 0 1vw;
+    }
+
+    #contact .container .contact-content{
+        flex: 2;
+        display: flex;
+        align-items: flex-start;
+    }
+    #contact .container .privacy-terms{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
     }
 
     #contact .container .content .content-left{
@@ -1307,8 +1375,6 @@
     }
 
     #contact .container .qr-code{
-        height: 7vw;
-        margin-top: 8vw;
         flex: 15%; 
         display: flex; 
         justify-content: space-around;
@@ -1333,18 +1399,24 @@
         }
         #contact .container .qr-code{
             flex: 20%;
+            margin: 3vw 0;
         }
         #contact .container .qr-code div img{
             width: 6vw;
         } 
 
         #contact .container .content{
-            margin: 3vw 2vw;
+            margin: 3vw 0;
+        }
+
+        #contact .container .privacy-terms{
+            margin: 3vw 0;
+            text-align: left;
         }
     }
     @media only screen and (max-width: 1068px){
         #contact{
-            background: #1d1d1e;
+            background: #070707;
         }
         #contact .total-content{
             display: block; 
@@ -1356,6 +1428,7 @@
             justify-content: space-around;
             height: initial;
             line-height: initial;
+            align-items: center;
         }
 
         #contact .container .content .content-left{
@@ -1405,15 +1478,28 @@
             line-height: 40px;       
         }
     }
-    @media only screen and (max-width: 468px){
+    @media only screen and (max-width: 568px){
         #contact .container .qr-code{
             margin: 50px auto 50px;
         }
         #contact .container .content{
-            display: block; 
-            margin: 3vw 10vw;
-            text-align: left;
+            justify-content: center;
+            margin: 8vw 0;
         }
+        #contact .container .content>div{
+            margin: 0 20px
+        }
+        #contact .container .contact-content{
+            display: block;
+        }
+        #contact .container .privacy-terms{
+            margin: 12vw 0;
+            text-align: center;
+        }
+        #contact .container .privacy-terms>div{
+            margin-bottom: 20px;
+        }
+
         #contact .container .content .content-left-left div,
         #contact .container .content .content-left-right div,
         #contact .container .content .content-right .contact-we{
@@ -1443,7 +1529,8 @@
 
         #contact .container .logo{
             display: block;
-            margin: 80px 10vw 0px;
+            margin: 60px 10vw;
+            
             line-height: 45px;
             text-align: left;
         }
@@ -1472,3 +1559,12 @@
     .head p {
 	    color: #fff;
     }
+
+
+
+@media only screen and (max-width: 1768px){
+    #storage_tip>div>span{
+        display: block;
+        margin: 10px;
+    }
+}

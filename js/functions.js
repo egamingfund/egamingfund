@@ -1,36 +1,28 @@
 
-//众筹时间倒计时
-var leftTimer = function(year, month, day, hour, minute, second){
-    var leftTime = (new Date(year, month-1, day, hour, minute, second)) - (new Date());//计算剩余毫秒数
-    var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10);//计算剩余天数
-    var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10);//计算剩余小时数
-    var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩分钟数
-    var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余秒数
-
-    days = checkTime(days).toString();
-    hours = checkTime(hours).toString();
-    minutes = checkTime(minutes).toString();
-    seconds = checkTime(seconds).toString();
-
-    $(".countdown-container .countdown-time .day div").eq(0).html(days.charAt(0));
-    $(".countdown-container .countdown-time .day div").eq(1).html(days.charAt(1));
-    $(".countdown-container .countdown-time .hour div").eq(0).html(hours.charAt(0));
-    $(".countdown-container .countdown-time .hour div").eq(1).html(hours.charAt(1));
-    $(".countdown-container .countdown-time .minute div").eq(0).html(minutes.charAt(0));
-    $(".countdown-container .countdown-time .minute div").eq(1).html(minutes.charAt(1));
-    $(".countdown-container .countdown-time .second div").eq(0).html(seconds.charAt(0));
-    $(".countdown-container .countdown-time .second div").eq(1).html(seconds.charAt(1));
-}
-var checkTime = function(i){
-    if(i < 10){
-        i = "0" + i;
+// 关闭网页前执行
+window.onbeforeunload = function() {
+    if(localStorage.getItem("isStorage") == "false"){
+        localStorage.clear();
     }
-    return i;
 }
+
 
 $(document).ready(function() {
 
+    $("#storage_tip").children("div").children("a").eq(0).bind('click', ()=> {
+        $("#storage_tip").hide();
+        localStorage.setItem("isStorage", "true");
+    });
+    $("#storage_tip").children("div").children("a").eq(1).bind('click', ()=> {
+        $("#storage_tip").hide();
+        localStorage.setItem("isStorage", "false");
+    });
+    if(localStorage.getItem("isStorage") == "true"){
+        $("#storage_tip").hide();
+    }
+
     var language = localStorage.getItem("language", language);
+    localStorage.setItem("language", 'en');
 
     //调用翻译的内容
     translation();
@@ -78,14 +70,14 @@ $(document).ready(function() {
         $("#community-video .video-content video").show();
         var language = localStorage.getItem("language");
         if(language == "cn"){
-            var text = '<source src="./img/community/gamefund.webm" type="video/webm" />' +
-                       '<source src="./img/community/gamefund.mp4" type="video/mp4" />' +     
-                       '<div id="video_tag_tip">您的浏览器不支持video标签</div>';
+            var text = '<source src="./img/community/egamingfund.webm" type="video/webm" />' +
+                       '<source src="./img/community/egamingfund.mp4" type="video/mp4" />' +     
+                       '<div id="video_tag_tip">unavailable video</div>';
             $("#community-video .video-content video").append(text);           
         }else{
-            var text = '<source src="./img/community/gamefund_en.webm" type="video/webm" />' +
-                       '<source src="./img/community/gamefund_en.mp4" type="video/mp4" />' +     
-                       '<div id="video_tag_tip">您的浏览器不支持video标签</div>';
+            var text = '<source src="./img/community/egamingfund_en.webm" type="video/webm" />' +
+                       '<source src="./img/community/egamingfund_en.mp4" type="video/mp4" />' +     
+                       '<div id="video_tag_tip">unavailable video/div>';
             $("#community-video .video-content video").append(text);
         }
 
@@ -99,59 +91,6 @@ $(document).ready(function() {
             $("#community-video .video-content .btn-video").show();
         }
     })
-
-
-    //众筹时间倒计时
-    var startTime = (new Date(2018, 5-1, 18, 11, 0, 0)) - (new Date());
-    var endTime = (new Date(2018, 6-1, 4, 11, 0, 0)) - (new Date());
-    if(startTime < 0 && endTime > 0){
-        $(".countdown-container").css("display", "flex");
-        setInterval("leftTimer(2018, 6, 4, 11, 0, 0)", 1000);
-
-        if(language == "cn"){
-            $("#countdown-time-text").html("距离eGamingFund原型展示版本上线还有");
-        }else{
-            $("#countdown-time-text").html("eGamingFund prototype display version will go live in :");
-        }
-
-        $(".countdown-container .countdown-time-endTime p").html("2018.6.4&nbsp&nbsp&nbsp11:00");
-    }else{
-        //原型版本
-        $(".version-container").show();
-        showProtoVer();
-    }
-
-    //原型版本
-    function showProtoVer(){
-        // if(language == "cn"){
-        //     $("#button-version div").html("原型展示版");
-        //     $("#version-content-text").html("原型展示版本仅供展示预览，非正式上线版本。");
-        //     $("#button-version").attr("href", "http://game.fund");
-        //     $("#button-version").attr("target", "_blank");
-        // }else{
-        //     $("#button-version div").html("Prototype display<br/> version");
-        //     $("#version-content-text").html("Prototype display version is not a formal online live version, just for display and preview.");
-            
-        //     $(".version-container .version-content .button-version>div").addClass("en-version").css({"line-height": "120%"});
-        //     $(".version-container .version-content .version-content-text").addClass("en-version");
-        //     $("#button-version").attr("href", "http://game.fund");
-        //     $("#button-version").attr("target", "_blank");
-        // }
-
-        if(language == "cn"){
-            $("#sequence-button-version span").html("eGamingFund 下载");
-            $("#sequence-button-version").attr("href", "http://game.fund");
-            $("#sequence_other-button-version span").html("eGamingFund 下载");
-            $("#sequence_other-button-version").attr("href", "http://game.fund");
-        }else{
-            $("#sequence-button-version span").html("Download eGamingFund");      //eGamingFund Download
-            $("#sequence-button-version").attr("href", "http://game.fund?language=en");
-            $("#sequence_other-button-version span").html("Download eGamingFund");      //eGamingFund Download
-            $("#sequence_other-button-version").attr("href", "http://game.fund?language=en");
-            $("#top-slider .slider-button .new-button-version").addClass("en-version");
-            $("#sequence .load-pdf-content .new-button-version").addClass("en-version");
-        }
-    }
         
 
     /*----------------------------------------------------*/
@@ -308,8 +247,21 @@ $(document).ready(function() {
             $("#sequence_item2_first_paper").html(cn.sequence_item2);
             $("#sequence_other_item2_first_paper").html(cn.sequence_item2);
 
+            $("#sequence_other_top_text1").html(cn.top_text1);
+            $("#sequence_other_top_text2").html(cn.top_text2);
+            $("#sequence_other_top_text3").html(cn.top_text3);
+            $("#sequence_other_top_text4").html(cn.top_text4);
+            $("#sequence_top_text1").html(cn.top_text1);
+            $("#sequence_top_text2").html(cn.top_text2);
+            $("#sequence_top_text3").html(cn.top_text3);
+            $("#sequence_top_text4").html(cn.top_text4);
+
             $("#sequence_other_item1").html(cn.sequence_item1);
             $("#sequence_other_item2_fourth").html(cn.sequence_item2_fourth);
+
+            // #abstract
+            $("#abstract_item1").html(cn.abstract_item1);
+            $("#abstract_item2").html(cn.abstract_item2);
             
             //#industry_status
             $("#industry_status_feature").html(cn.industry_status_feature);
@@ -491,8 +443,22 @@ $(document).ready(function() {
             $("#sequence_item2_first_paper").html(en.sequence_item2);
             $("#sequence_other_item2_first_paper").html(en.sequence_item2);
 
+            $("#sequence_other_top_text1").html(en.top_text1);
+            $("#sequence_other_top_text2").html(en.top_text2);
+            $("#sequence_other_top_text3").html(en.top_text3);
+            $("#sequence_other_top_text4").html(en.top_text4);
+            $("#sequence_top_text1").html(en.top_text1);
+            $("#sequence_top_text2").html(en.top_text2);
+            $("#sequence_top_text3").html(en.top_text3);
+            $("#sequence_top_text4").html(en.top_text4);
+
             $("#sequence_other_item1").html(en.sequence_item1);
             $("#sequence_other_item2_fourth").html(en.sequence_item2_fourth);
+
+            // #abstract
+            $("#abstract_item1").html(en.abstract_item1);
+            $("#abstract_item2").html(en.abstract_item2);
+
             //#industry_status
             $("#industry_status_feature").html(en.industry_status_feature);
             $("#industry_status_item1").html(en.industry_status_item1);
@@ -672,9 +638,23 @@ $(document).ready(function() {
             $("#sequence_item2_fourth").html(en.sequence_item2_fourth);
             $("#sequence_item2_first_paper").html(en.sequence_item2);
             $("#sequence_other_item2_first_paper").html(en.sequence_item2);
+
+            $("#sequence_other_top_text1").html(en.top_text1);
+            $("#sequence_other_top_text2").html(en.top_text2);
+            $("#sequence_other_top_text3").html(en.top_text3);
+            $("#sequence_other_top_text4").html(en.top_text4);
+            $("#sequence_top_text1").html(en.top_text1);
+            $("#sequence_top_text2").html(en.top_text2);
+            $("#sequence_top_text3").html(en.top_text3);
+            $("#sequence_top_text4").html(en.top_text4);
             
             $("#sequence_other_item1").html(en.sequence_item1);
             $("#sequence_other_item2_fourth").html(en.sequence_item2_fourth);
+
+            // #abstract
+            $("#abstract_item1").html(en.abstract_item1);
+            $("#abstract_item2").html(en.abstract_item2);
+            
             //#industry_status
             $("#industry_status_feature").html(en.industry_status_feature);
             $("#industry_status_item1").html(en.industry_status_item1);
