@@ -127,7 +127,7 @@ var cn = {
     team_title3: 'SPONSORS',
 
     team_name_item3: 'Oliver Wu: Founder of eGamingFund',
-    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu previously ran the Singapore Interactive Media Center, as well as the heading Development and Operations of the virtual reality world of the Youth Olympic Games. He has also been the overseas President of ZQgame.',
+    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
@@ -305,7 +305,7 @@ var en = {
     team_title3: 'SPONSORS',
 
     team_name_item3: 'Oliver Wu: Founder of eGamingFund',
-    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu previously ran the Singapore Interactive Media Center, as well as the heading Development and Operations of the virtual reality world of the Youth Olympic Games. He has also been the overseas President of ZQgame.',
+    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
