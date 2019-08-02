@@ -8,7 +8,7 @@ window.onbeforeunload = function() {
 
 
 $(document).ready(function() {
-
+    /** 点击底部的授权按钮 */
     $("#storage_tip").children("div").children("a").eq(0).bind('click', ()=> {
         $("#storage_tip").hide();
         localStorage.setItem("isStorage", "true");
@@ -20,6 +20,22 @@ $(document).ready(function() {
     if(localStorage.getItem("isStorage") == "true"){
         $("#storage_tip").hide();
     }
+
+    /** contact 悬停事件 */
+    $("#contact .container .content>div>a").unbind("click").bind({
+        mouseenter:function(){
+            $(this).children("i").css("color", '#BF0A0A');
+        },
+        mouseleave:function(){
+            $(this).children("i").css("color", '#86878F');
+        },
+        click:function(event){
+            event.stopPropagation();
+        }
+    });
+
+    /** CEO样式 */
+    $("#team_role_item19").css({'width': $("#team .team-item").width() + 30, 'margin-left': -35,});
 
     var language = localStorage.getItem("language", language);
     localStorage.setItem("language", 'en');
@@ -151,11 +167,7 @@ $(document).ready(function() {
         if(language == "en"){
             $("#portfolio .overlay p ").css("line-height", "18px");
             $("#portfolio .overlay  #Grid_title_item11").css("margin", "0");
-            
-            $("#competitive .background-img .competitive-content .item-content .item-title").css("font-size", "16px");
-            $("#competitive .background-img .competitive-content .item-content .item-title").css("margin-bottom", "0");
-            $("#competitive .background-img .competitive-content .fifth-content .item-title").css("margin-top", "0");
-            $("#competitive .background-img .competitive-content #competitive_title_item6").css("line-height", "20px");
+            // $("#competitive .background-img .competitive-content .fourth-content .item-text").css("line-height", "130%");
             // $("#industry-status .container .prominent-characteristic").css("margin-top", "5vw");
             $("#industry-status .container .special-info div span").css("line-height", "20px");
             $("#industry-status .industry-status-intro").css("top", "12%");
@@ -172,27 +184,6 @@ $(document).ready(function() {
             if($(window).width() < 1400){
                 $("#service .service-col h4").css({"line-height":"20px", "padding":"0"});
             }
-         
-        }else if(language == "ja"){          
-            $("#portfolio #Grid .service-col").css("padding-top", "25px");
-            $("#portfolio .overlay .icon-mobile").css("height", "55px");
-            $("#industry-status .industry-status-intro").css("top", "12%");     
-            $("#competitive .background-img .competitive-content #competitive_title_item6").css({"line-height": "20px", "margin-bottom": "0px"});//competitive_title_item3
-            $("#competitive .background-img .competitive-content #competitive_title_item3").css({"line-height": "20px", "margin-bottom": "0px"});
-
-
-            if($(window).width() > 1250){
-                $("#service .container .service .service-col").css("padding", "0");
-                $("#service .service-col p").css("line-height", "22px");
-                $("#service .service-col h4").css({"margin": "0", "padding":"0"});
-            }
-            if($(window).width() < 475){
-                $("#sequence_other_item2_fourth").css({"position": "absolute", "letter-spacing": "-1px", "font-size": "15px"});
-            }
-            if($(window).width() < 375){
-                $("#sequence_other_item2_fourth").css({"position": "absolute", "letter-spacing": "-2px", "font-size": "15px"});
-            }
-            $("#sequence_item2_fourth").css({"position": "absolute"});
         }
     })
 
@@ -218,19 +209,6 @@ $(document).ready(function() {
                 $("#service .service-col h4").css({"line-height":"inherit", "padding":"10px 0px"});
             }
 
-        }else if(language == "ja"){
-            if($(window).width() > 1250){
-                $("#service .container .service .service-col").css("padding", "0");
-                $("#service .service-col p").css("line-height", "22px");
-                $("#service .service-col h4").css({"margin": "0", "padding":"0"});
-            }else{
-                $("#service .container .service .service-col").css("padding", "30px 10px");
-            }
-            if($(window).width() < 375){
-                $("#sequence_other_item2_fourth").css({"position": "absolute", "letter-spacing": "-2px", "font-size": "15px"});
-            }else{
-                $("#sequence_other_item2_fourth").css({"position": "block", "letter-spacing": "-1px", "font-size": "16px"})
-            }
         }
     })
 
@@ -324,30 +302,18 @@ $(document).ready(function() {
             $("#competitive_title1").html(cn.competitive_title1);
             $("#competitive_title2").html(cn.competitive_title2);
 
-            $("#competitive_title_item1").html(cn.competitive_title_item1);
             $("#competitive_text_item1").html(cn.competitive_text_item1);
-            $("#competitive_title_item2").html(cn.competitive_title_item2);
             $("#competitive_text_item2").html(cn.competitive_text_item2);
-            $("#competitive_title_item3").html(cn.competitive_title_item3);
             $("#competitive_text_item3").html(cn.competitive_text_item3);
-            $("#competitive_title_item4").html(cn.competitive_title_item4);
             $("#competitive_text_item4").html(cn.competitive_text_item4);
-            $("#competitive_title_item5").html(cn.competitive_title_item5);
             $("#competitive_text_item5").html(cn.competitive_text_item5);
-            $("#competitive_title_item6").html(cn.competitive_title_item6);
             $("#competitive_text_item6").html(cn.competitive_text_item6);
 
-            $("#competitive_other_title_item1").html(cn.competitive_title_item1);
             $("#competitive_other_text_item1").html(cn.competitive_text_item1);
-            $("#competitive_other_title_item2").html(cn.competitive_title_item2);
             $("#competitive_other_text_item2").html(cn.competitive_text_item2);
-            $("#competitive_other_title_item3").html(cn.competitive_title_item3);
             $("#competitive_other_text_item3").html(cn.competitive_text_item3);
-            $("#competitive_other_title_item4").html(cn.competitive_title_item4);
             $("#competitive_other_text_item4").html(cn.competitive_text_item4);
-            $("#competitive_other_title_item5").html(cn.competitive_title_item5);
             $("#competitive_other_text_item5").html(cn.competitive_text_item5);
-            $("#competitive_other_title_item6").html(cn.competitive_title_item6);
             $("#competitive_other_text_item6").html(cn.competitive_text_item6);
             //price_title
             $("#price_title1").html(cn.price_title1);
@@ -379,6 +345,7 @@ $(document).ready(function() {
             // $("#team_name_item2").html(cn.team_name_item2);
             // $("#team_text_item2").html(cn.team_text_item2);
             $("#team_name_item3").html(cn.team_name_item3);
+            $("#team_role_item3").html(cn.team_role_item3);
             $("#team_text_item3").html(cn.team_text_item3);
             // $("#team_name_item4").html(cn.team_name_item4);
             // $("#team_text_item4").html(cn.team_text_item4);
@@ -386,6 +353,7 @@ $(document).ready(function() {
             $("#team_name_item5").html(cn.team_name_item5);
             $("#team_text_item5").html(cn.team_text_item5);
             $("#team_name_item6").html(cn.team_name_item6);
+            $("#team_role_item6").html(cn.team_role_item6);
             $("#team_text_item6").html(cn.team_text_item6);
             // $("#team_name_item7").html(cn.team_name_item7);
             // $("#team_text_item7").html(cn.team_text_item7);
@@ -405,6 +373,7 @@ $(document).ready(function() {
             $("#team_name_item18").html(cn.team_name_item18);
             $("#team_text_item18").html(cn.team_text_item18);
             $("#team_name_item19").html(cn.team_name_item19);
+            $("#team_role_item19").html(cn.team_role_item19);
             $("#team_text_item19").html(cn.team_text_item19);
             
             $("#team_support_item1").html(cn.team_support_item1);
@@ -520,30 +489,18 @@ $(document).ready(function() {
             $("#competitive_title1").html(en.competitive_title1);
             $("#competitive_title2").html(en.competitive_title2);
 
-            $("#competitive_title_item1").html(en.competitive_title_item1);
             $("#competitive_text_item1").html(en.competitive_text_item1);
-            $("#competitive_title_item2").html(en.competitive_title_item2);
             $("#competitive_text_item2").html(en.competitive_text_item2);
-            $("#competitive_title_item3").html(en.competitive_title_item3);
             $("#competitive_text_item3").html(en.competitive_text_item3);
-            $("#competitive_title_item4").html(en.competitive_title_item4);
             $("#competitive_text_item4").html(en.competitive_text_item4);
-            $("#competitive_title_item5").html(en.competitive_title_item5);
             $("#competitive_text_item5").html(en.competitive_text_item5);
-            $("#competitive_title_item6").html(en.competitive_title_item6);
             $("#competitive_text_item6").html(en.competitive_text_item6);
 
-            $("#competitive_other_title_item1").html(en.competitive_title_item1);
             $("#competitive_other_text_item1").html(en.competitive_text_item1);
-            $("#competitive_other_title_item2").html(en.competitive_title_item2);
             $("#competitive_other_text_item2").html(en.competitive_text_item2);
-            $("#competitive_other_title_item3").html(en.competitive_title_item3);
             $("#competitive_other_text_item3").html(en.competitive_text_item3);
-            $("#competitive_other_title_item4").html(en.competitive_title_item4);
             $("#competitive_other_text_item4").html(en.competitive_text_item4);
-            $("#competitive_other_title_item5").html(en.competitive_title_item5);
             $("#competitive_other_text_item5").html(en.competitive_text_item5);
-            $("#competitive_other_title_item6").html(en.competitive_title_item6);
             $("#competitive_other_text_item6").html(en.competitive_text_item6);
             //price_title
             $("#price_title1").html(en.price_title1);
@@ -575,6 +532,7 @@ $(document).ready(function() {
             // $("#team_name_item2").html(en.team_name_item2);
             // $("#team_text_item2").html(en.team_text_item2);
             $("#team_name_item3").html(en.team_name_item3);
+            $("#team_role_item3").html(en.team_role_item3);
             $("#team_text_item3").html(en.team_text_item3);
             // $("#team_name_item4").html(en.team_name_item4);
             // $("#team_text_item4").html(en.team_text_item4);
@@ -582,6 +540,7 @@ $(document).ready(function() {
             $("#team_name_item5").html(en.team_name_item5);
             $("#team_text_item5").html(en.team_text_item5);
             $("#team_name_item6").html(en.team_name_item6);
+            $("#team_role_item6").html(en.team_role_item6);
             $("#team_text_item6").html(en.team_text_item6);
             // $("#team_name_item7").html(en.team_name_item7);
             // $("#team_text_item7").html(en.team_text_item7);
@@ -601,6 +560,7 @@ $(document).ready(function() {
             $("#team_name_item18").html(en.team_name_item18);
             $("#team_text_item18").html(en.team_text_item18);
             $("#team_name_item19").html(en.team_name_item19);
+            $("#team_role_item19").html(en.team_role_item19);
             $("#team_text_item19").html(en.team_text_item19);
 
             $("#team_support_item1").html(en.team_support_item1);
@@ -716,30 +676,18 @@ $(document).ready(function() {
             $("#competitive_title1").html(en.competitive_title1);
             $("#competitive_title2").html(en.competitive_title2);
 
-            $("#competitive_title_item1").html(en.competitive_title_item1);
             $("#competitive_text_item1").html(en.competitive_text_item1);
-            $("#competitive_title_item2").html(en.competitive_title_item2);
             $("#competitive_text_item2").html(en.competitive_text_item2);
-            $("#competitive_title_item3").html(en.competitive_title_item3);
             $("#competitive_text_item3").html(en.competitive_text_item3);
-            $("#competitive_title_item4").html(en.competitive_title_item4);
             $("#competitive_text_item4").html(en.competitive_text_item4);
-            $("#competitive_title_item5").html(en.competitive_title_item5);
             $("#competitive_text_item5").html(en.competitive_text_item5);
-            $("#competitive_title_item6").html(en.competitive_title_item6);
             $("#competitive_text_item6").html(en.competitive_text_item6);
 
-            $("#competitive_other_title_item1").html(en.competitive_title_item1);
             $("#competitive_other_text_item1").html(en.competitive_text_item1);
-            $("#competitive_other_title_item2").html(en.competitive_title_item2);
             $("#competitive_other_text_item2").html(en.competitive_text_item2);
-            $("#competitive_other_title_item3").html(en.competitive_title_item3);
             $("#competitive_other_text_item3").html(en.competitive_text_item3);
-            $("#competitive_other_title_item4").html(en.competitive_title_item4);
             $("#competitive_other_text_item4").html(en.competitive_text_item4);
-            $("#competitive_other_title_item5").html(en.competitive_title_item5);
             $("#competitive_other_text_item5").html(en.competitive_text_item5);
-            $("#competitive_other_title_item6").html(en.competitive_title_item6);
             $("#competitive_other_text_item6").html(en.competitive_text_item6);
             //price_title
             $("#price_title1").html(en.price_title1);
@@ -771,6 +719,7 @@ $(document).ready(function() {
             // $("#team_name_item2").html(en.team_name_item2);
             // $("#team_text_item2").html(en.team_text_item2);
             $("#team_name_item3").html(en.team_name_item3);
+            $("#team_role_item3").html(en.team_role_item3);
             $("#team_text_item3").html(en.team_text_item3);
             // $("#team_name_item4").html(en.team_name_item4);
             // $("#team_text_item4").html(en.team_text_item4);
@@ -778,6 +727,7 @@ $(document).ready(function() {
             $("#team_name_item5").html(en.team_name_item5);
             $("#team_text_item5").html(en.team_text_item5);
             $("#team_name_item6").html(en.team_name_item6);
+            $("#team_role_item6").html(en.team_role_item6);
             $("#team_text_item6").html(en.team_text_item6);
             // $("#team_name_item7").html(en.team_name_item7);
             // $("#team_text_item7").html(en.team_text_item7);
@@ -797,6 +747,7 @@ $(document).ready(function() {
             $("#team_name_item18").html(en.team_name_item18);
             $("#team_text_item18").html(en.team_text_item18);
             $("#team_name_item19").html(en.team_name_item19);
+            $("#team_role_item19").html(en.team_role_item19);
             $("#team_text_item19").html(en.team_text_item19);
 
             $("#team_support_item1").html(en.team_support_item1);

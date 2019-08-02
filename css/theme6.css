@@ -578,14 +578,15 @@
         text-align: center;
     }
     #team .team-item div{
-            margin: 0px 10px;
-            padding: 30px 10px;
+        margin: 0px 10px;
+        padding: 30px 10px;
     }
     #team .team-item .team-member p{
         /*padding: 10px;*/
         color: #c0c0c0;
         font-size: 12px;
         line-height: 24px;
+        margin-top: 20px;
     }
     #team .team-item .team-member .name{
         font-size: 16px;
@@ -1033,16 +1034,12 @@
         height: 22%;
         position: relative;
         padding: 5px 8px;
-    }
-    #competitive .background-img .competitive-content .item-content .item-title{
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
     }
     #competitive .background-img .competitive-content .item-content .item-text{
-        color: #d3d3d3;
-        font-size: 13px;
+        color: #fff;
+        font-size: 15px;
     }
     #competitive .background-img .competitive-content .item-content .item-text span{
         color: #feb201;
@@ -1078,18 +1075,12 @@
 
     #competitive .background-img .competitive-content .first-content .item-text,
     #competitive .background-img .competitive-content .fourth-content .item-text,
-    #competitive .background-img .competitive-content .third-content .item-text,
-    #competitive .background-img .competitive-content .first-content .item-title,
-    #competitive .background-img .competitive-content .fourth-content .item-title,
-    #competitive .background-img .competitive-content .third-content .item-title{
+    #competitive .background-img .competitive-content .third-content .item-text{
         text-align: right;
     }
     #competitive .background-img .competitive-content .second-content .item-text,
     #competitive .background-img .competitive-content .sixth-content .item-text,
-    #competitive .background-img .competitive-content .fifth-content .item-text,
-    #competitive .background-img .competitive-content .second-content .item-title,
-    #competitive .background-img .competitive-content .sixth-content .item-title,
-    #competitive .background-img .competitive-content .fifth-content .item-title{
+    #competitive .background-img .competitive-content .fifth-content .item-text{
         text-align: left;
     }
 
@@ -1140,16 +1131,12 @@
             width: 382px;
             margin: auto;
             padding: 5px 10px;
-        }
-        #competitive .container .other-container .other-container-content .item-title{
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
         }
         #competitive .container .other-container .other-container-content .item-text{
-            color: #d3d3d3;
-            font-size: 13px;
+            color: #fff;
+            font-size: 14px;
         }
         #competitive .container .other-container .other-container-content .item-text span{
             color: #feb201;
@@ -1327,12 +1314,13 @@
         flex: 2;
         display: flex;
         align-items: flex-start;
+        padding: 10px;
     }
     #contact .container .privacy-terms{
-        flex: 2;
+        flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
     }
 
@@ -1377,10 +1365,9 @@
     #contact .container .qr-code{
         flex: 15%; 
         display: flex; 
-        justify-content: space-around;
+        justify-content: flex-end;
     }
     #contact .container .qr-code div{
-        flex: 1;
         text-align: center;
     }
     #contact .container .qr-code div img{
@@ -1478,9 +1465,10 @@
             line-height: 40px;       
         }
     }
-    @media only screen and (max-width: 568px){
+    @media only screen and (max-width: 598px){
         #contact .container .qr-code{
             margin: 50px auto 50px;
+            justify-content: center;
         }
         #contact .container .content{
             justify-content: center;
@@ -1495,6 +1483,7 @@
         #contact .container .privacy-terms{
             margin: 12vw 0;
             text-align: center;
+            align-items: center;
         }
         #contact .container .privacy-terms>div{
             margin-bottom: 20px;

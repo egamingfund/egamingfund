@@ -84,22 +84,15 @@ var cn = {
     Grid_title_item12: 'Trustable Database ',
     Grid_text_item12: 'Control click farming behavior through coindays consumption, the history score, behavior, develop historical track of works, and the commenting behavior of critics will branded in the blockchain by smart contract, become a reputation database that <span>traceability but can not be tampered with</span>.',
 
-
     //#competitive
-    competitive_title1: 'COMPETITIVE',
-    competitive_title2: '&nbspADVANTAGES',
-    competitive_title_item1: 'Sign the High Revenue Products',
-    competitive_text_item1: 'Sign the product with <span>billion revenue</span>. In the beginning, the community has <span>more than ten</span> commercial mature game work with highly commercial profits.',
-    competitive_title_item2: 'Industry Resources',
-    competitive_text_item2: 'Richly cultivating gaming industry and owning professional experience <span>more than ten years</span>, we have game industry resource, experience and internet contacts.',
-    competitive_title_item3: 'Click to play HTML5 2.0',
-    competitive_text_item3: '<span>Converts existing</span> high quality games to achieve "free-installation, free-download". The <span>new generation</span> of unlimited data, high-speed 4G and 5G, we build the <span>new trend</span> of game platform.',
-    competitive_title_item4: 'High-class gaming development engine',
-    competitive_text_item4: 'High-class gaming development engine: <span>eGamingFund Creator</span>',
-    competitive_title_item5: 'Mature Live Broadcast Software System',
-    competitive_text_item5: 'Live games, greatly improving the community activity and user stickiness.',
-    competitive_title_item6: 'Smart Contracts Graphical Free-programming Tool',
-    competitive_text_item6: '<span>programming-free</span> smart contracts programming tool AISC, return the convenience of tradition that write contract by words.',
+    competitive_title1: 'eGamingFund',
+    competitive_title2: '&nbspAdvantages',
+    competitive_text_item1: 'The more the GFG token is used throughout the community, the more the demand for GFG tokens increases - so the more the value of GFG appreciates',
+    competitive_text_item2: 'eGaming crowdfunding: community members can support the cost of game development using GFG, and those funders will receive GFG returns from any success of the game',
+    competitive_text_item3: 'Our collective experience in eGaming, online gaming and the blockchain industry over the last decade has led to the creation of a network of first-class industry connections',
+    competitive_text_item4: 'eGamingFund Creator games are all HTML5 optimised – so any games created can be played on whichever device you choose (mobile, tablet or desktop)',
+    competitive_text_item5: 'The best games: eGamingFund provides access to a huge number of fantastic games for players of all levels',
+    competitive_text_item6: 'Gaming development software for all: we built eGamingFundCreator, the software-development environment, designed for any game lover',
 
     //#price
     price_title1: 'Products',
@@ -123,16 +116,20 @@ var cn = {
     team_title: 'Team',
     team_title_intro: '&nbspIntroduce',
     team_title1: 'THE MAIN TEAM',
-    team_title2: 'CONSULTANTS',
+    team_title2: 'ADVISORS',
     team_title3: 'SPONSORS',
 
-    team_name_item3: 'Oliver Wu: Founder of eGamingFund',
+    team_name_item3: 'Oliver Wu',
+    team_role_item3: 'Founder of eGamingFund',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
+    
     team_name_item6: 'Frank Liu',
+    team_role_item6: 'CTO',
     team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
+    
     team_name_item9: 'Li Chong',
     team_text_item9: 'Li Chong is a eGamingFund angel investor. He is also a backer of DL Capital and co-founder of PPTV. His main focus is mobile internet, blockchain, Bubi blockchain, SandiJianke, Boqi, P2 joint office and a large number of current ventures.',
     team_name_item17: 'John Caldwell',
@@ -140,8 +137,9 @@ var cn = {
     team_name_item18: 'Duncan Cameron',
     team_text_item18: 'Duncan has led some of the most ambitious technical projects in the online gambling world. While at PokerStars, Duncan managed the building and launch of the PokerStars Mobile App – PS Mobile – which was responsible for the company receiving eGaming Review’s ‘Mobile Operator of the Year’ award. To this day, PS Mobile is considered the gold standard of online poker mobile apps. Duncan also managed from concept and executed one of the leading Business Intelligence back-end information reporting systems in the gambling business, known as ‘BORIS’.',
 
-    team_name_item19: 'Gareth George McIntosh: CEO (Europe, Latin America and USA)',
-    team_text_item19:'A crypto enthusiast with over 15 years’ experience in the online poker industry, George was recently the Managing director of GreySnow Poker. Prior to this, he worked at PokerStars for a number of years in roles starting as the North America Marketing Manager. He then went on to successfully launch the PokerStars Portugal site in this newly regulated market. His field of expertise lies in digital marketing, and the strategizing and execution of marketing campaigns. A keen snowboarder, he currently resides in Malta.',
+    team_name_item19: 'Gareth George McIntosh',
+    team_role_item19: 'CEO (Europe, Latin America and USA)',
+    team_text_item19:'A crypto enthusiast with over 15 years’ experience in the online poker industry, George was recently the Managing director of GreySnow Poker. Prior to this, he worked at PokerStars for a number of years, starting as the North America Marketing Manager. He then went on to successfully launch the PokerStars Portugal site in this newly regulated market. His field of expertise lies in digital marketing, and the strategizing and execution of marketing campaigns. A keen snowboarder, he currently resides in Malta.',
 
     //#community
     community_title1: 'Community ',
@@ -264,20 +262,14 @@ var en = {
 
 
     //#competitive
-    competitive_title1: 'COMPETITIVE',
-    competitive_title2: '&nbspADVANTAGES',
-    competitive_title_item1: 'Sign the High Revenue Products',
-    competitive_text_item1: 'Sign the product with <span>billion revenue</span>. In the beginning, the community has <span>more than ten</span> commercial mature game work with highly commercial profits.',
-    competitive_title_item2: 'Industry Resources',
-    competitive_text_item2: 'Richly cultivating gaming industry and owning professional experience <span>more than ten years</span>, we have game industry resource, experience and internet contacts.',
-    competitive_title_item3: 'Click to play HTML5 2.0',
-    competitive_text_item3: '<span>Converts existing</span> high quality games to achieve "free-installation, free-download". The <span>new generation</span> of unlimited data, high-speed 4G and 5G, we build the <span>new trend</span> of game platform.',
-    competitive_title_item4: 'High-class gaming development engine',
-    competitive_text_item4: 'High-class gaming development engine: <span>eGamingFund Creator</span>',
-    competitive_title_item5: 'Mature Live Broadcast Software System',
-    competitive_text_item5: 'Live games, greatly improving the community activity and user stickiness.',
-    competitive_title_item6: 'Smart Contracts Graphical Free-programming Tool',
-    competitive_text_item6: '<span>programming-free</span> smart contracts programming tool AISC, return the convenience of tradition that write contract by words.',
+    competitive_title1: 'eGamingFund',
+    competitive_title2: '&nbspAdvantages',
+    competitive_text_item1: 'The more the GFG token is used throughout the community, the more the demand for GFG tokens increases - so the more the value of GFG appreciates',
+    competitive_text_item2: 'eGaming crowdfunding: community members can support the cost of game development using GFG, and those funders will receive GFG returns from any success of the game',
+    competitive_text_item3: 'Our collective experience in eGaming, online gaming and the blockchain industry over the last decade has led to the creation of a network of first-class industry connections',
+    competitive_text_item4: 'eGamingFund Creator games are all HTML5 optimised – so any games created can be played on whichever device you choose (mobile, tablet or desktop)',
+    competitive_text_item5: 'The best games: eGamingFund provides access to a huge number of fantastic games for players of all levels',
+    competitive_text_item6: 'Gaming development software for all: we built eGamingFundCreator, the software-development environment, designed for any game lover',
 
     //#price
     price_title1: 'Products',
@@ -301,16 +293,20 @@ var en = {
     team_title: 'Team',
     team_title_intro: '&nbspIntroduce',
     team_title1: 'THE MAIN TEAM',
-    team_title2: 'CONSULTANTS',
+    team_title2: 'ADVISORS',
     team_title3: 'SPONSORS',
 
-    team_name_item3: 'Oliver Wu: Founder of eGamingFund',
+    team_name_item3: 'Oliver Wu',
+    team_role_item3: 'Founder of eGamingFund',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
+    
     team_name_item6: 'Frank Liu',
+    team_role_item6: 'CTO',
     team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
+    
     team_name_item9: 'Li Chong',
     team_text_item9: 'Li Chong is a eGamingFund angel investor. He is also a backer of DL Capital and co-founder of PPTV. His main focus is mobile internet, blockchain, Bubi blockchain, SandiJianke, Boqi, P2 joint office and a large number of current ventures.',
     team_name_item17: 'John Caldwell',
@@ -318,8 +314,9 @@ var en = {
     team_name_item18: 'Duncan Cameron',
     team_text_item18: 'Duncan has led some of the most ambitious technical projects in the online gambling world. While at PokerStars, Duncan managed the building and launch of the PokerStars Mobile App – PS Mobile – which was responsible for the company receiving eGaming Review’s ‘Mobile Operator of the Year’ award. To this day, PS Mobile is considered the gold standard of online poker mobile apps. Duncan also managed from concept and executed one of the leading Business Intelligence back-end information reporting systems in the gambling business, known as ‘BORIS’.',
 
-    team_name_item19: 'Gareth George McIntosh: CEO (Europe, Latin America and USA)',
-    team_text_item19:'A crypto enthusiast with over 15 years’ experience in the online poker industry, George was recently the Managing director of GreySnow Poker. Prior to this, he worked at PokerStars for a number of years in roles starting as the North America Marketing Manager. He then went on to successfully launch the PokerStars Portugal site in this newly regulated market. His field of expertise lies in digital marketing, and the strategizing and execution of marketing campaigns. A keen snowboarder, he currently resides in Malta.',
+    team_name_item19: 'Gareth George McIntosh',
+    team_role_item19: 'CEO (Europe, Latin America and USA)',
+    team_text_item19:'A crypto enthusiast with over 15 years’ experience in the online poker industry, George was recently the Managing director of GreySnow Poker. Prior to this, he worked at PokerStars for a number of years, starting as the North America Marketing Manager. He then went on to successfully launch the PokerStars Portugal site in this newly regulated market. His field of expertise lies in digital marketing, and the strategizing and execution of marketing campaigns. A keen snowboarder, he currently resides in Malta.',
 
     //#community
     community_title1: 'Community ',

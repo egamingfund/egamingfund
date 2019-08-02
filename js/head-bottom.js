@@ -63,13 +63,13 @@ $("body").prepend(headerText);
 var bottomText =
     '<!-- CONTACT -->' +
     '<div id="contact">' +
-      '<div class="container" style="width: 90vw; height: 100%;">' +
+      '<div class="container" style="height: 100%;">' +
         '<div class="row" style="height: 100%;">' +
         
           '<div class="center-block" style="height: 100%;">' +
           
             '<div class="col-lg-12 col-md-12 col-xs-12 total-content">' +
-                '<div style="flex: 1">' +
+                // '<div style="flex: 1">' +
                     // '<div class="content-left-left" style=" flex: 40%;">' +
                     //     '<div> <a href="'+ fatherHref + '/index.html#about"  id="contact_href_item1">简介</a> </div>' +
                     //     '<div> <a href="'+ fatherHref + '/index.html#service" id="contact_href_item2">背景及问题</a> </div>' +
@@ -82,7 +82,7 @@ var bottomText =
                     //     '<div><a href="'+ fatherHref + '/bloglist.html" id="contact_href_item7">Blog</a></div>' +
                     //     // '<div><a href="'+ fatherHref + '//reward/reward.html" id="contact_href_item8">Reward</a></div>' +
                     // '</div>' +
-                '</div>' +
+                // '</div>' +
                 
 
                 '<div class="contact-content">' + 
@@ -90,6 +90,9 @@ var bottomText =
                         // '<a href="#top-slider" ><img src="'+ fatherHref + '/img/contact/logo.png" alt=""></a>' +
                         '<div style="width: 60px;"><a href="'+ fatherHref + '/EGF_TERMS.pdf" style="color: #a8a8a8;font-size: 12px; border-bottom: 1px solid #c5c5c5;" target="_blank" >TERMS</a></div>' +
                         '<div style="width: 60px;margin-top: 1vw;"><a href="'+ fatherHref + '/EGF_PRIVACY.pdf" style="color: #a8a8a8;font-size: 12px; border-bottom: 1px solid #c5c5c5;" target="_blank" >PRIVACY</a></div>' +
+                    '</div>' +
+                    
+                    '<div style="flex: 4;">' + 
                     '</div>' +
 
                     '<div style="flex: 1;">' + 
