@@ -1,49 +1,49 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="favicon.png">
+    <meta charset="utf-8">
+    <title>eGamingFund - the blockchain-fuelled platform for the gaming community</title>
+    <link rel="bookmark" type="image/x-icon" href="img/logo1.ico"/>
+	<link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/logo2.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
+    <meta name="description" content="eGamingFund - the blockchain-fuelled platform for the gaming community">
+    <meta name="author" content="Fabian Bentz Webdesign">
+    <meta name="keywords" content="Game Development,Financing,Crowdfunding,Investment,NSFW,Token,Gaming">
 
+    <!--facebook linked start-->
+    <meta property="og:type" content="website"/>
+    <!--<meta property="og:locale" content="en_US"/>-->
+	<meta property="og:url" content="https://egamingfund.org"/>
+    <meta property="og:title" content="eGamingFund"/>
+    <meta property="og:description" content="eGamingFund - the blockchain-fuelled platform for the gaming community"/>
+    <meta property="og:image" content="https://egamingfund.org/img/logo2.png" />
+    <!--facebook linked end-->
 
-    <title>GF二次元游戏平台_下载_GameFand_官方网站</title>
-    <meta name="description"
-        content="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
-    <meta name="keywords" content="GameFund GF游戏平台 GF网游加速器 GF游戏加速器 GF加速器 免费加速器 免费网游加速器 ACG 二次元游戏 游戏资讯 发现好游戏">
-    <meta name="Author" contect="GameFund">
+    <!--twitter linked start-->
+    <meta name="twitter:card" content="summary"/>
+    <!--<meta name="twitter:site" content="@enjin"/>-->
+	<meta name="twitter:title" content="eGamingFund"/>
+    <meta name="twitter:description" content="eGamingFund - the blockchain-fuelled platform for the gaming community"/>
+    <meta name="twitter:image" content="https://egamingfund.org/img/logo2.png"/>
+    <!--twitter linked end-->
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GF二次元游戏平台_GameFund_官方网站">
-    <meta property="og:url" content="http://game.fund">
-    <meta property="og:description"
-        content="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
-    <meta property="og:site_name" content="GameFund">
-    <meta property="og:image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" value="game.fund">
-    <meta name="twitter:title" value="GF二次元游戏平台">
-    <meta name="twitter:description"
-        value="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
-    <meta name="twitter:image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
-    <meta name="twitter:url" value="http://game.fund">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138654149-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143955759-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-138654149-1'); 
+        gtag('config', 'UA-143955759-1');
     </script>
+    <!-- Google Analytics end -->
 </head>
 
 <body style="width: 100%; height: 100%;">
     <div id="container"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div style="font-size: 30px">正在加载，请稍等。。。</div>
+        <div style="font-size: 30px">Loading ...</div>
     </div>
     <script>
 
@@ -118,12 +118,12 @@
             var ua = window.navigator.userAgent.toLowerCase();
             var isWeixin = ua.indexOf('micromessenger') != -1;
             if (isWeixin) {
-                window.location.href = "http://game.fund/index.html";
+                window.location.href = "http://egamingfund.org/index.html";
             } else {
                 let language = splitUrl(window.location.href, "language");
                 if(language == 'en'){
                     document.getElementById('container').getElementsByTagName('div')[0].innerHTML = 'Loading, Please wait...';
-                    document.title = 'ACGN Gaming Platform_Download_GameFand_Official Website';
+                    document.title = 'ACGN Gaming Platform_Download_eGamingFund_Official Website';
                 }
 
                 function addLogDownloadSource() {
@@ -142,11 +142,11 @@
                         }
                     })
                 }
-                addLogDownloadSource();
+                // addLogDownloadSource();
                 if(splitUrl(window.location.href, "isEn") == 'true'){
-                    window.location.href = 'https://github.com/gamefund/game.github.io/releases/download/GameFund/GF1.0.26.apk';
+                    window.location.href = 'https://d29u5pqjmzbsm4.cloudfront.net/apk/egamingfund-1.0.26.apk';
                 }else {
-                    window.location.href = "https://resource-1258943997.file.myqcloud.com/apk/GF1.0.26.apk";
+                    window.location.href = "https://d29u5pqjmzbsm4.cloudfront.net/apk/egamingfund-1.0.26.apk";
                 }
             }
         })();
