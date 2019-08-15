@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
+
+
+    <title>GF二次元游戏平台_下载_GameFand_官方网站</title>
+    <meta name="description"
+        content="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
+    <meta name="keywords" content="GameFund GF游戏平台 GF网游加速器 GF游戏加速器 GF加速器 免费加速器 免费网游加速器 ACG 二次元游戏 游戏资讯 发现好游戏">
+    <meta name="Author" contect="GameFund">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GF二次元游戏平台_GameFund_官方网站">
+    <meta property="og:url" content="http://game.fund">
+    <meta property="og:description"
+        content="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
+    <meta property="og:site_name" content="GameFund">
+    <meta property="og:image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" value="game.fund">
+    <meta name="twitter:title" value="GF二次元游戏平台">
+    <meta name="twitter:description"
+        value="《GF二次元游戏平台》汇聚全球热爱ACG的玩家，GameFund严选全球二次元精品游戏、漫画、番剧、资讯。内置GF加速器（官方下载），速度快、超稳定、注册即送超长免费的网游加速时长，专业解决游戏延迟、卡顿、掉线等问题。">
+    <meta name="twitter:image" content="https://resource-1258943997.file.myqcloud.com/gf/SnapshotLogo.png">
+    <meta name="twitter:url" value="http://game.fund">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138654149-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138654149-1'); 
+    </script>
+</head>
+
+<body style="width: 100%; height: 100%;">
+    <div id="container"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div style="font-size: 30px">正在加载，请稍等。。。</div>
+    </div>
+    <script>
+
+
+        /** ajax */
+        function ajax() {
+            var ajaxData = {
+                type: arguments[0].type || "POST",
+                url: arguments[0].url || "",
+                async: arguments[0].async || "true",
+                data: arguments[0].data || null,
+                dataType: arguments[0].dataType || "text",
+                contentType: arguments[0].contentType || "application/x-www-form-urlencoded",
+                beforeSend: arguments[0].beforeSend || function () { },
+                success: arguments[0].success || function () { },
+                error: arguments[0].error || function () { }
+            }
+            ajaxData.beforeSend()
+            var xhr = createxmlHttpRequest();
+            xhr.responseType = ajaxData.dataType;
+            xhr.open(ajaxData.type, ajaxData.url, ajaxData.async);
+            xhr.setRequestHeader("Content-Type", ajaxData.contentType);
+            xhr.send(convertData(ajaxData.data));
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        ajaxData.success(xhr.response)
+                    } else {
+                        ajaxData.error()
+                    }
+                }
+            }
+        }
+
+        function createxmlHttpRequest() {
+            if (window.ActiveXObject) {
+                return new ActiveXObject("Microsoft.XMLHTTP");
+            } else if (window.XMLHttpRequest) {
+                return new XMLHttpRequest();
+            }
+        }
+
+        function convertData(data) {
+            if (typeof data === 'object') {
+                var convertResult = "";
+                for (var c in data) {
+                    convertResult += c + "=" + data[c] + "&";
+                }
+                convertResult = convertResult.substring(0, convertResult.length - 1)
+                return convertResult;
+            } else {
+                return data;
+            }
+        }
+
+
+
+        /** 主函数 */
+        (function () {
+            //解析路径中传递过来的值
+            var splitUrl = function (url, str) {
+                var firstArr = url.split('?');
+                var secondArr = firstArr[firstArr.length - 1].split('&')
+                for (var i in secondArr) {
+                    if (secondArr[i].indexOf(str) != -1) {
+                        var resultArr = secondArr[i].split('=');
+                        return resultArr[resultArr.length - 1];
+                    }
+                }
+            }
+
+            var ua = window.navigator.userAgent.toLowerCase();
+            var isWeixin = ua.indexOf('micromessenger') != -1;
+            if (isWeixin) {
+                window.location.href = "http://game.fund/index.html";
+            } else {
+                let language = splitUrl(window.location.href, "language");
+                if(language == 'en'){
+                    document.getElementById('container').getElementsByTagName('div')[0].innerHTML = 'Loading, Please wait...';
+                    document.title = 'ACGN Gaming Platform_Download_GameFand_Official Website';
+                }
+
+                function addLogDownloadSource() {
+                    var generalServerIp = splitUrl(window.location.href, "generalServerIp") || "http://139.217.235.88:9001";
+                    var userId = splitUrl(window.location.href, "userId");
+                    var logUrl = generalServerIp + "/insertLogDownloadSource";
+                    ajax({
+                        async: false,
+                        type: "post",
+                        url: logUrl,
+                        contentType: "application/json",
+                        dateType: "json",
+                        data: { userId: userId },
+                        success: function (data) {
+                            console.log("add log success")
+                        }
+                    })
+                }
+                addLogDownloadSource();
+                if(splitUrl(window.location.href, "isEn") == 'true'){
+                    window.location.href = 'https://github.com/gamefund/game.github.io/releases/download/GameFund/GF1.0.26.apk';
+                }else {
+                    window.location.href = "https://resource-1258943997.file.myqcloud.com/apk/GF1.0.26.apk";
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
