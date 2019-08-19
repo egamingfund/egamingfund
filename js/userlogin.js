@@ -158,9 +158,9 @@ $(function(){
                 "<form id='form_common_id' class='form-container'>" +
                     "<img id='form_common_close' src='https://egamingfund.org/img/close.png' style='position: absolute; top: 5px; right: 5px; width:3%;' alt=''/>" +
                     "<div class='form-logo'>" +
-                        "<img src='https://egamingfund.org/img/logo2.png' width='20%' style='margin-top: -70px;' alt=''/>" +
+                        "<img src='https://egamingfund.org/img/logo2-new.png' width='20%' style='margin-top: -70px;' alt=''/>" +
                     "</div>" +
-                    "<h4>e<span style='color: #fe6501;'>G</span>aming<span style='color: #fe6501;'>F</span>und</h4>" +
+                    "<h4>e<span style='color: #fa4616;'>G</span>aming<span style='color: #fa4616;'>F</span>und</h4>" +
                     //虚位以待。。。 
                     "<div class='form-content'></div>"                
                 "</form>" +

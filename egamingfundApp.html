@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eGamingFund - the blockchain-fuelled platform for the gaming community</title>
+    <link rel="bookmark" type="image/x-icon" href="img/logo-new.ico"/>
+	<link rel="shortcut icon" href="img/logo-new.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/logo2-new.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eGamingFund - the blockchain-fuelled platform for the gaming community">
+    <meta name="author" content="Fabian Bentz Webdesign">
+    <meta name="keywords" content="Game Development,Financing,Crowdfunding,Investment,NSFW,Token,Gaming">
+
+    <!--facebook linked start-->
+    <meta property="og:type" content="website"/>
+    <!--<meta property="og:locale" content="en_US"/>-->
+	<meta property="og:url" content="https://egamingfund.org"/>
+    <meta property="og:title" content="eGamingFund"/>
+    <meta property="og:description" content="eGamingFund - the blockchain-fuelled platform for the gaming community"/>
+    <meta property="og:image" content="https://egamingfund.org/img/logo2-new.png" />
+    <!--facebook linked end-->
+
+    <!--twitter linked start-->
+    <meta name="twitter:card" content="summary"/>
+    <!--<meta name="twitter:site" content="@enjin"/>-->
+	<meta name="twitter:title" content="eGamingFund"/>
+    <meta name="twitter:description" content="eGamingFund - the blockchain-fuelled platform for the gaming community"/>
+    <meta name="twitter:image" content="https://egamingfund.org/img/logo2-new.png"/>
+    <!--twitter linked end-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143955759-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143955759-1');
+    </script>
+    <!-- Google Analytics end -->
+
+    <!-- CSS Styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" id="theme" href="./css/theme6.css" type="text/css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="./css/sequence-slider.css" />
+    <link rel="stylesheet" href="./css/top.css" type="text/css" />
+    <link rel="stylesheet" href="./css/new.css" type="text/css" />
+
+    <link rel="stylesheet" href="./css/userlogin.css" type="text/css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" type="text/css" />
+
+    <style>
+        body {
+            background: #000;
+        }
+        .app-container{
+            font-size: 62.5%;
+            width: 100%;
+            height: 100%;
+            background: url('./app/app-bg.jpg');
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .flexSpaceAround {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .app-left-content {
+            flex: 2;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10% 0;
+            padding-top: 6%;
+        }
+        .app-right-content {
+            flex: 4;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 16% 0;
+        }
+        .app-left-content-div {
+            width: 84%;
+            margin-left: -11%;
+        }
+        .app-title {
+            color: #ffffff;
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+        .app-introduction {
+            color: #ffffff;
+            font-size: 1.6rem;
+            line-height: 180%;
+            text-align: center;
+        }
+        .app-download {
+            margin: 2.5rem 0;
+        }
+        .app-qrcode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2.5rem 0;
+        }
+        .app-qrcode-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding: 2.5rem;
+            border: 2px solid #DA1E25;
+        }
+        .app-download-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            min-width: 200px;
+            padding: 10px 20px;
+            background-color: #DA1E25;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .app-window-image {
+            width: 18%;
+            margin-right: 15px;
+            margin-left: 0;
+        }
+
+        .app-right-content>img{
+            width: 98%;
+            margin-right: -6%;
+        }
+        @media (max-width: 1267px) {
+            .app-left-content-div {
+                width: 84%;
+                margin-left: 0;
+            }
+        }
+        @media (max-width: 1067px) {
+            .app-left-content-div{
+                padding: 0;
+            }
+        }
+        @media (max-width: 767px) {
+            .app-container .flexSpaceAround{
+                flex-direction: column;
+            }
+            .app-left-content-div {
+                width: 84%;
+                margin-left: 0;
+            }
+            .app-right-content>img{
+                width: 98%;
+                margin-right: 0%;
+            }
+            .app-left-content, .app-right-content{
+                justify-content: center
+            }
+            .app-left-content {
+                padding-top: 10%;
+            }
+            .app-right-content {
+                padding: 6% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="app-container">
+        <div class="container flexSpaceAround">
+            <div class="app-left-content">
+                <div class="app-left-content-div ">
+                    <div class="app-title">
+                        eGamingFund App
+                    </div>
+                    <div class="app-introduction">
+                        eGamingFund is a e-gaming community
+                    </div>
+                    <div class="app-qrcode">
+                        <div class="app-qrcode-content">
+                            <img src="./app/qrcode.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div class="app-download">
+                        <a class="app-download-button" href="https://d29u5pqjmzbsm4.cloudfront.net/apk/egamingfund-1.0.26.apk" target="_blank">
+                            <img class="app-window-image" src="./app/android.svg" />
+                            <div style="font-size: 1.8rem; font-weight: bold">DOWNLOAD</div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="app-right-content">
+                <img src="./app/app.png" style="" />
+            </div>
+        </div>
+    </div>
+
+     <!-- 载入Jquery 框架 -->
+     <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="./js/head-bottom.js"></script>
+
+     <!-- Sticky Navigation --> 
+     <script type="text/javascript" src="./js/jquery.sticky.js"></script>
+
+     <script type="text/javascript" src="./js/news.js"></script>
+     <!-- language -->
+     <script type="text/javascript" src="./js/language.js"></script> 
+
+     <script type="text/javascript" src="./js/userlogin.js"></script>
+</body>
+</html>

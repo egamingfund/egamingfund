@@ -4,12 +4,12 @@ var fatherHref = '.';   //只可用于根目录下html，
 var headerText = 
     '<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="menu">' +
           '<div class="container">' +
-                '<div class="w-col">' +
-                    '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center;">' +
-                        '<img class="logo" src="'+ fatherHref + '/img/logo2.png" height="28px">' +
-                        '<div style="margin-top: 10px; font-size: 18px; color: #fff">e<span style="color: #fe6501">G</span>aming<span style="color: #fe6501">F</span>und</div>' +
-                    '</a>' +
-                '</div>' +
+                // '<div class="w-col">' +
+                //     '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center;">' +
+                //         '<img class="logo" src="'+ fatherHref + '/img/logo2-new.png" height="28px">' +
+                //         '<div style="margin-top: 10px; font-size: 18px; color: #fff">e<span style="color: #fa4616">G</span>aming<span style="color: #fa4616">F</span>und</div>' +
+                //     '</a>' +
+                // '</div>' +
 
               /* '<div>' +
                 '<ul class="nav navbar-nav" id="translation">' +
@@ -27,33 +27,55 @@ var headerText =
                 '<!--<div id="google_translate_element"></div>-->' +
               '</div>' +*/
 
-              /*'<div class="navbar-header">' +
-                '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">' +
-                  '<span class="sr-only">Toggle navigation</span>' +
-                  '<span class="icon-bar"></span>' +
-                  '<span class="icon-bar"></span>' +
-                  '<span class="icon-bar"></span>' +
-                '</button>' +
-              '</div>' +
+            //   '<div class="navbar-header">' +
+            //     '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">' +
+            //       '<span class="sr-only">Toggle navigation</span>' +
+            //       '<span class="icon-bar"></span>' +
+            //       '<span class="icon-bar"></span>' +
+            //       '<span class="icon-bar"></span>' +
+            //     '</button>' +
+            //   '</div>' +
 
-              '<!-- MENU LINKS -->' +
-              '<div class="navbar-collapse collapse">' +
-                  '<ul class="nav navbar-nav" id="navigation">' +
-                    '<li class="menu-about"><a href="'+ fatherHref + '/index.html#about" id="navigation_item1">Introduction</a></li>' +
-                    '<li class="menu-service"><a href="'+ fatherHref + '/index.html#service" id="navigation_item2">Background</a></li>' +
-                    // '<li class="menu-portfolio"><a href="'+ fatherHref + '/index.html#portfolio" id="navigation_item3">Solution</a></li>' +
-                    '<li class="menu-community"><a href="'+ fatherHref + '/index.html#community" id="navigation_item6">Ecology</a></li>' +
-                    '<li class="menu-price"><a href="'+ fatherHref + '/index.html#advance" id="navigation_item4">Advantage</a></li>' +
-                    '<li class="menu-team"><a href="'+ fatherHref + '/index.html#team" id="navigation_item5">Team</a></li>' +
-                    '<li class="menu-blog"><a href="'+ fatherHref + '/bloglist.html" id="navigation_item7">Blog</a></li>' +
-                    // '<li class="menu-reward"><a href="'+ fatherHref + '/reward/reward.html" id="navigation_item8">Reward</a></li>' +
-                  '</ul>' +
+            //   '<!-- MENU LINKS -->' +
+            //   '<div class="navbar-collapse collapse">' +
+            //       '<ul class="nav navbar-nav" id="navigation">' +
+            //         '<li class="menu-about"><a href="'+ fatherHref + '/index.html#about" id="navigation_item1">Introduction</a></li>' +
+            //         '<li class="menu-service"><a href="'+ fatherHref + '/index.html#service" id="navigation_item2">Background</a></li>' +
+            //         // '<li class="menu-portfolio"><a href="'+ fatherHref + '/index.html#portfolio" id="navigation_item3">Solution</a></li>' +
+            //         '<li class="menu-community"><a href="'+ fatherHref + '/index.html#community" id="navigation_item6">Ecology</a></li>' +
+            //         '<li class="menu-price"><a href="'+ fatherHref + '/index.html#advance" id="navigation_item4">Advantage</a></li>' +
+            //         '<li class="menu-team"><a href="'+ fatherHref + '/index.html#team" id="navigation_item5">Team</a></li>' +
+            //         '<li class="menu-blog"><a href="'+ fatherHref + '/bloglist.html" id="navigation_item7">Blog</a></li>' +
+            //         // '<li class="menu-reward"><a href="'+ fatherHref + '/reward/reward.html" id="navigation_item8">Reward</a></li>' +
+            //       '</ul>' +
 
-                  '<ul class="nav navbar-nav" id="registration">' +
-                    '<!--<li><a href="'+ fatherHref + '/whitelist" target="_blank" id="registration_item_menu">Join whitelist</a></li>-->' +
-                    '<li><span>NOW LIVE!</span></li>' +
-                  '</ul>' +          
-              '</div>' +*/
+            //       '<ul class="nav navbar-nav" id="registration">' +
+            //         '<!--<li><a href="'+ fatherHref + '/whitelist" target="_blank" id="registration_item_menu">Join whitelist</a></li>-->' +
+            //         '<li><span>NOW LIVE!</span></li>' +
+            //       '</ul>' +          
+            //   '</div>' +
+
+            '<div class="navbar-header">' +
+                // '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">' +
+                //     '<span class="sr-only">Toggle navigation</span>' +
+                //     '<span class="icon-bar"></span>' +
+                //     '<span class="icon-bar"></span>' +
+                //     '<span class="icon-bar"></span>' +
+                // '</button>' +
+                '<div class="w-col">' +
+                    '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center;">' +
+                        '<img class="logo" src="'+ fatherHref + '/img/logo2-new.svg" height="28px">' +
+                        '<div style="margin-top: 10px; font-size: 18px; color: #fff; font-family: Barlow-SemiBold;">e<span style="color: #fa4616">G</span>aming<span style="color: #fa4616">F</span>und</div>' +
+                    '</a>' +
+                '</div>' +
+            '</div>' +
+
+            // '<div class="navbar-collapse collapse" id="nav-button">' +
+            //     '<ul class="nav navbar-nav">' +
+            //         '<li><a href="'+ fatherHref + '/egamingfundApp.html" target="_blank" id="">eGamingFund APP</a></li>' +
+            //         '<li><a href="'+ fatherHref + '/egamingfundCreator.html" target="_blank" id="">eGamingFund Creator</a></li>' +
+            //     '</ul>' +          
+            // '</div>'
         '</div>' +
     '</nav>';
 
@@ -124,8 +146,8 @@ var bottomText =
                         // logo
                         '<div class="content">' +
                             '<a href="'+ fatherHref + '/index.html" style="display: flex;align-items: center; margin-left: 1vw">' +
-                                '<img src="'+ fatherHref + '/img/logo2.png" width="28px" height="28px" style="margin-right: 10px;">' +
-                                '<div style="font-size: 18px; color: #fff">e<span style="color: #fe6501">G</span>aming<span style="color: #fe6501">F</span>und</div>' +
+                                '<img src="'+ fatherHref + '/img/logo2-new.svg" width="28px" height="28px" style="margin-right: 10px;">' +
+                                '<div style="font-size: 18px; color: #fff; font-family: Barlow-SemiBold;">e<span style="color: #fa4616">G</span>aming<span style="color: #fa4616">F</span>und</div>' +
                             '</a>' +
                         '</div>' +
                     '</div>' +

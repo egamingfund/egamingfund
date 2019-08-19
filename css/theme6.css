@@ -216,7 +216,7 @@
         line-height: 24px;
     }
     #industry-status .container .special-info div .industry_status_item span{ 
-        color: #FE6501;
+        color: #fa4616;
     }
 
     #industry-status .industry-status-intro{
@@ -428,7 +428,7 @@
         margin-top: 10px;
     }
     #portfolio .overlay .service-p span{
-        color: #FE6501;
+        color: #fa4616;
     }
     @media only screen and (max-width: 1468px) {
         #service .service{
@@ -664,7 +664,7 @@
         margin: 0 20px;
     }
     #team .team-support-content .team-support-item1 span{
-        color: #fe6501;
+        color: #fa4616;
     }
     #team .team-support-content .team-support-item1 a{
         color: #5480ff;
@@ -1557,3 +1557,4 @@
         margin: 10px;
     }
 }
+
