@@ -33,6 +33,18 @@ $(document).ready(function() {
             event.stopPropagation();
         }
     });
+    /** pricacy-terms 悬停事件 */
+    $("#contact .container .privacy-terms>div").unbind("click").bind({
+        mouseenter:function(){
+            $(this).children("a").css({"color": '#fa4616', "border-bottom": '1px solid #fa4616'});
+        },
+        mouseleave:function(){
+            $(this).children("a").css({"color": '#86878F', "border-bottom": '1px solid #c5c5c5'});
+        },
+        click:function(event){
+            event.stopPropagation();
+        }
+    });
 
     /** CEO样式 */
     $("#team_role_item19").css({'width': $("#team .team-item").width() + 30, 'margin-left': -35,});
