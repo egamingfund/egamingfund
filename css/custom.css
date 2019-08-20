@@ -19,12 +19,12 @@
      
     */
     body.body{
-        font-family:  "Microsoft YaHei", "Arial" !important;
+        font-family: 'Barlow-Regular', "Microsoft YaHei", "Arial" !important;
         /*min-width: 1280px;*/
          overflow-x: hidden;
     }
     .body_en{
-        font-family: "Arial", "Microsoft YaHei" !important;
+        font-family: 'Barlow-Regular', "Arial", "Microsoft YaHei" !important;
         /*min-width: 1280px;*/
          overflow-x: hidden;
     }
@@ -125,14 +125,15 @@
     }
     #menu .container .navbar-collapse a{
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         font-size: 14px;
         padding: 15.5px 0;
         margin: 0 12px;
         color: #e5e5e5;
     }
     #menu .container .navbar-collapse a:hover,  #menu .container .navbar-collapse a:focus{
-        border-bottom: 2px solid red;
-        color: red;
+        border-bottom: 2px solid #fa4616;
+        color: #fa4616;
         background-color: #000;
     }
     #menu .container #navigation{
@@ -166,10 +167,11 @@
     }
     #menu .container #registration a{
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         font-size: 13px;
         margin: 11px 0;
         padding: 0px 13px;
-        border: 1px solid red;
+        border: 1px solid #fa4616;
         color: #e5e5e5;
         border-radius: 4px;
         height: 28px;
@@ -185,19 +187,19 @@
         background-color: #000;
     }
     #menu .container #registration a:hover{
-        background-color: red;
+        background-color: #fa4616;
     }
     #menu .container #registration a:active{
-        background-color: red;
+        background-color: #fa4616;
     }
     
     #menu .container #registration span{
         font-size: 14px;
         padding: 15px 0;
         margin: 0 0px;
-        color: red;
+        color: #fa4616;
         font-weight: bolder;
-        font-family: "Arial";
+        font-family: 'Barlow-Regular', "Arial";
     }
 
     @media only screen and (max-width: 1067px){
@@ -234,15 +236,15 @@
             margin-right:  10px;
         }
         #menu-sticky-wrapper .navbar-inverse .navbar-toggle .icon-bar {
-            background-color: red;
+            background-color: #fa4616;
         }
         #menu-sticky-wrapper .navbar-inverse .in{
             overflow: hidden;
             padding: 0;
             width: 100%;
             margin: 0;
-            border-color: red;
-            border-bottom: 1px solid red;
+            border-color: #fa4616;
+            border-bottom: 1px solid #fa4616;
         }
         #menu .container #navigation{
             margin-left: 20px;

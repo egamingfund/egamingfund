@@ -57,6 +57,7 @@
     #about .about-title{
         /*font-size: 3.1vw;*/
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         font-size: 38px;
         color: #fff;
         text-align: center;
@@ -167,13 +168,14 @@
     }
     #industry-status .container .prominent-characteristic div div{ 
         /*margin-left: 3px;*/
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid #fa4616;
     }
 
     #industry-status .container .industry-title{
         font-size: 38px; 
         color: #fff; 
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
      
     #industry-status .industry-status-img{
@@ -287,6 +289,7 @@
      #service .container .row .head .service-title{
         color: #fff; 
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
     #service .container .row .head .service-title div{
         font-size: 36px; 
@@ -310,6 +313,7 @@
         color: #d3d3d3;
         font-size: 20px;
         font-weight: bold;
+        font-family: Barlow-SemiBold !important;
         height: 80px;
         display: flex;
         justify-content: center;
@@ -386,6 +390,7 @@
         font-size: 36px; 
         color: #fff; 
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
 
     #portfolio h1 {
@@ -424,6 +429,7 @@
         color: #fff;
         font-size: 20px;
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         margin-bottom: 5px;
         margin-top: 10px;
     }
@@ -602,6 +608,7 @@
      #team .container .row .head .team-title{
             color: #fff; 
             font-weight: bold; 
+            font-family: Barlow-SemiBold;
     }
     #team .container .row .head .team-title div{
             font-size: 36px;
@@ -638,6 +645,7 @@
     #team  .team-small-title{
         font-size: 36px;
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         color: #fff;
         /* margin: 60px 0 20px; */
         margin: 4vw 8vw;
@@ -776,6 +784,7 @@
 #community .head .community-title{        
     color: #5b5b5b; 
     font-weight: bold;
+    font-family: Barlow-SemiBold;
 }
 #community .head .community-title span{        
     font-size: 36px; 
@@ -783,6 +792,7 @@
 #community .community-img-title{
     font-size: 36px;
     font-weight: bold;
+    font-family: Barlow-SemiBold;
     /* margin: 60px 20px 30px; */
     margin: 4vw 8vw;
 }
@@ -838,6 +848,7 @@
     #community .background-img .community-content .item-title{
         font-size: 16px;
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
     #community .background-img .community-content .item-text{
         font-size: 13px;
@@ -868,6 +879,7 @@
     #community .background-img .community-content .item-title{
         font-size: 16px;
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         text-align: left;
     }
     #community .background-img .community-content .item-text{
@@ -916,6 +928,7 @@
 #community-video .community-video-title{
     font-size: 36px;
     font-weight: bold;
+    font-family: Barlow-SemiBold;
     /* margin: 60px 20px 30px; */
     margin: 4vw 8vw;
 }
@@ -1090,6 +1103,7 @@
     #competitive .head .competitive-title{        
         color: #fff; 
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
     #competitive .head .competitive-title span{
         font-size: 36px; 
@@ -1194,12 +1208,14 @@
     #price .price-item div{
         font-size: 16px;
         font-weight: bold;
+        font-family: Barlow-SemiBold;
         color: #2e2e2e;
         margin-top: 8px;
     }
     #price  .container .row .head-title .price-title{
         color: #5b5b5b; 
         font-weight: bold;
+        font-family: Barlow-SemiBold;
     }
     #price  .container .row .head-title .price-title div{
         font-size: 36px;

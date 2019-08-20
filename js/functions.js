@@ -24,7 +24,7 @@ $(document).ready(function() {
     /** contact 悬停事件 */
     $("#contact .container .content>div>a").unbind("click").bind({
         mouseenter:function(){
-            $(this).children("i").css("color", '#BF0A0A');
+            $(this).children("i").css("color", '#fa4616');
         },
         mouseleave:function(){
             $(this).children("i").css("color", '#86878F');
