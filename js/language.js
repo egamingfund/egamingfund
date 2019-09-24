@@ -119,6 +119,10 @@ var cn = {
     team_title2: 'ADVISORS',
     team_title3: 'SPONSORS',
 
+    team_name_item0: 'Tim Wong',
+    team_role_item0: 'CEO',
+    team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
+    
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Founder of eGamingFund',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
@@ -126,9 +130,9 @@ var cn = {
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
     
-    team_name_item6: 'Frank Liu',
-    team_role_item6: 'CTO',
-    team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
+    // team_name_item6: 'Frank Liu',
+    // team_role_item6: 'CTO',
+    // team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
     
     team_name_item9: 'Li Chong',
     team_text_item9: 'Li Chong is a eGamingFund angel investor. He is also a backer of DL Capital and co-founder of PPTV. His main focus is mobile internet, blockchain, Bubi blockchain, SandiJianke, Boqi, P2 joint office and a large number of current ventures.',
@@ -296,6 +300,10 @@ var en = {
     team_title2: 'ADVISORS',
     team_title3: 'SPONSORS',
 
+    team_name_item0: 'Tim Wong',
+    team_role_item0: 'CEO',
+    team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
+  
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Founder of eGamingFund',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
@@ -303,9 +311,9 @@ var en = {
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
     
-    team_name_item6: 'Frank Liu',
-    team_role_item6: 'CTO',
-    team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
+    // team_name_item6: 'Frank Liu',
+    // team_role_item6: 'CTO',
+    // team_text_item6: 'The postdoctoral researcher of Singapore Nanyang Technological University, Mr. Liu owns a number of intellectual property rights. His interests include deep mathematical thinking, studying and researching 3D graphics, cryptography, peer-to-peer communications and blockchain consensus mechanisms.',
     
     team_name_item9: 'Li Chong',
     team_text_item9: 'Li Chong is a eGamingFund angel investor. He is also a backer of DL Capital and co-founder of PPTV. His main focus is mobile internet, blockchain, Bubi blockchain, SandiJianke, Boqi, P2 joint office and a large number of current ventures.',

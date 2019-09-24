@@ -350,8 +350,9 @@ $(document).ready(function() {
             $("#team-consultant-title").html(cn.team_title2);
             $("#team-investment-title").html(cn.team_title3);
             
-            // $("#team_name_item0").html(cn.team_name_item0);
-            // $("#team_text_item0").html(cn.team_text_item0);
+            $("#team_name_item0").html(cn.team_name_item0);
+            $("#team_role_item0").html(cn.team_role_item0);
+            $("#team_text_item0").html(cn.team_text_item0);
             // $("#team_name_item1").html(cn.team_name_item1);
             // $("#team_text_item1").html(cn.team_text_item1);
             // $("#team_name_item2").html(cn.team_name_item2);
@@ -364,9 +365,9 @@ $(document).ready(function() {
 
             $("#team_name_item5").html(cn.team_name_item5);
             $("#team_text_item5").html(cn.team_text_item5);
-            $("#team_name_item6").html(cn.team_name_item6);
-            $("#team_role_item6").html(cn.team_role_item6);
-            $("#team_text_item6").html(cn.team_text_item6);
+            // $("#team_name_item6").html(cn.team_name_item6);
+            // $("#team_role_item6").html(cn.team_role_item6);
+            // $("#team_text_item6").html(cn.team_text_item6);
             // $("#team_name_item7").html(cn.team_name_item7);
             // $("#team_text_item7").html(cn.team_text_item7);
             // $("#team_name_item8").html(cn.team_name_item8);
@@ -537,8 +538,9 @@ $(document).ready(function() {
             $("#team-consultant-title").html(en.team_title2.toUpperCase());
             $("#team-investment-title").html(en.team_title3.toUpperCase());
             
-            // $("#team_name_item0").html(en.team_name_item0);
-            // $("#team_text_item0").html(en.team_text_item0);
+            $("#team_name_item0").html(en.team_name_item0);
+            $("#team_role_item0").html(en.team_role_item0);
+            $("#team_text_item0").html(en.team_text_item0);
             // $("#team_name_item1").html(en.team_name_item1);
             // $("#team_text_item1").html(en.team_text_item1);
             // $("#team_name_item2").html(en.team_name_item2);
@@ -551,9 +553,9 @@ $(document).ready(function() {
 
             $("#team_name_item5").html(en.team_name_item5);
             $("#team_text_item5").html(en.team_text_item5);
-            $("#team_name_item6").html(en.team_name_item6);
-            $("#team_role_item6").html(en.team_role_item6);
-            $("#team_text_item6").html(en.team_text_item6);
+            // $("#team_name_item6").html(en.team_name_item6);
+            // $("#team_role_item6").html(en.team_role_item6);
+            // $("#team_text_item6").html(en.team_text_item6);
             // $("#team_name_item7").html(en.team_name_item7);
             // $("#team_text_item7").html(en.team_text_item7);
             // $("#team_name_item8").html(en.team_name_item8);
@@ -724,8 +726,9 @@ $(document).ready(function() {
             $("#team-consultant-title").html(en.team_title2.toUpperCase());
             $("#team-investment-title").html(en.team_title3.toUpperCase());
             
-            // $("#team_name_item0").html(en.team_name_item0);
-            // $("#team_text_item0").html(en.team_text_item0);
+            $("#team_name_item0").html(en.team_name_item0);
+            $("#team_role_item0").html(en.team_role_item0);
+            $("#team_text_item0").html(en.team_text_item0);
             // $("#team_name_item1").html(en.team_name_item1);
             // $("#team_text_item1").html(en.team_text_item1);
             // $("#team_name_item2").html(en.team_name_item2);
@@ -738,9 +741,9 @@ $(document).ready(function() {
 
             $("#team_name_item5").html(en.team_name_item5);
             $("#team_text_item5").html(en.team_text_item5);
-            $("#team_name_item6").html(en.team_name_item6);
-            $("#team_role_item6").html(en.team_role_item6);
-            $("#team_text_item6").html(en.team_text_item6);
+            // $("#team_name_item6").html(en.team_name_item6);
+            // $("#team_role_item6").html(en.team_role_item6);
+            // $("#team_text_item6").html(en.team_text_item6);
             // $("#team_name_item7").html(en.team_name_item7);
             // $("#team_text_item7").html(en.team_text_item7);
             // $("#team_name_item8").html(en.team_name_item8);
