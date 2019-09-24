@@ -125,7 +125,7 @@ var cn = {
     
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Founder of eGamingFund',
-    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
+    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry. As a firm believer of crypto, past few years Oliver is involving with vairous blockchain projects related with egaming, healthcare, etc. He recently joined the advisory board of CasinoCoin foundation.',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
@@ -306,7 +306,7 @@ var en = {
   
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Founder of eGamingFund',
-    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry',
+    team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry. As a firm believer of crypto, past few years Oliver is involving with vairous blockchain projects related with egaming, healthcare, etc. He recently joined the advisory board of CasinoCoin foundation.',
     
     team_name_item5: 'Feng Tao',
     team_text_item5: 'Feng Tao is the Chairman of New Margin, the investment firm. He is the creator of Sina and has built many other successful cases. In 2017. Mr.Tao was among the top 3 best venture capitalists selected by Forbes China (with Shen Nanpeng and others). In the early days of blockchain, he was a supporter of INB, OK, NEO, BigONE and Beechat, among others.',
