@@ -120,11 +120,11 @@ var cn = {
     team_title3: 'SPONSORS',
 
     team_name_item0: 'Tim Wong',
-    team_role_item0: 'CEO',
+    team_role_item0: 'Founder & CEO',
     team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
     
     team_name_item3: 'Oliver Wu',
-    team_role_item3: 'Founder of eGamingFund',
+    team_role_item3: 'Co-Founder',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry. As a firm believer of crypto, past few years Oliver is involving with vairous blockchain projects related with egaming, healthcare, etc. He recently joined the advisory board of CasinoCoin foundation.',
     
     team_name_item5: 'Feng Tao',
@@ -301,11 +301,11 @@ var en = {
     team_title3: 'SPONSORS',
 
     team_name_item0: 'Tim Wong',
-    team_role_item0: 'CEO',
+    team_role_item0: 'Founder & CEO',
     team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
   
     team_name_item3: 'Oliver Wu',
-    team_role_item3: 'Founder of eGamingFund',
+    team_role_item3: 'Co-Founder',
     team_text_item3: 'Oliver is the producer behind various MMO online games. Dr. Wu has also been the overseas President of a public listed game company. He has more than a decade eGaming related experience, and well-known in Asia eGaming industry. As a firm believer of crypto, past few years Oliver is involving with vairous blockchain projects related with egaming, healthcare, etc. He recently joined the advisory board of CasinoCoin foundation.',
     
     team_name_item5: 'Feng Tao',
