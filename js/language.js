@@ -121,7 +121,7 @@ var cn = {
 
     team_name_item0: 'Tim Wong',
     team_role_item0: 'Founder & CEO',
-    team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
+    team_text_item0: 'Owns the master degree of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Academy. Tim has more than 10 years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
     
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Co-Founder',
@@ -302,7 +302,7 @@ var en = {
 
     team_name_item0: 'Tim Wong',
     team_role_item0: 'Founder & CEO',
-    team_text_item0: 'Owns the master degree  of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Military Academy, the founder of C²engine. Mr.Dong has 15-years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
+    team_text_item0: 'Owns the master degree of software from Shanghai Jiao tong University. The engineer of Perfect World research center, the former CTO of VRSTANDARD which be called VR Huangpu Academy. Tim has more than 10 years experience in the gaming industry, producing a number of profitable commercial games. Since 2014, he has researched the application of blockchain in the gaming industry.',
   
     team_name_item3: 'Oliver Wu',
     team_role_item3: 'Co-Founder',
